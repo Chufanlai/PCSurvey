@@ -62,12 +62,6 @@
 \CJKindent
 \CJKtilde
 
-%这是文章的标题
-%\title{动态图的可视分析方法综述}
-
-%这是文章的作者
-%\author{王祖超\hspace{1em}袁晓如}
-
 %这是文章的时间
 %如果没有这行将显示当前时间
 %如果不想显示时间则使用 \date{}
@@ -112,11 +106,41 @@
   \end{@twocolumnfalse}
 ]
 
-\cite{inselberg1985plane}
 %再插入目录
 %\tableofcontents
-%\section{引言}
-%\label{section:introduction}
+\section{引言}
+\label{section:introduction}
+
+在现实世界中，同一事物往往有多个不同的属性，要完整地描述该事物，需要记录其各个属性的信息。而这类具有多属性（维度）信息的数据，就称为多变量数据（Multivariate Data)，或称高维数据（High-dimensional Data）。在传统的数据分析中，高维数据一般利用统计方法加以处理，并通过表格的方式呈现。但传统方法过于依赖自动算法，既无法结合用户的知识与判断，也不利于对抽象的高维信息的认知和理解。而信息可视化技术（Information Visualization）通过对高维数据的视觉呈现，辅以交互式的数据处理手段，能使用户充分参与到数据处理过程中，既加深了用户对数据的理解，也提高了数据分析的效率和可靠性。
+
+高维数据一直是信息可视化领域的研究重点之一，其独有的两个特性：即维度数高、抽象性强，为可视化设计带来了巨大挑战。一方面，维度数的增长使得数据的信息量急剧增大，有限的显示空间只能表达一部分数据特征，而自动算法也会因为所谓的“维数灾难”（过高的复杂度、过低的采样率等\citep{Bellman1962}）而难以应用。另一方面，由于人无法感知高于三维的拓扑空间，高维的数据特征（如聚类、流型等）往往抽象而难以理解。针对这些挑战，领域内提出了各类高维可视化方法\cite{grinstein2001high}，包括降维投影\cite{fodor2002survey}、散点图矩阵\cite{cleveland1988dynamic}、雷达图\cite{hoffman1999dimensional}、星型坐标\cite{kandogan2000star}等等。而由Inselberg等人提出的平行坐标\cite{inselberg1985plane}也因其简单直观、可拓展性强等优点而被广泛应用于高维数据的可视分析中。
+
+本文对
+
+就具体设计而言，平行坐标的构造原理十分简单。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_principle.eps}
+\caption{\label{fig:overview_method}轨迹数据可视分析的三种方法。本图修改自Andrienko~等人的论文~\citep{AndrienkoADFW2008}~。
+}
+\end{figure}
+
+\section{基本原理}
+\label{section:basics}
+
+
+\section{平行坐标的改进}
+\label{section:improvements}
+
+\section{平行坐标的应用}
+\label{section:applications}
+
+\section{问题与挑战}
+\label{section:challenges}
+
+\section{结论}
+\label{section:conclusion}
+
 \bibliographystyle{abbrvnat}
 %\setcitestyle{aysep={,},yysep={;}}
 \bibliography{parallelcoordinates}
