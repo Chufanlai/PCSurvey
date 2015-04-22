@@ -249,14 +249,13 @@
   Timestamp                = {2015.04.08}
 }
 
-@Misc{fodor2002survey,
+@Article{fodor2002survey,
   Title                    = {A survey of dimension reduction techniques},
-
   Author                   = {Fodor, Imola K},
   Year                     = {2002},
 
+  File                     = {:A survey of dimension reduction techniques.pdf:PDF},
   Owner                    = {chufanlai},
-  Publisher                = {Technical Report UCRL-ID-148494, Lawrence Livermore National Laboratory},
   Timestamp                = {2015.04.09}
 }
 
