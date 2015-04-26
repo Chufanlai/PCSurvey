@@ -138,7 +138,7 @@
   Publisher                = {CRC Press, Inc.},
   Year                     = {1988},
 
-  __markedentry            = {[chufanlai:5]},
+  __markedentry            = {[chufanlai:3]},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.09}
 }
@@ -288,7 +288,7 @@
   Author                   = {Fodor, Imola K},
   Year                     = {2002},
 
-  __markedentry            = {[chufanlai:1]},
+  __markedentry            = {[chufanlai:3]},
   File                     = {:A survey of dimension reduction techniques.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.09}
@@ -516,7 +516,7 @@
   Organization             = {ACM},
   Pages                    = {9--16},
 
-  __markedentry            = {[chufanlai:5]},
+  __markedentry            = {[chufanlai:3]},
   File                     = {:Dimensional anchors\: a graphic primitive for multidimensional multivariate information visualizations.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.09}

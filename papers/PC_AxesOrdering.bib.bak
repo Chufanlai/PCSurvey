@@ -2,6 +2,22 @@
 % Encoding: UTF-8
 
 
+@InProceedings{ferdosi2011visualizing,
+  Title                    = {Visualizing High-Dimensional Structures by Dimension Ordering and Filtering using Subspace Analysis},
+  Author                   = {Ferdosi, Bilkis J and Roerdink, Jos BTM},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2011},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {1121--1130},
+  Volume                   = {30},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:Visualizing high-dimensional structures by dimension ordering and filtering using subspace analysis.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
 @InProceedings{johansson20053,
   Title                    = {3-dimensional display for clustered multi-relational parallel coordinates},
   Author                   = {Johansson, Jimmy and Cooper, Matthew and Jern, Mikael},
