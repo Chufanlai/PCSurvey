@@ -187,6 +187,21 @@
   Timestamp                = {2015.04.08}
 }
 
+@Article{dasgupta2011adaptive,
+  Title                    = {Adaptive privacy-preserving visualization using parallel coordinates},
+  Author                   = {Dasgupta, Aritra and Kosara, Robert},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {12},
+  Pages                    = {2241--2248},
+  Volume                   = {17},
+
+  File                     = {:Adaptive privacy-preserving visualization using parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.10}
+}
+
 @Article{ellis2006enabling,
   Title                    = {Enabling automatic clutter reduction in parallel coordinate plots},
   Author                   = {Ellis, Geoffrey and Dix, Alan},
@@ -501,6 +516,16 @@
   Timestamp                = {2015.04.08}
 }
 
+@Book{inselberg2009parallel,
+  Title                    = {Parallel coordinates},
+  Author                   = {Inselberg, Alfred},
+  Publisher                = {Springer},
+  Year                     = {2009},
+
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.22}
+}
+
 @Article{inselberg1985plane,
   Title                    = {The plane with parallel coordinates},
   Author                   = {Inselberg, Alfred},
@@ -605,6 +630,21 @@
   File                     = {:Revealing structure within clustered parallel coordinates displays.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
+}
+
+@Article{johansson2009interactive,
+  Title                    = {Interactive dimensionality reduction through user-defined combinations of quality metrics},
+  Author                   = {Johansson, Sara and Johansson, Jimmy},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2009},
+  Number                   = {6},
+  Pages                    = {993--1000},
+  Volume                   = {15},
+
+  File                     = {:Interactive Dimensionality Reduction Through User-defined.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.24}
 }
 
 @InProceedings{kandogan2000star,
@@ -918,6 +958,19 @@
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
   Timestamp                = {2015.04.08}
+}
+
+@InProceedings{van2005value,
+  Title                    = {The value of visualization},
+  Author                   = {Van Wijk, Jarke J},
+  Booktitle                = {Visualization, 2005. VIS 05. IEEE},
+  Year                     = {2005},
+  Organization             = {IEEE},
+  Pages                    = {79--86},
+
+  File                     = {:The Value of Visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.22}
 }
 
 @Article{viau2010flowvizmenu,

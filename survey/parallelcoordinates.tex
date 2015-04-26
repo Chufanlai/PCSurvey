@@ -113,7 +113,7 @@
 
 在现实世界中，同一事物往往有多个不同的属性，要完整地描述该事物，需要记录其各个属性的信息。而这类具有多属性（维度）信息的数据，就称为多变量数据（Multivariate Data)，或称高维数据（High-dimensional Data）。在传统的数据分析中，高维数据一般利用统计方法加以处理，并通过表格的方式呈现。但传统方法过于依赖自动算法，既无法结合用户的知识与判断，也不利于对抽象的高维信息的认知和理解。而信息可视化技术（Information Visualization）通过对高维数据的视觉呈现，辅以交互式的数据处理手段，能使用户充分参与到数据分析过程中，既加深了用户对数据的理解，也提高了分析的效率和可靠性。
 
-高维数据一直是信息可视化领域的研究重点之一，其独有的两个特性：即维度数高、抽象性强，为可视化设计带来了巨大挑战。一方面，维度数的增长使得数据的信息量急剧增大，有限的显示空间只能表达一部分数据特征，而自动算法也会因为所谓的“维数灾难”（过高的复杂度、过低的采样率等~\citep{Bellman1962}）而难以应用。另一方面，由于人无法感知高于三维的拓扑空间，高维的数据特征（如聚类、流型等）往往抽象而难以理解。针对这些挑战，领域内提出了各类高维可视化方法~\citep{grinstein2001high}，包括降维投影~\citep{fodor2002survey}、散点图矩阵~\citep{cleveland1988dynamic}、雷达图~\citep{hoffman1999dimensional}、星型坐标~\citep{kandogan2000star}等等。而由Inselberg等人提出的平行坐标~\citep{inselberg1985plane}（如图\ref{fig:PC_demo}）也因其简单直观、可拓展性强等优点而被广泛应用于高维数据的可视分析中。
+高维数据一直是信息可视化领域的研究重点之一，其独有的两个特性：即维度数高、抽象性强，为可视化设计带来了巨大挑战。一方面，维度数的增长使得数据的信息量急剧增大，有限的显示空间只能表达一部分数据特征，而自动算法也会因为所谓的“维数灾难”（过高的复杂度、过低的采样率等~\citep{Bellman1962}）而难以应用。另一方面，由于人无法感知高于三维的拓扑空间，高维的数据特征（如聚类、流型等）往往抽象而难以理解。针对这些挑战，领域内提出了各类高维可视化方法\citep{grinstein2001high}，包括降维投影\citep{fodor2002survey}、散点图矩阵\citep{cleveland1988dynamic}、雷达图\citep{hoffman1999dimensional}、星型坐标\citep{kandogan2000star}等等。而由Inselberg等人提出的平行坐标~\citep{inselberg1985plane}（如图\ref{fig:PC_demo}）也因其简单直观、可拓展性强等优点而被广泛应用于高维数据的可视分析中。
 
 \begin{figure}[htb!]
 \centering
@@ -128,11 +128,22 @@
 
 \section{基本原理及主要问题}
 \label{section:basics&prob}
-在这一节里，我们将简要介绍平行坐标的基本原理，包括其视觉设计和基本的交互功能。在此过程中，我们将逐步阐述平行坐标的几个主要问题。
+在这一节里，我们将从四个方面简要介绍平行坐标的设计。在此过程中，我们会逐步阐述平行坐标的几个主要问题。作进一步的探讨前，这里先简要介绍Jarke提出的的可视分析模型~\citep{van2005value}（如图\ref{fig:Vis_model}）。在一个可视分析流程中，数据（Data）驱动了可视化展示（Visualization），用户对视图进行感知（Perception）并从中获取知识（Knowledge）。基于已有知识，用户可以通过交互探索（Exploration）来改变视图的参数设置（Specification），以产生新的可视化来发掘更多知识。由此可见，可视分析流程主要由四部分组成，分别是数据、视图、感知和交互。本节余下内容以及第\ref{section:impro}节的内容都将按这四个部分展开。
 
-\subsection{视觉设计}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\linewidth]{images/Vis_model.eps}
+\caption{\label{fig:Vis_model}可视分析模型。本图修改自Jarke~等人的论文~\citep{van2005value}~。
+}
+\end{figure}
+
+\subsection{数据}
+\label{subsection:dataBasics}
+假设一个数据集有$m$个样本，每个样本有$n$个维度，则它可以记成一个$m \times n$的矩阵，其中每一行是一个样本，每一列代表一个维度。这样的矩阵又称为数据矩阵（data matrix），是平行坐标所处理的典型高维数据。数据的维度大致分为两种，即连续型（Continuous）维度和类别型（Categorical）维度。而一般的坐标轴只适用于连续型维度，类别型数据需要转换成连续型来表示，但往往会造成感知上的问题（详见~\ref{subsection:perceptionBasics}节）。因此，平行坐标并不适合表现类别型数据。另外，高维信息的产生往往伴随着其他类型的数据，譬如高维时空间数据、高维网络数据、高维流场数据等等。如何拓展平行坐标来表现不同类型的高维数据，也是研究的重点之一。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+\subsection{视图设计}
 \label{basics}
-正如前节所述，人无法感知高于三维的拓扑关系。传统的笛卡尔坐标系限定了坐标轴之间必须相互垂直，这使得高维的坐标空间极为抽象和难以理解。而平行坐标解决这一难题的方法，顾名思义，就是将各个维度的坐标轴平行放置，如图\ref{fig:PC_principle}所示。一个高维数据在各个坐标轴上均有取值，连接各取值所形成的一条折线，即表达了这个数据。
+正如第\ref{section:introduction}节所提到，人无法感知高于三维的拓扑关系。而传统的笛卡尔坐标系限定了各坐标轴必须相互垂直，这使得高维的坐标空间极为抽象和难以理解。平行坐标解决这一难题的方法，顾名思义，就是将各个维度的坐标轴平行放置，如图\ref{fig:PC_principle}所示。一个高维数据在各个坐标轴上均有取值，连接各取值点所形成的一条折线，即表达了这个数据。事实上，基于线和点的转化关系，平行坐标和笛卡尔坐标之间有很好的几何对称性，有兴趣的读者可参阅相关文献~\citep{inselberg1985plane}~\citep{inselberg2009parallel}。
 
 \begin{figure}[!htb]
 \centering
@@ -141,7 +152,29 @@
 }
 \end{figure}
 
-相比于其他高维可视化方法，平行坐标
+和其他高维可视化方法相比，平行坐标有几个突出的优点。首先，由于坐标轴的数量只受限于屏幕的横向分辨率，它相比于散点图矩阵等可以容易容纳更多维度，具有很强的可扩展性。其次，它完整地表达了数据在每个维度上的取值，相比于降维投影、雷达图等具有较低的不确定性和信息损失。最后，平行坐标构造简单、无需自动算法辅助，既方便使用也容易理解。
+
+但相对地，平行坐标也存在一些明显的局限和缺点：
+其一，每个数据用一条折线来表示，这会比散点形式占用更多的显示空间。当数据量增大时，视图很容易发生图元堆叠、导致视觉混杂（如图~\ref{fig:PC_clutter}），用户将无法从中得到有用的信息。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\linewidth]{images/PC_clutter.eps}
+\caption{\label{fig:PC_clutter}视觉混杂问题。本图来源于Artero~等人的论文~\citep{artero2004uncovering}~。
+}
+\end{figure}
+
+其二，平行坐标能够表现相邻维度间的关系，但信息量偏低。假设数据有$n$个维度，它们两两组合可得到$\frac{n(n-1)}{2}$个二维子空间，散点图矩阵能容纳其中的所有信息。但在平行坐标里，用户无法观察两个不相邻维度间的关系,因此只能看到$(n-1)$个二维子空间。换言之，平行坐标只表现了$\frac{2}{n}$的维度关系，不恰当的坐标轴排序很容易掩埋重要的相关性信息（如图\ref{fig:PC_reordering})。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_reordering.eps}
+\caption{\label{fig:PC_reordering}不同坐标轴排序对平行坐标的影响，其中上、下图分别为重排序前、后的视图。本图修改自Ferdosi~等人的论文~\citep{ferdosi2011visualizing}~。
+}
+\end{figure}
+
+\subsection{感知}
+\label{subsection:perceptionBasics}
 
 \subsection{基本交互}
 
