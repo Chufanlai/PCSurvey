@@ -1,0 +1,32 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@InProceedings{barlow2004animator,
+  Title                    = {Animator: A tool for the animation of parallel coordinates},
+  Author                   = {Barlow, N and Stuart, Liz J},
+  Booktitle                = {Information Visualisation, 2004. IV 2004. Proceedings. Eighth International Conference on},
+  Year                     = {2004},
+  Organization             = {IEEE},
+  Pages                    = {725--730},
+
+  __markedentry            = {},
+  File                     = {:Animator\: A Tool for the Animation of Parallel Coordinates .pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{dasgupta2011adaptive,
+  Title                    = {Adaptive privacy-preserving visualization using parallel coordinates},
+  Author                   = {Dasgupta, Aritra and Kosara, Robert},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {12},
+  Pages                    = {2241--2248},
+  Volume                   = {17},
+  File                     = {:Adaptive privacy-preserving visualization using parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.10}
+}
+

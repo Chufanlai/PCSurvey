@@ -1,0 +1,72 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@InProceedings{albuquerque2009quality,
+  Title                    = {Quality-Based Visualization Matrices.},
+  Author                   = {Albuquerque, Georgia and Eisemann, Martin and Lehmann, Dirk J and Theisel, Holger and Magnor, Marcus A},
+  Booktitle                = {VMV},
+  Year                     = {2009},
+  Pages                    = {341--350},
+  File                     = {:Quality-based visualization matrices.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{dasgupta2010pargnostics,
+  Title                    = {Pargnostics: Screen-space metrics for parallel coordinates},
+  Author                   = {Dasgupta, Aritra and Kosara, Robert},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2010},
+  Number                   = {6},
+  Pages                    = {1017--1026},
+  Volume                   = {16},
+
+  File                     = {:Pargnostics\: Screen-space metrics for parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.26}
+}
+
+@InProceedings{holten2010evaluation,
+  Title                    = {Evaluation of cluster identification performance for different PCP variants},
+  Author                   = {Holten, Danny and Van Wijk, Jarke J},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2010},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {793--802},
+  Volume                   = {29},
+  File                     = {:Evaluation of cluster iden- tification performance for different PCP variants.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{johansson2008perceiving,
+  Title                    = {Perceiving patterns in parallel coordinates: determining thresholds for identification of relationships},
+  Author                   = {Johansson, Jimmy and Forsell, Camilla and Lind, Mats and Cooper, Matthew},
+  Journal                  = {Information Visualization},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {152--162},
+  Volume                   = {7},
+  File                     = {:Perceiving patterns in parallel coordinates\: determining thresh- olds for identification of relationships.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{li2010judging,
+  Title                    = {Judging correlation from scatterplots and parallel coordinate plots},
+  Author                   = {Li, Jing and Martens, Jean-Bernard and Van Wijk, Jarke J},
+  Journal                  = {Information Visualization},
+  Year                     = {2010},
+  Number                   = {1},
+  Pages                    = {13--30},
+  Volume                   = {9},
+  File                     = {:Judging correlation from scatterplots and parallel coordinate plots.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.04.08}
+}
+

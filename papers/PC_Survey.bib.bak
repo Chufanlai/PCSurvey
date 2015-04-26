@@ -1,0 +1,114 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Article{fodor2002survey,
+  Title                    = {A survey of dimension reduction techniques},
+  Author                   = {Fodor, Imola K},
+  Year                     = {2002},
+  File                     = {:A survey of dimension reduction techniques.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@InProceedings{grinstein2001high,
+  Title                    = {High-dimensional visualizations},
+  Author                   = {Grinstein, Georges and Trutschl, Marjan and Cvek, Urska},
+  Booktitle                = {Data mining conference KDD workshop 2001},
+  Year                     = {2001},
+  Pages                    = {7--19},
+
+  File                     = {:High-dimensional visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@Article{heinrich2013state,
+  Title                    = {State of the art of parallel coordinates},
+  Author                   = {Heinrich, Julian and Weiskopf, Daniel},
+  Journal                  = {STAR Proceedings of Eurographics},
+  Year                     = {2013},
+  Pages                    = {95--116},
+  Volume                   = {2013},
+
+  __markedentry            = {},
+  File                     = {:State of the art of parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.06}
+}
+
+@Book{inselberg2009parallel,
+  Title                    = {Parallel coordinates},
+  Author                   = {Inselberg, Alfred},
+  Publisher                = {Springer},
+  Year                     = {2009},
+
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.22}
+}
+
+@Article{inselberg1985plane,
+  Title                    = {The plane with parallel coordinates},
+  Author                   = {Inselberg, Alfred},
+  Journal                  = {The Visual Computer},
+  Year                     = {1985},
+  Number                   = {2},
+  Pages                    = {69--91},
+  Volume                   = {1},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:The plane with parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {Springer},
+  Timestamp                = {2015.04.06}
+}
+
+@InProceedings{146402,
+  Title                    = {Parallel coordinates: a tool for visualizing multi-dimensional geometry},
+  Author                   = {Inselberg, A. and Dimsdale, Bernard},
+  Booktitle                = {Visualization, 1990. Visualization '90., Proceedings of the First IEEE Conference on},
+  Year                     = {1990},
+  Month                    = {Oct},
+  Pages                    = {361-378},
+  Doi                      = {10.1109/VISUAL.1990.146402},
+  File                     = {:Parallel coordinates\: a tool for visualizing multi-dimensional geometry.pdf:PDF},
+  Keywords                 = {computational geometry;computer graphics;N-dimensional;hypersurface;interior point;multivariate data;nonprojective mapping;parallel coordinates;planar images;two-dimensional sets;visualizing multi-dimensional geometry;Air traffic control;Application software;Computational geometry;Computer displays;Computer science;Orbital robotics;Robot kinematics;Robot vision systems;Statistics;Visualization},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{siirtola2006interacting,
+  Title                    = {Interacting with parallel coordinates},
+  Author                   = {Siirtola, Harri and R{\"a}ih{\"a}, Kari-Jouko},
+  Journal                  = {Interacting with Computers},
+  Year                     = {2006},
+  Number                   = {6},
+  Pages                    = {1278--1309},
+  Volume                   = {18},
+  File                     = {:Interacting with parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {Oxford University Press},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{van2005value,
+  Title                    = {The value of visualization},
+  Author                   = {Van Wijk, Jarke J},
+  Booktitle                = {Visualization, 2005. VIS 05. IEEE},
+  Year                     = {2005},
+  Organization             = {IEEE},
+  Pages                    = {79--86},
+
+  File                     = {:The Value of Visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.22}
+}
+
+@InProceedings{wong199430,
+  Title                    = {30 Years of Multidimensional Multivariate Visualization.},
+  Author                   = {Wong, Pak Chung and Bergeron, R Daniel},
+  File                     = {:30 Years of Multidimensional Multivariate Visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+

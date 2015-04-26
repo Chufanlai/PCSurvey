@@ -1,0 +1,42 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@InProceedings{fua1999navigating,
+  Title                    = {Navigating hierarchies with structure-based brushes},
+  Author                   = {Fua, Ying-Huey and Ward, Matthew O and Rundensteiner, Elke A},
+  Booktitle                = {Information Visualization, 1999.(Info Vis' 99) Proceedings. 1999 IEEE Symposium on},
+  Year                     = {1999},
+  Organization             = {IEEE},
+  Pages                    = {58--64},
+  File                     = {:Hierarchical parallel coordinates for exploration of large datasets.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{hauser2002angular,
+  Title                    = {Angular brushing of extended parallel coordinates},
+  Author                   = {Hauser, Helwig and Ledermann, Florian and Doleisch, Helmut},
+  Booktitle                = {Information Visualization, 2002. INFOVIS 2002. IEEE Symposium on},
+  Year                     = {2002},
+  Organization             = {IEEE},
+  Pages                    = {127--130},
+  File                     = {:Angular brushing of extended parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{siirtola2006interacting,
+  Title                    = {Interacting with parallel coordinates},
+  Author                   = {Siirtola, Harri and R{\"a}ih{\"a}, Kari-Jouko},
+  Journal                  = {Interacting with Computers},
+  Year                     = {2006},
+  Number                   = {6},
+  Pages                    = {1278--1309},
+  Volume                   = {18},
+  File                     = {:Interacting with parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {Oxford University Press},
+  Timestamp                = {2015.04.08}
+}
+

@@ -1,0 +1,74 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@InProceedings{berger2011uncertainty,
+  Title                    = {Uncertainty-Aware Exploration of Continuous Parameter Spaces Using Multivariate Prediction},
+  Author                   = {Berger, Wolfgang and Piringer, Harald and Filzmoser, Peter and Gr{\"o}ller, Eduard},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2011},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {911--920},
+  Volume                   = {30},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:Uncertainty-aware exploration of continuous parameter spaces using multivariate prediction.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{caat2007design,
+  Title                    = {Design and evaluation of tiled parallel coordinate visualization of multichannel EEG data},
+  Author                   = {Caat, M ten and Maurits, Natasha M and Roerdink, Jos BTM},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2007},
+  Number                   = {1},
+  Pages                    = {70--79},
+  Volume                   = {13},
+  File                     = {:Design and evaluation of tiled parallel coordinate visualization of multichannel EEG data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{guo2011tripvista,
+  Title                    = {TripVista: Triple perspective visual trajectory analytics and its application on microscopic traffic data at a road intersection},
+  Author                   = {Guo, Hanqi and Wang, Zuchao and Yu, Bowen and Zhao, Huijing and Yuan, Xiaoru},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2011 IEEE},
+  Year                     = {2011},
+  Organization             = {IEEE},
+  Pages                    = {163--170},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:TripVista\: triple perspective visual trajectory analytics and its ap- plication on microscopic traffic data at a road intersection.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{guo2011multi,
+  Title                    = {Multi-dimensional transfer function design based on flexible dimension projection embedded in parallel coordinates},
+  Author                   = {Guo, Hanqi and Xiao, He and Yuan, Xiaoru},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2011 IEEE},
+  Year                     = {2011},
+  Organization             = {IEEE},
+  Pages                    = {19--26},
+  File                     = {:Multi-dimensional transfer function design based on flexible dimension projection embedded in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{tory2005parallel,
+  Title                    = {A parallel coordinates style interface for exploratory volume visualization},
+  Author                   = {Tory, Melanie and Potts, Simeon and Moller, Torsten},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2005},
+  Number                   = {1},
+  Pages                    = {71--80},
+  Volume                   = {11},
+  File                     = {:A parallel coordinates style interface for exploratory volume visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
