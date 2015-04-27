@@ -18,6 +18,19 @@
   Timestamp                = {2015.04.08}
 }
 
+@Article{heinrich2012parallel,
+  Title                    = {The parallel coordinates matrix},
+  Author                   = {Heinrich, J and Stasko, J and Weiskopf, D},
+  Journal                  = {EuroVis--Short Papers},
+  Year                     = {2012},
+  Pages                    = {37--41},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:The parallel coordinates matrix.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
 @InProceedings{johansson20053,
   Title                    = {3-dimensional display for clustered multi-relational parallel coordinates},
   Author                   = {Johansson, Jimmy and Cooper, Matthew and Jern, Mikael},
@@ -25,6 +38,7 @@
   Year                     = {2005},
   Organization             = {IEEE},
   Pages                    = {188--193},
+
   File                     = {:3-dimensional display for clustered multi-relational parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -52,6 +66,7 @@
   Year                     = {2004},
   Organization             = {IEEE},
   Pages                    = {89--96},
+
   File                     = {:Clutter reduction in multi-dimensional data visualization using dimension reordering.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -65,21 +80,10 @@
   Number                   = {5},
   Pages                    = {584--597},
   Volume                   = {17},
+
   File                     = {:Automated analytical methods to support visual exploration of high-dimensional data.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
-  Timestamp                = {2015.04.08}
-}
-
-@InProceedings{tatu2009combining,
-  Title                    = {Combining automated analysis and visualization techniques for effective exploration of high-dimensional data},
-  Author                   = {Tatu, Andrada and Albuquerque, Georgia and Eisemann, Martin and Schneidewind, J{\"o}rn and Theisel, Holger and Magnor, Marcus and Keim, Daniel},
-  Booktitle                = {Visual Analytics Science and Technology, 2009. VAST 2009. IEEE Symposium on},
-  Year                     = {2009},
-  Organization             = {IEEE},
-  Pages                    = {59--66},
-  File                     = {:Combining automated analysis and visualization techniques for effective exploration of high-dimensional data.pdf:PDF},
-  Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
 }
 
@@ -90,6 +94,7 @@
   Year                     = {2003},
   Organization             = {IEEE},
   Pages                    = {105--112},
+
   File                     = {:Interactive hierarchical dimension ordering, spacing and filtering for exploration of high dimensional datasets.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -102,6 +107,7 @@
   Year                     = {2012},
   Organization             = {IEEE},
   Pages                    = {17--24},
+
   File                     = {:A network-based interface for the exploration of high-dimensional data spaces.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}

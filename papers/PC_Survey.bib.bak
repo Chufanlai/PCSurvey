@@ -2,15 +2,6 @@
 % Encoding: UTF-8
 
 
-@Article{fodor2002survey,
-  Title                    = {A survey of dimension reduction techniques},
-  Author                   = {Fodor, Imola K},
-  Year                     = {2002},
-  File                     = {:A survey of dimension reduction techniques.pdf:PDF},
-  Owner                    = {chufanlai},
-  Timestamp                = {2015.04.09}
-}
-
 @InProceedings{grinstein2001high,
   Title                    = {High-dimensional visualizations},
   Author                   = {Grinstein, Georges and Trutschl, Marjan and Cvek, Urska},

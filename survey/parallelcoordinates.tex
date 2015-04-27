@@ -124,11 +124,11 @@
 
 然而，相比于其他高维可视化形式，平行坐标的设计也存在种种缺点，譬如展现的信息量较少、容易出现视觉混杂（Visual Clutter)、数据特征不直观等等（详见第\ref{section:impro}节）。针对这些问题，领域内的学者们做了大量的研究工作，并提出了各种方法对平行坐标进行改进和延展。
 
-本文基于已有的一些综述论文~\citep{heinrich2013state}~\citep{siirtola2006interacting}，并结合近年来的最新进展，将对平行坐标方面的研究工作进行比较、总结和展望。在文章的余下部分里：第\ref{section:basics&prob}节介绍了平行坐标的基本原理，并阐述其设计上存在的主要问题；第\ref{section:impro}节就平行坐标的不同部分，回顾了领域学者们为解决前述问题所作出的研究努力；第\ref{section:applications}节则介绍了平行坐标在不同领域内的应用现状；第\ref{section:challenges}节基于已有的研究和应用，探讨了仍然存在的挑战，以展望未来的研究动向和应用前景；最后，第\ref{section:conclusion}节对全文内容进行总结。
+本文基于一些已有的综述论文~\citep{grinstein2001high}~\citep{heinrich2013state}~\citep{siirtola2006interacting}~\citep{wong199430}，并结合近年来的最新进展，将对平行坐标方面的研究工作进行比较、总结和展望。在文章的余下部分里：第\ref{section:basics&prob}节介绍了平行坐标的基本原理，并阐述其设计上存在的主要问题；第\ref{section:impro}节就平行坐标的不同部分，回顾了领域学者们为解决前述问题所作出的研究努力；第\ref{section:applications}节则介绍了平行坐标在不同领域内的应用现状；第\ref{section:challenges}节基于已有的研究和应用，探讨了仍然存在的挑战，以展望未来的研究动向和应用前景；最后，第\ref{section:conclusion}节对全文内容进行总结。
 
 \section{基本原理及主要问题}
 \label{section:basics&prob}
-在这一节里，我们将从四个方面简要介绍平行坐标的设计。在此过程中，我们会逐步阐述平行坐标的几个主要问题。作进一步的探讨前，这里先简要介绍Jarke提出的的可视分析模型~\citep{van2005value}（如图\ref{fig:Vis_model}）。在一个可视分析流程中，数据（Data）驱动了可视化展示（Visualization），用户对视图进行感知（Perception）并从中获取知识（Knowledge）。基于已有知识，用户可以通过交互探索（Exploration）来改变视图的参数设置（Specification），以产生新的可视化来发掘更多知识。由此可见，可视分析流程主要由四部分组成，分别是数据、视图、感知和交互。本节余下内容以及第\ref{section:impro}节的内容都将按这四个部分展开。
+在这一节里，我们将从四个方面简要介绍平行坐标的设计。在此过程中，我们会逐步阐述平行坐标的几个主要问题。作进一步的探讨前，这里先简要介绍Jarke提出的的可视分析模型~\citep{van2005value}（如图\ref{fig:Vis_model}）。在一个可视分析流程中，数据（Data）驱动了可视化展示（Visualization），用户对视图进行感知（Perception）并从中获取知识（Knowledge）。基于已有知识，用户可以通过交互探索（Exploration）来改变视图的参数设置（Specification），以产生新的可视化来发掘更多知识。由此可见，可视分析流程主要由四部分组成，分别是数据、视图、视觉感知和交互。本节余下内容以及第\ref{section:impro}节的内容都将按这四个部分展开。
 
 \begin{figure}[!htb]
 \centering
@@ -147,8 +147,8 @@
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=1.0\linewidth]{images/PC_principle.eps}
-\caption{\label{fig:PC_principle}平行坐标的基本原理。本图来源于Inselberg~等人的论文~\citep{inselberg1985plane}~。
+\includegraphics[width=0.9\linewidth]{images/PC_principle.eps}
+\caption{\label{fig:PC_principle}平行坐标的构造原理。本图来源于Inselberg~等人的论文~\citep{inselberg1985plane}~。
 }
 \end{figure}
 
@@ -156,7 +156,16 @@
 
 但相对地，平行坐标也存在一些明显的局限和缺点：
 
-其一，每个数据用一条折线来表示，这会比散点形式占用更多的显示空间。当数据量增大时，视图很容易发生图元堆叠、导致视觉混杂（如图~\ref{fig:PC_clutter}），用户将无法从中得到有用的信息。因此，平行坐标对数据规模的可扩展性较差。
+其一，当一个维度上有多个相同的取值时，多条折线汇合到一个点，直接观察将无法区分不同的数据走向。而在类别型的数据中，类似问题出现于每一个轴，导致大量线段完全重叠，用户甚至无法辨别其中的数据量（见图\ref{fig:PC_coincide})。这正是平行坐标不适合表现类别型数据的原因。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\linewidth]{images/PC_coincide.eps}
+\caption{\label{fig:PC_coincide}类别型数据中的线段重合问题。本图来源于Rosario~等人的论文~\citep{rosario2004mapping}~。
+}
+\end{figure}
+
+其二，每个数据用一条折线来表示，这会比散点形式占用更多的显示空间。当数据量增大时，视图很容易发生图元堆叠、导致视觉混杂（如图~\ref{fig:PC_clutter}），用户将无法从中得到有用的信息。由此可见，平行坐标对数据规模的扩展性较差。
 
 \begin{figure}[!htb]
 \centering
@@ -165,7 +174,7 @@
 }
 \end{figure}
 
-其二，平行坐标能够表现相邻维度间的关系，但信息量偏低。假设数据有$n$个维度，它们两两组合可得到$\frac{n(n-1)}{2}$个二维子空间，散点图矩阵能容纳其中的所有信息。但在平行坐标里，用户无法观察两个不相邻维度间的关系,因此只能看到$(n-1)$个二维子空间。换言之，平行坐标只表现了$\frac{2}{n}$的维度关系，不恰当的坐标轴排序很容易掩埋重要的相关性信息（如图\ref{fig:PC_reordering})。
+其三，平行坐标能够表现相邻维度间的关系，但信息量偏低。假设数据有$n$个维度，它们两两组合可得到$\frac{n(n-1)}{2}$个二维子空间，散点图矩阵能容纳其中的所有信息。但在平行坐标里，用户无法观察两个不相邻维度间的关系,因此只能看到$(n-1)$个二维子空间。换言之，平行坐标只表现了$\frac{2}{n}$的维度关系，不恰当的坐标轴排序很容易掩埋重要的相关性信息（如图\ref{fig:PC_reordering})。
 
 \begin{figure}[!htb]
 \centering
@@ -174,12 +183,25 @@
 }
 \end{figure}
 
-其三，
+最后，除了排序上的变化，坐标轴的放置还存在许多可能性。平行坐标的出现启发了大量对非垂直坐标系、甚至是非直线坐标轴的的研究，这些都将在第~\ref{section:impro}节中加以讨论。
 
 \subsection{感知}
 \label{subsection:perceptionBasics}
 
-\subsection{基本交互}
+针对平行坐标的感知研究主要有两种，一是视觉感知的有效性评估，二是数据特征的刻画和提取。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_correlation.eps}
+\caption{\label{fig:PC_correlation}维度相关性的解读。A、B两行分别显示了不同的相关关系下数据在散点图和平行坐标中的分布。本图来源于Li~等人的论文~\citep{li2010judging}~。
+}
+\end{figure}
+
+在平行坐标里，能观察到的数据特征主要有两种，即聚类信息和相关关系。一方面，相似的折线形成线簇，代表着不同的聚类，反映了数据趋势、异常点等行为。但要观察到聚类，必须先处理好前面提到的视觉混杂问题，使隐含的聚类能被凸显出来。另一方面，相邻坐标轴之间的线段走向能反映这两个维度的相关关系（如图\ref{fig:PC_correlation}）。但用户对相关性的感知是否准确，和其他方法相比是否更有效等等，都需要通过实验来评估。除此之外，还有很多有意义的数据特征无法通过简单的聚类或相关来描述。而已有的特征也需要相应的自动提取算法，来遍寻和评估不同的参数设置（如不同的维度排序），以找到特征明显、信息量大的视图。
+
+\subsection{交互}
+
+基于已有的观察，用户通过交互来改变视图，以发掘更多信息。平行坐标提供两种基本的交互功能，即数据刷选和坐标轴排序。对于刷选，用户需要给每个坐标轴限定取值范围~\citep{martin1995high}。这相当于在高维空间中建立一个超立方体（Hypercube）包围盒，同时满足各维度条件的数据才会被选中。这样的方式虽然逻辑简单，但操作繁琐、缺乏灵活性，用户既无法选中任意形状的数据区域，也无法根据其他数据特征来选择数据。除了刷选，用户还可以手动调整坐标轴的顺序。但这在数据维度较高时并不现实，用户很难通过交互来发现合适的排序。
 
 \section{平行坐标的改进}
 \label{section:impro}

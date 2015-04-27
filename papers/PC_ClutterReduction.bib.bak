@@ -2,6 +2,20 @@
 % Encoding: UTF-8
 
 
+@InProceedings{artero2004uncovering,
+  Title                    = {Uncovering clusters in crowded parallel coordinates visualizations},
+  Author                   = {Artero, Almir Olivette and de Oliveira, Maria Cristina Ferreira and Levkowitz, Haim},
+  Booktitle                = {Information Visualization, 2004. INFOVIS 2004. IEEE Symposium on},
+  Year                     = {2004},
+  Organization             = {IEEE},
+  Pages                    = {81--88},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:Uncovering clusters in crowded parallel coordinates visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
 @Article{caat2007design,
   Title                    = {Design and evaluation of tiled parallel coordinate visualization of multichannel EEG data},
   Author                   = {Caat, M ten and Maurits, Natasha M and Roerdink, Jos BTM},
@@ -71,6 +85,20 @@
   File                     = {:Angular histograms\: Frequency-based visualiza- tions for large, high dimensional data.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{graham2003using,
+  Title                    = {Using curves to enhance parallel coordinate visualisations},
+  Author                   = {Graham, Martin and Kennedy, Jessie},
+  Booktitle                = {Information Visualization, 2003. IV 2003. Proceedings. Seventh International Conference on},
+  Year                     = {2003},
+  Organization             = {IEEE},
+  Pages                    = {10--16},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:Using curves to enhance parallel coordinate visualisations.pdf:PDF},
+  Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
 }
 
@@ -166,6 +194,22 @@
   Timestamp                = {2015.04.08}
 }
 
+@InProceedings{muigg2011visual,
+  Title                    = {Visual Coherence for Large-Scale Line-Plot Visualizations},
+  Author                   = {Muigg, Philipp and Hadwiger, Markus and Doleisch, Helmut and Gr{\"o}ller, Eduard},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2011},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {643--652},
+  Volume                   = {30},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:Visual Coherence for Large‐Scale Line‐Plot Visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
 @Article{novotny2006outlier,
   Title                    = {Outlier-preserving focus+ context visualization in parallel coordinates},
   Author                   = {Novotny, Matej and Hauser, Helwig},
@@ -228,6 +272,22 @@
 
   __markedentry            = {[chufanlai:]},
   File                     = {:Splatting the lines in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{zhou2008visual,
+  Title                    = {Visual clustering in parallel coordinates},
+  Author                   = {Zhou, Hong and Yuan, Xiaoru and Qu, Huamin and Cui, Weiwei and Chen, Baoquan},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2008},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {1047--1054},
+  Volume                   = {27},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:Visual clustering in parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
 }

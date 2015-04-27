@@ -15,6 +15,20 @@
   Timestamp                = {2015.04.08}
 }
 
+@InProceedings{ankerst1998similarity,
+  Title                    = {Similarity clustering of dimensions for an enhanced visualization of multidimensional data},
+  Author                   = {Ankerst, Mihael and Berchtold, Stefan and Keim, Daniel A},
+  Booktitle                = {Information Visualization, 1998. Proceedings. IEEE Symposium on},
+  Year                     = {1998},
+  Organization             = {IEEE},
+  Pages                    = {52--60},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Similarity Clustering of Dimensions for an enhanced visualization of multidimensional data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.27}
+}
+
 @InProceedings{artero2004uncovering,
   Title                    = {Uncovering clusters in crowded parallel coordinates visualizations},
   Author                   = {Artero, Almir Olivette and de Oliveira, Maria Cristina Ferreira and Levkowitz, Haim},
@@ -472,7 +486,7 @@
   Year                     = {2012},
   Pages                    = {37--41},
 
-  __markedentry            = {[chufanlai:5]},
+  __markedentry            = {[chufanlai:1]},
   File                     = {:The parallel coordinates matrix.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -763,6 +777,20 @@
   Timestamp                = {2015.04.08}
 }
 
+@InProceedings{martin1995high,
+  Title                    = {High dimensional brushing for interactive exploration of multivariate data},
+  Author                   = {Martin, Allen R and Ward, Matthew O},
+  Booktitle                = {Proceedings of the 6th Conference on Visualization'95},
+  Year                     = {1995},
+  Organization             = {IEEE Computer Society},
+  Pages                    = {271},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:High dimensional brushing for interactive exploration of multivariate data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.28}
+}
+
 @InProceedings{mcdonnell2008illustrative,
   Title                    = {Illustrative parallel coordinates},
   Author                   = {McDonnell, Kevin T and Mueller, Klaus},
@@ -866,6 +894,22 @@
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
   Timestamp                = {2015.04.08}
+}
+
+@Article{rosario2004mapping,
+  Title                    = {Mapping nominal values to numbers for effective visualization},
+  Author                   = {Rosario, Geraldine E and Rundensteiner, Elke A and Brown, David C and Ward, Matthew O and Huang, Shiping},
+  Journal                  = {Information Visualization},
+  Year                     = {2004},
+  Number                   = {2},
+  Pages                    = {80--95},
+  Volume                   = {3},
+
+  __markedentry            = {[chufanlai:5]},
+  File                     = {:Mapping Nominal Values to Numbers for Effective Visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.04.26}
 }
 
 @InProceedings{rosenbaum2012progressive,
@@ -1016,6 +1060,22 @@
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
   Timestamp                = {2015.04.08}
+}
+
+@Article{wilkinson2006high,
+  Title                    = {High-dimensional visual analytics: Interactive exploration guided by pairwise views of point distributions},
+  Author                   = {Wilkinson, Leland and Anand, Anushka and Grossman, Robert},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2006},
+  Number                   = {6},
+  Pages                    = {1363--1372},
+  Volume                   = {12},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:High-Dimensional Visual Analytics\: Interactive Exploration Guided by Pairwise Views of Point Distributions.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.27}
 }
 
 @InProceedings{wong199430,

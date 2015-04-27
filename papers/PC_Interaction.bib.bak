@@ -2,6 +2,22 @@
 % Encoding: UTF-8
 
 
+@Article{fua2000structure,
+  Title                    = {Structure-based brushes: A mechanism for navigating hierarchically organized data and information spaces},
+  Author                   = {Fua, Ying-Huey and Ward, Matthew O and Rundensteiner, Elke A},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2000},
+  Number                   = {2},
+  Pages                    = {150--159},
+  Volume                   = {6},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:Structure-based brushes\: a mechanism for navigating hierarchically organized data and information spaces.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
 @InProceedings{fua1999navigating,
   Title                    = {Navigating hierarchies with structure-based brushes},
   Author                   = {Fua, Ying-Huey and Ward, Matthew O and Rundensteiner, Elke A},

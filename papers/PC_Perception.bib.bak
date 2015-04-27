@@ -70,3 +70,17 @@
   Timestamp                = {2015.04.08}
 }
 
+@InProceedings{siirtola2009visual,
+  Title                    = {Visual perception of parallel coordinate visualizations},
+  Author                   = {Siirtola, Harri and Laivo, Tuuli and Heimonen, Tomi and Raiha, K-J},
+  Booktitle                = {Information Visualisation, 2009 13th International Conference},
+  Year                     = {2009},
+  Organization             = {IEEE},
+  Pages                    = {3--9},
+
+  __markedentry            = {[chufanlai:]},
+  File                     = {:Visual perception of parallel coordinate visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
