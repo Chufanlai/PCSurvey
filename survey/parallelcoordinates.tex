@@ -117,7 +117,7 @@
 
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=1.0\linewidth]{images/PC_demo.eps}
+\includegraphics[width=0.9\linewidth]{images/PC_demo.eps}
 \caption{\label{fig:PC_demo}平行坐标示例
 }
 \end{figure}
@@ -139,9 +139,9 @@
 
 \subsection{数据}
 \label{subsection:dataBasics}
-假设一个数据集有$m$个样本，每个样本有$n$个维度，则它可以记成一个$m \times n$的矩阵，其中每一行是一个样本，每一列代表一个维度。这样的矩阵又称为数据矩阵（data matrix），是平行坐标所处理的典型高维数据。数据的维度大致分为两种，即连续型（Continuous）维度和类别型（Categorical）维度。而一般的坐标轴只适用于连续型维度，类别型数据需要转换成连续型来表示，但往往会造成感知上的问题（详见~\ref{subsection:designBasics}节）。因此，平行坐标并不适合表现类别型数据。另外，高维信息的产生往往伴随着其他类型的数据，譬如高维时空间数据、高维网络数据、高维流场数据等等。如何拓展平行坐标来表现不同类型的高维数据，也是研究的重点之一。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+假设一个数据集有$m$个样本，每个样本有$n$个维度，则它可以记成一个$m \times n$的矩阵，其中每一行是一个样本，每一列代表一个维度。这样的矩阵又称为数据矩阵（data matrix），是平行坐标所处理的典型高维数据。数据的维度大致分为两种，即连续型维度~（Continuous Dimension，具有无数种取值，如身高、体重）和类别型维度~（Categorical Dimension，只有有限的取值，如国籍）。而一般的坐标轴只适用于连续型维度，类别型数据需要转换成连续型来表示，但往往会造成一定的误导（详见~\ref{subsection:designBasics}节），这使得平行坐标不适合表现类别型数据。其次，高维数据的产生往往伴随着其他类型的信息，譬如高维时空数据、高维网络数据、高维流场数据等等。如何拓展平行坐标以表现这些混合高维数据，也是研究的重点之一。除了不同的数据类型，数据的隐私性、不确定性，对大数据的处理等等，都是在数据方面的研究会涉及的课题。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
-\subsection{视图设计}
+\subsection{视图}
 \label{subsection:designBasics}
 正如第\ref{section:introduction}节所提到，人无法感知高于三维的拓扑关系。而传统的笛卡尔坐标系限定了各坐标轴必须相互垂直，这使得高维的坐标空间极为抽象和难以理解。平行坐标解决这一难题的方法，顾名思义，就是将各个维度的坐标轴平行放置，如图\ref{fig:PC_principle}所示。一个高维数据在各个坐标轴上均有取值，连接各取值点所形成的一条折线，即表达了这个数据。事实上，基于线和点的转化关系，平行坐标和笛卡尔坐标之间有很好的几何对称性，有兴趣的读者可参阅相关文献~\citep{inselberg1985plane}~\citep{inselberg2009parallel}。
 
@@ -205,6 +205,31 @@
 
 \section{平行坐标的改进}
 \label{section:impro}
+
+针对前一节中提出的各种问题，领域学者们做了许多研究工作来对平行坐标进行改进和延展。这一节将详细地回顾这些工作，并对它们进行比较、总结。为了保持行文结构、方便读者对照理解，这一节依然按数据、视图、感知和交互四个部分来展开。
+
+\subsection{数据}
+\label{subsection:dataImpro}
+
+在数据方面，
+
+正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的取值，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。Kosara~等人利用线段宽度来映射取值相同的样本的数量，提出了平行集合的形式（如图\ref{fig:PC_Data_ParallelSet}）。每个轴上的不同取值相当于不同的集合，相应条带的宽度则映射了集合的大小。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\linewidth]{images/PC_Data_ParallelSet.eps}
+\caption{\label{fig:PC_Data_ParallelSet}平行集合的构造。本图来源于Kosara~等人的论文~\citep{kosara2006parallel}~。
+}
+\end{figure}
+
+\subsection{视图}
+\label{subsection:dataImpro}
+
+\subsection{感知}
+\label{subsection:dataImpro}
+
+\subsection{交互}
+\label{subsection:dataImpro}
 
 \section{平行坐标的应用}
 \label{section:applications}
