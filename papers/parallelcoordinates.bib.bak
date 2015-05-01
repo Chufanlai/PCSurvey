@@ -1238,9 +1238,9 @@ elberg2009parallel\;siirtola2006interacting\;siirtola2009visual\;van20
 05value\;wong199430\;;
 1 ExplicitGroup:Data\;0\;barlow2004animator\;bendix2005parallel\;blaas
 2008extensions\;collins2009parallel\;dasgupta2011adaptive\;dasgupta201
-2conceptualizing\;feng2010matching\;heinrich2011progressive\;hofmann20
-13common\;johansson2007depth\;kosara2006parallel\;rosenbaum2012progres
-sive\;;
+2conceptualizing\;feng2010matching\;heinrich2009continuous\;heinrich20
+11progressive\;hofmann2013common\;johansson2007depth\;kosara2006parall
+el\;lehmann2011features\;rosenbaum2012progressive\;;
 1 ExplicitGroup:Application\;0\;berger2011uncertainty\;caat2007design\
 ;gratzl2013lineup\;guo2011multi\;guo2011tripvista\;qu2007visual\;tory2
 005parallel\;;
@@ -1252,10 +1252,10 @@ isualizing\;johansson2009interactive\;tatu2011automated\;wilkinson2006
 high\;yang2003interactive\;zhang2012network\;;
 1 ExplicitGroup:ClutterReduction\;0\;artero2004uncovering\;dang2010sta
 cking\;ellis2006enabling\;fua1999hierarchical\;geng2011angular\;guo201
-0interactive\;heinrich2009continuous\;heinrich2011evaluation\;johansso
-n2005revealing\;lehmann2011features\;mcdonnell2008illustrative\;muigg2
-011visual\;novotny2006outlier\;palmas2014edge\;peng2004clutter\;siirto
-la2000direct\;zhou2008visual\;zhou2009splatting\;;
+0interactive\;heinrich2011evaluation\;johansson2005revealing\;mcdonnel
+l2008illustrative\;muigg2011visual\;novotny2006outlier\;palmas2014edge
+\;peng2004clutter\;siirtola2000direct\;zhou2008visual\;zhou2009splatti
+ng\;;
 1 ExplicitGroup:Interaction\;0\;fua1999navigating\;fua2000structure\;h
 auser2002angular\;martin1995high\;;
 1 ExplicitGroup:LineImprovement\;0\;graham2003using\;moustafa2002some\

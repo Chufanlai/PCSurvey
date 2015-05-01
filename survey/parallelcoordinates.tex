@@ -16,6 +16,8 @@
 \usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage{titling}
+\usepackage{subfigure}
+\usepackage{ccaption}
 
 \setlength{\parindent}{2em}
 \setlength{\parskip}{0.5em}
@@ -203,24 +205,32 @@
 
 基于已有的观察，用户通过交互来改变视图，以发掘更多信息。平行坐标提供两种基本的交互功能，即数据刷选和坐标轴排序。对于刷选，用户需要给每个坐标轴限定取值范围~\citep{martin1995high}。这相当于在高维空间中建立一个超立方体（Hypercube）包围盒，同时满足各维度条件的数据才会被选中。这样的方式虽然逻辑简单，但操作繁琐、缺乏灵活性，用户既无法选中任意形状的数据区域，也无法根据其他数据特征来选择数据。除了刷选，用户还可以手动调整坐标轴的顺序。但这在数据维度较高时并不现实，用户很难通过交互来发现合适的排序。
 
-\section{平行坐标的改进}
+\section{平行坐标的相关研究}
 \label{section:impro}
 
-针对前一节中提出的各种问题，领域学者们做了许多研究工作来对平行坐标进行改进和延展。这一节将详细地回顾这些工作，并对它们进行比较、总结。为了保持行文结构、方便读者对照理解，这一节依然按数据、视图、感知和交互四个部分来展开。
+针对前一节中提出的各种问题，领域学者们做了许多研究工作来对平行坐标进行改进和延展。这一节将详细地回顾这些工作，并对它们进行比较和总结。为了保持行文结构、方便读者对照理解，这一节依然按数据、视图、感知和交互四个部分来展开。
 
 \subsection{数据}
 \label{subsection:dataImpro}
 
-在数据方面，
+对数据的研究主要关注三个方面：不同的数据类型、数据的隐私性和不确定性、以及大数据的绘制效率。
 
-正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的取值，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。Kosara~等人利用线段宽度来映射取值相同的样本的数量，提出了平行集合的形式（如图\ref{fig:PC_Data_ParallelSet}）。每个轴上的不同取值相当于不同的集合，相应条带的宽度则映射了集合的大小。
+\subsubsection{不同的数据类型}
+
+正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的取值，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。Kosara~等人~\citep{kosara2006parallel}~\citep{bendix2005parallel}利用线段宽度来映射取值相同的样本数量，提出了平行集合（Parallel Set）的形式（如图\ref{fig:PC_Data_ParallelSet}）。而Hofmann等人~\citep{hofmann2013common}指出，折线的宽度并不对应它所代表的数据量（比较图\ref{fig:PC_Data_CommonAnglePlot}中的$a$、$b$两段），容易造成误导。他们提出用统一的角度来绘制折线，即统一角度图（Common Angle Plot）的形式，使用户能通过直线部分的宽度来准确感知集合的大小。
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.9\linewidth]{images/PC_Data_ParallelSet.eps}
-\caption{\label{fig:PC_Data_ParallelSet}平行集合的构造。本图来源于Kosara~等人的论文~\citep{kosara2006parallel}~。
-}
+\subfigure[平行集合]
+{\label{fig:PC_Data_ParallelSet}
+\includegraphics[width=0.9\linewidth]{images/PC_Data_ParallelSet.eps}}
+\subfigure[统一角度图]
+{\label{fig:PC_Data_CommonAnglePlot}
+\includegraphics[width=0.9\linewidth]{images/PC_Data_CommonAnglePlot.eps}}
+\caption{平行集合及其改进版本，用以在平行坐标框架下表现类别型数据。图(a)、(b)分别来自论文~\citep{kosara2006parallel}和~\citep{hofmann2013common}。}
 \end{figure}
+
+除了类别型数据，
 
 \subsection{视图}
 \label{subsection:dataImpro}
