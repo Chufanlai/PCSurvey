@@ -217,7 +217,7 @@
 
 \subsubsection{不同的数据类型}
 
-正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的取值，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。Kosara~等人~\citep{kosara2006parallel}~\citep{bendix2005parallel}利用线段宽度来映射取值相同的样本数量，提出了平行集合（Parallel Set）的形式（如图\ref{fig:PC_Data_ParallelSet}）。而Hofmann等人~\citep{hofmann2013common}指出，折线的宽度并不对应它所代表的数据量（比较图\ref{fig:PC_Data_CommonAnglePlot}中的$a$、$b$两段），容易造成误导。他们提出用统一的角度来绘制折线，即统一角度图（Common Angle Plot）的形式，使用户能通过直线部分的宽度来准确感知集合的大小。
+正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的取值，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。Kosara~等人~\citep{kosara2006parallel}~\citep{bendix2005parallel}利用线段宽度来映射取值相同的样本数量，提出了平行集合（Parallel Set）的形式（如图\ref{fig:PC_Data_ParallelSet}）。而Hofmann等人~\citep{hofmann2013common}指出，折线的宽度并不对应它所代表的数据量（比较图\ref{fig:PC_Data_CommonAnglePlot}中的$a$、$b$两段）。他们提出用统一的角度来绘制折线，即统一角度图（Common Angle Plot）的形式，使用户能通过直线部分的宽度来准确感知集合的大小。
 
 \begin{figure}[!htb]
 \centering
@@ -230,7 +230,16 @@
 \caption{平行集合及其改进版本，用以在平行坐标框架下表现类别型数据。图(a)、(b)分别来自论文~\citep{kosara2006parallel}和~\citep{hofmann2013common}。}
 \end{figure}
 
-除了类别型数据，
+除了类别型数据，表现时变数据也是一类重要的拓展。最直接的方法莫过于增加一个代表时间维度的平行轴，但将时间与属性同等对待不利于凸显数据的时变趋势。也可以结合折线图，用多个轴表示一个维度的时变信息~\citep{edsall2003parallel}~\citep{dietzsch2009spray}（如图\ref{fig:PC_Data_Time1}），但同一维度的重复出现会大大降低视图的可扩展性。除了利用坐标轴，还可以用动画的形式表现数据变化~\citep{barlow2004animator}，但用户难以跟踪比较不同时刻的数据，在维度较高、变动剧烈的情况下尤为如此。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\linewidth]{images/PC_Data_Time1.eps}
+\caption{\label{fig:PC_Data_Time1}在平行坐标中嵌入时变折线图。本图来源于Dietzsch~等人的论文~\citep{dietzsch2009spray}~。
+}
+\end{figure}
+
+
 
 \subsection{视图}
 \label{subsection:dataImpro}

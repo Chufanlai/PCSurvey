@@ -86,6 +86,21 @@
   Timestamp                = {2015.04.10}
 }
 
+@Article{edsall2003parallel,
+  Title                    = {The parallel coordinate plot in action: design and use for geographic visualization},
+  Author                   = {Edsall, Robert M},
+  Journal                  = {Computational Statistics \& Data Analysis},
+  Year                     = {2003},
+  Number                   = {4},
+  Pages                    = {605--619},
+  Volume                   = {43},
+
+  File                     = {:The parallel coordinate plot in action\: design and 3 use for geographic visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.05.02}
+}
+
 @Article{feng2010matching,
   Title                    = {Matching visual saliency to confidence in plots of uncertain data},
   Author                   = {Feng, David and Kwock, Lester and Lee, Yueh and Taylor, Russell M},
@@ -98,6 +113,21 @@
   File                     = {:Matching visual saliency to confidence in plots of uncertain data.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{heinrich2011progressive,
+  Title                    = {Progressive splatting of continuous scatterplots and parallel coordinates},
+  Author                   = {Heinrich, Julian and Bachthaler, Sven and Weiskopf, Daniel},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2011},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {653--662},
+  Volume                   = {30},
+
+  File                     = {:Progressive splatting of continuous scatterplots and parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
 }
 
@@ -171,6 +201,19 @@
   File                     = {:Features in continuous parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{rosenbaum2012progressive,
+  Title                    = {Progressive parallel coordinates},
+  Author                   = {Rosenbaum, Ren{\'e} and Zhi, Jian and Hamann, Bernd},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2012 IEEE},
+  Year                     = {2012},
+  Organization             = {IEEE},
+  Pages                    = {25--32},
+
+  File                     = {:Progressive parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
 }
 
