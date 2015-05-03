@@ -86,6 +86,19 @@
   Timestamp                = {2015.04.10}
 }
 
+@InProceedings{dietzsch2009spray,
+  Title                    = {Spray: A visual analytics approach for gene expression data},
+  Author                   = {Dietzsch, Janko and Heinrich, Julian and Nieselt, Kay and Bartz, Dirk},
+  Booktitle                = {Visual Analytics Science and Technology, 2009. VAST 2009. IEEE Symposium on},
+  Year                     = {2009},
+  Organization             = {IEEE},
+  Pages                    = {179--186},
+
+  File                     = {:SpRay\: A Visual Analytics Approach for Gene Expression Data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.02}
+}
+
 @Article{edsall2003parallel,
   Title                    = {The parallel coordinate plot in action: design and use for geographic visualization},
   Author                   = {Edsall, Robert M},
@@ -215,5 +228,17 @@
   File                     = {:Progressive parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
+}
+
+@InProceedings{wegenkittl1997visualizing,
+  Title                    = {Visualizing the behaviour of higher dimensional dynamical systems},
+  Author                   = {Wegenkittl, Rainer and Loffelmann, Helwig and Groller, Eduard},
+  Booktitle                = {Visualization'97., Proceedings},
+  Year                     = {1997},
+  Organization             = {IEEE},
+  Pages                    = {119--125},
+
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.03}
 }
 

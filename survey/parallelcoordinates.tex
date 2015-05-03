@@ -230,15 +230,30 @@
 \caption{平行集合及其改进版本，用以在平行坐标框架下表现类别型数据。图(a)、(b)分别来自论文~\citep{kosara2006parallel}和~\citep{hofmann2013common}。}
 \end{figure}
 
-除了类别型数据，表现时变数据也是一类重要的拓展。最直接的方法莫过于增加一个代表时间维度的平行轴，但将时间与属性同等对待不利于凸显数据的时变趋势。也可以结合折线图，用多个轴表示一个维度的时变信息~\citep{edsall2003parallel}~\citep{dietzsch2009spray}（如图\ref{fig:PC_Data_Time1}），但同一维度的重复出现会大大降低视图的可扩展性。除了利用坐标轴，还可以用动画的形式表现数据变化~\citep{barlow2004animator}，但用户难以跟踪比较不同时刻的数据，在维度较高、变动剧烈的情况下尤为如此。
+除了类别型数据，表现时变数据也是一类重要的拓展。最简单的方法莫过于增加一个代表时间维度的平行轴。但各个时刻的数据被同等对待，不利于凸显数据变化的信息。Johansson等人~\citep{johansson2007depth}提出利用不透明度和色调等来区分数据变动的时间范围（如图~\ref{fig:PC_Data_Time3}）。用户可以直观地看出变化的频率和趋势，但不同时刻的数据依然会相互遮挡。为防止遮挡，也可以结合折线图（Line Chart），用多个轴表示一个维度的时变信息~\citep{edsall2003parallel}~\citep{dietzsch2009spray}（如图\ref{fig:PC_Data_Time1}），但同一维度的重复出现会大大降低视图的可扩展性。进一步地，Wegenkittl等人~\citep{wegenkittl1997visualizing}令时间轴垂直于平行坐标平面，提出了三维时变平行坐标的形式（如图~\ref{fig:PC_Data_Time2}）。其中每条折线沿时间轴演化会形成一个曲面，该曲面即表达了时变高维的所有信息。但多个不同的曲面很容易交错重叠而难以观察，使其不适用于数据量大的情形。除了静态展示，还可以用动画来表现数据变化~\citep{barlow2004animator}。但视觉的瞬变使用户难以跟踪不同维度的变动，在维度较高、变动剧烈的情况下尤为如此。为每个维度提供额外的时变直方图~\citep{blaas2008extensions}可以减轻这一问题，但这又割裂了时变信息与维度关系。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.3\linewidth]{images/PC_Data_Time4.eps}}
+\subfigure[]{
+\includegraphics[width=0.6\linewidth]{images/PC_Data_Time3.eps}}
+\caption{\label{fig:PC_Data_Time3}用不透明度和色调刻画数据变动。其中折线的变化用多边形表示（如图(a)），不透明度刻画了变化的频率（图(b)上图），而不同的色调代表不同的时刻（图(b)下图）。本图来源于Johansson~等人的论文~\citep{johansson2007depth}~。}
+\end{figure}
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.9\linewidth]{images/PC_Data_Time1.eps}
-\caption{\label{fig:PC_Data_Time1}在平行坐标中嵌入时变折线图。本图来源于Dietzsch~等人的论文~\citep{dietzsch2009spray}~。
+\caption{\label{fig:PC_Data_Time1}在平行坐标中嵌入折线图。本图来源于Dietzsch~等人的论文~\citep{dietzsch2009spray}~。
 }
 \end{figure}
 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_Data_Time2.eps}
+\caption{\label{fig:PC_Data_Time2}三维时变平行坐标。图中$x_1$至$x_4$表示不同维度，$t_1$至$t_4$为不同的时刻。本图来源于Wegenkittl~等人的论文~\citep{wegenkittl1997visualizing}~。
+}
+\end{figure}
 
 
 \subsection{视图}
