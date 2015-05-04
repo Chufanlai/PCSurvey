@@ -1140,6 +1140,20 @@
   Timestamp                = {2015.04.08}
 }
 
+@InProceedings{wegenkittl1997visualizing,
+  Title                    = {Visualizing the behaviour of higher dimensional dynamical systems},
+  Author                   = {Wegenkittl, Rainer and Loffelmann, Helwig and Groller, Eduard},
+  Booktitle                = {Visualization'97., Proceedings},
+  Year                     = {1997},
+  Organization             = {IEEE},
+  Pages                    = {119--125},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visualizing the Behavior of Higher Dimensional Dynamical Systems.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.03}
+}
+
 @Article{wilkinson2006high,
   Title                    = {High-dimensional visual analytics: Interactive exploration guided by pairwise views of point distributions},
   Author                   = {Wilkinson, Leland and Anand, Anushka and Grossman, Robert},

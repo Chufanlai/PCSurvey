@@ -141,7 +141,7 @@
 
 \subsection{数据}
 \label{subsection:dataBasics}
-假设一个数据集有$m$个样本，每个样本有$n$个维度，则它可以记成一个$m \times n$的矩阵，其中每一行是一个样本，每一列代表一个维度。这样的矩阵又称为数据矩阵（data matrix），是平行坐标所处理的典型高维数据。数据的维度大致分为两种，即连续型维度~（Continuous Dimension，具有无数种取值，如身高、体重）和类别型维度~（Categorical Dimension，只有有限的取值，如国籍）。而一般的坐标轴只适用于连续型维度，类别型数据需要转换成连续型来表示，但往往会造成一定的误导（详见~\ref{subsection:designBasics}节），这使得平行坐标不适合表现类别型数据。其次，高维数据的产生往往伴随着其他类型的信息，譬如高维时空数据、高维网络数据、高维流场数据等等。如何拓展平行坐标以表现这些混合高维数据，也是研究的重点之一。除了不同的数据类型，数据的隐私性、不确定性，对大数据的处理等等，都是在数据方面的研究会涉及的课题。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+假设一个数据集有$m$个样本，每个样本有$n$个维度，则它可以记成一个$m \times n$的矩阵，其中每一行是一个样本，每一列代表一个维度。这样的矩阵又称为数据矩阵（data matrix），是平行坐标所处理的典型高维数据。数据的维度大致分为两种，即数值型维度~（Continuous Dimension，具有无数种取值，如身高、体重）和类别型维度~（Categorical Dimension，只有有限的取值，如国籍）。而一般的坐标轴只适用于数值型维度，类别型数据需要转换成数值型来表示，但往往会造成一定的误导（详见~\ref{subsection:designBasics}节），这使得平行坐标不适合表现类别型数据。其次，高维数据的产生往往伴随着其他类型的信息，譬如高维时空数据、高维网络数据、高维流场数据等等。如何拓展平行坐标以表现这些混合高维数据，也是研究的重点之一。除了不同的数据类型，数据的隐私性、不确定性，对大数据的处理等等，都是在数据方面的研究会涉及的课题。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 \subsection{视图}
 \label{subsection:designBasics}
@@ -213,7 +213,7 @@
 \subsection{数据}
 \label{subsection:dataImpro}
 
-对数据的研究主要关注三个方面：不同的数据类型、数据的隐私性和不确定性、以及大数据的绘制效率。
+对数据的研究主要关注三个方面：不同的数据类型、数据隐私与不确定性、以及大数据的绘制效率。
 
 \subsubsection{不同的数据类型}
 
@@ -230,7 +230,20 @@
 \caption{平行集合及其改进版本，用以在平行坐标框架下表现类别型数据。图(a)、(b)分别来自论文~\citep{kosara2006parallel}和~\citep{hofmann2013common}。}
 \end{figure}
 
-除了类别型数据，表现时变数据也是一类重要的拓展。最简单的方法莫过于增加一个代表时间维度的平行轴。但各个时刻的数据被同等对待，不利于凸显数据变化的信息。Johansson等人~\citep{johansson2007depth}提出利用不透明度和色调等来区分数据变动的时间范围（如图~\ref{fig:PC_Data_Time3}）。用户可以直观地看出变化的频率和趋势，但不同时刻的数据依然会相互遮挡。为防止遮挡，也可以结合折线图（Line Chart），用多个轴表示一个维度的时变信息~\citep{edsall2003parallel}~\citep{dietzsch2009spray}（如图\ref{fig:PC_Data_Time1}），但同一维度的重复出现会大大降低视图的可扩展性。进一步地，Wegenkittl等人~\citep{wegenkittl1997visualizing}令时间轴垂直于平行坐标平面，提出了三维时变平行坐标的形式（如图~\ref{fig:PC_Data_Time2}）。其中每条折线沿时间轴演化会形成一个曲面，该曲面即表达了时变高维的所有信息。但多个不同的曲面很容易交错重叠而难以观察，使其不适用于数据量大的情形。除了静态展示，还可以用动画来表现数据变化~\citep{barlow2004animator}。但视觉的瞬变使用户难以跟踪不同维度的变动，在维度较高、变动剧烈的情况下尤为如此。为每个维度提供额外的时变直方图~\citep{blaas2008extensions}可以减轻这一问题，但这又割裂了时变信息与维度关系。
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.25\linewidth]{images/PC_Data_Time5_1.eps}}
+\subfigure[]{
+\includegraphics[width=0.35\linewidth]{images/PC_Data_Time5_2.eps}}
+\subfigure[]{
+\includegraphics[width=0.28\linewidth]{images/PC_Data_Time5_3.eps}}
+\caption{\label{fig:PC_Data_Time5}时变平行坐标的三种静态展示方式：(a).时间轴平行于属性轴；(b).时间轴在坐标平面内垂直于属性轴；(c).时间轴垂直于坐标平面。}
+\end{figure}
+
+除了类别型数据，时变数据也是一类重要的拓展，具体方法可分为静态和动态两种。其中静态的展示需要引入时间轴、并同时绘制所有时刻的数据，只是对时间轴的处理各有不同（见图\ref{fig:PC_Data_Time5})。
+
+最简单的方式莫过于将时间轴看作一个平行轴，但各个时刻的数据被同等对待，不利于凸显数据的变化信息。Johansson等人~\citep{johansson2007depth}提出利用不透明度和色调等来区分数据变动的时间范围（如图~\ref{fig:PC_Data_Time3}）。用户可以直观地看出变化的频率和趋势，但不同时刻的数据依然会相互遮挡。
 
 \begin{figure}[!htb]
 \centering
@@ -238,8 +251,10 @@
 \includegraphics[width=0.3\linewidth]{images/PC_Data_Time4.eps}}
 \subfigure[]{
 \includegraphics[width=0.6\linewidth]{images/PC_Data_Time3.eps}}
-\caption{\label{fig:PC_Data_Time3}用不透明度和色调刻画数据变动。其中折线的变化用多边形表示（如图(a)），不透明度刻画了变化的频率（图(b)上图），而不同的色调代表不同的时刻（图(b)下图）。本图来源于Johansson~等人的论文~\citep{johansson2007depth}~。}
+\caption{\label{fig:PC_Data_Time3}用不透明度和色调刻画数据变动。其中折线变化用多边形表示（如图(a)），不透明度刻画了变化的频率，不同的色调则代表不同的时刻（如图(b)）。本图来源于Johansson~等人的论文~\citep{johansson2007depth}~。}
 \end{figure}
+
+为防止遮挡，也可以结合折线图（Line Chart），用多个轴表示一个维度的时变信息~\citep{edsall2003parallel}~\citep{dietzsch2009spray}（如图\ref{fig:PC_Data_Time1}），但同一维度的重复出现会大大降低视图的可扩展性。
 
 \begin{figure}[!htb]
 \centering
@@ -248,12 +263,30 @@
 }
 \end{figure}
 
+进一步地，Wegenkittl等人~\citep{wegenkittl1997visualizing}令时间轴垂直于坐标平面，提出了三维时变平行坐标的形式（如图~\ref{fig:PC_Data_Time2}）。其中每条折线沿时间轴演化会形成一个曲面，该曲面即表达了时变高维的所有信息。但多个不同的曲面很容易交错重叠而难以观察，使其不适用于数据量大的情形。
+
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=1.0\linewidth]{images/PC_Data_Time2.eps}
 \caption{\label{fig:PC_Data_Time2}三维时变平行坐标。图中$x_1$至$x_4$表示不同维度，$t_1$至$t_4$为不同的时刻。本图来源于Wegenkittl~等人的论文~\citep{wegenkittl1997visualizing}~。
 }
 \end{figure}
+
+除了静态展示，还可以用动画来表现数据变化~\citep{barlow2004animator}。但视觉的瞬变使用户难以同时跟踪多个维度的变动，在维数较高、变动剧烈的情况下尤为如此。为每个维度提供额外的时变直方图~\citep{blaas2008extensions}可以缓解这一问题，但这又割裂了时变信息与维度关系。总的来说，以上方法都各有优劣，但还没有一个较为全面的方式来展现时变平行坐标。
+
+还有一类拓展在于连续型数据。在科学数据（Scientific Data）里，所有样本可能都来自同一个数据域（Data Domain，如流场、物体表面等）。平行坐标能够逐个描绘这些样本，但无法展现通过插值重构出来的连续数据域，即所谓的“连续型数据”（Continuous Data）。绘制连续型数据的概念最早由Bachthaler等人~\citep{bachthaler2008continuous}提出并应用在散点图中。他们基于离散的样本，建模估计、并以颜色表现了视图各处的密度。基于这一研究，Heinrich等人利用散点图和平行坐标的几何对称性，发展出连续型平行坐标~\citep{heinrich2009continuous}的形式（如图\ref{fig:PC_Data_Continuous2}）。后来的研究~\citep{lehmann2011features}则进一步揭示了这两种连续视图之间的密切联系。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_Data_Continuous2.eps}
+\caption{\label{fig:PC_Data_Continuous2}连续型平行坐标。本图来源于Heinrich~等人的论文~\citep{heinrich2009continuous}~。
+}
+\end{figure}
+
+相比于传统形式，连续型平行坐标可以在样本较少的情况下重构出精度较高的原数据域，而且能避免视图混杂问题（见~\ref{subsection:dataImpro}节），也具有较好的可扩展性和渲染效率。但它无法给出单个样本的信息，也不支持传统的交互和分析方法（如刷选、聚类等），在可用性上有一定的局限。
+
+\subsubsection{数据隐私与不确定性}
+
 
 
 \subsection{视图}
