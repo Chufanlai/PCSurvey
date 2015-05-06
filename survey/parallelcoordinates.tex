@@ -213,7 +213,7 @@
 \subsection{数据}
 \label{subsection:dataImpro}
 
-对数据的研究主要关注三个方面：不同的数据类型、数据隐私与不确定性、以及大数据的绘制效率。
+对数据的研究主要关注三个方面：不同的数据类型、不确定性与数据隐私、以及大数据的绘制效率。
 
 \subsubsection{不同的数据类型}
 
@@ -285,9 +285,27 @@
 
 相比于传统形式，连续型平行坐标可以在样本较少的情况下重构出精度较高的原数据域，而且能避免视图混杂问题（见~\ref{subsection:dataImpro}节），也具有较好的可扩展性和渲染效率。但它无法给出单个样本的信息，也不支持传统的交互和分析方法（如刷选、聚类等），在可用性上有一定的局限。
 
-\subsubsection{数据隐私与不确定性}
+\subsubsection{不确定性与数据隐私}
 
+无论什么类型的数据，都会在其采集和处理的过程中，因为种种原因（测量误差、样本随机性等）产生不同程度的不确定性。从结果推测的原数据因而会呈现概率分布，而这些分布则要通过样本重构来得到。前面关于连续型数据的研究~\citep{bachthaler2008continuous}~\citep{heinrich2009continuous}都假定数据域是被充分均匀采样的，并采取线性插值的方法来进行重构。但这些假定都基于格点型的数据（Grid Data），对于不充分、非均匀采样的情形并不适用。
 
+对于一般的数据，Feng~\citep{feng2010matching}等人提出用高斯核密度方法（Kernel Density Estimation）来进行重构，并利用连续型平行坐标的技术将其绘制出来（如图\ref{fig:PC_Data_Uncertainty}）。除此之外，他们还将这一技术向曲线形式作了拓展，并加入了基于密度的刷选、高亮等交互方式。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_Data_Uncertainty.eps}
+\caption{\label{fig:PC_Data_Uncertainty}平行坐标表现数据不确定性。本图来源于Feng等人的论文~\citep{feng2010matching}~。
+}
+\end{figure}
+
+不确定性往往是分析人员极力避免的因素。但反过来，我们也可以制造“额外的”不确定性，来保护数据中的隐私信息。而上述基于密度的方法给出了原数据域的分布，其信息量甚至大于样本数据，因此不适合隐私保护。Dasgupta等人~\citep{dasgupta2011adaptive}提出通过聚类来封装底层数据，从而保护样本信息（如图~\ref{fig:PC_Data_Privacy}）。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_Data_Privacy.eps}
+\caption{\label{fig:PC_Data_Privacy}通过聚类保护数据隐私。本图来源于Dasgupta等人的论文~\citep{dasgupta2011adaptive}~。
+}
+\end{figure}
 
 \subsection{视图}
 \label{subsection:dataImpro}
