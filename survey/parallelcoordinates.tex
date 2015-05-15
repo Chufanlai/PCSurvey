@@ -213,7 +213,7 @@
 \subsection{数据}
 \label{subsection:dataImpro}
 
-对数据的研究主要关注三个方面：不同的数据类型、不确定性与数据隐私、以及大数据的绘制效率。
+对数据的研究主要关注三个方面：不同的数据类型、不确定性与数据隐私、以及绘制效率。
 
 \subsubsection{不同的数据类型}
 
@@ -287,9 +287,9 @@
 
 \subsubsection{不确定性与数据隐私}
 
-无论什么类型的数据，都会在其采集和处理的过程中，因为种种原因（测量误差、样本随机性等）产生不同程度的不确定性。从结果推测的原数据因而会呈现概率分布，而这些分布则要通过样本重构来得到。前面关于连续型数据的研究~\citep{bachthaler2008continuous}~\citep{heinrich2009continuous}都假定数据域是被充分均匀采样的，并采取线性插值的方法来进行重构。但这些假定都基于格点型的数据（Grid Data），对于不充分、非均匀采样的情形并不适用。
+无论什么类型的数据，都会在其采集和处理的过程中，因为种种原因（测量误差、样本随机性等）产生不同程度的不确定性。从结果推测的原数据因而会呈现概率分布，而这些分布则需要通过样本重构来得到。前面关于连续型数据的研究~\citep{bachthaler2008continuous}~\citep{heinrich2009continuous}都假定数据域是被充分均匀采样的，并采取线性插值的方法来进行重构。但这些假定都基于格点型的数据（Grid Data），对于不充分、非均匀采样的情形并不适用。
 
-对于一般的数据，Feng~\citep{feng2010matching}等人提出用高斯核密度方法（Kernel Density Estimation）来进行重构，并利用连续型平行坐标的技术将其绘制出来（如图\ref{fig:PC_Data_Uncertainty}）。除此之外，他们还将这一技术向曲线形式作了拓展，并加入了基于密度的刷选、高亮等交互方式。
+对于一般的数据，Feng~\citep{feng2010matching}等人提出用高斯核密度估计（Kernel Density Estimation）来进行重构，并利用连续型平行坐标的技术来绘制数据分布（如图\ref{fig:PC_Data_Uncertainty}）。视图中密度越高的区域，其数据分布越集中，不确定性也越低。除此之外，他们还对这一技术作了曲线形式的拓展，并加入了基于密度的刷选、高亮等交互方式。
 
 \begin{figure}[!htb]
 \centering
@@ -298,17 +298,34 @@
 }
 \end{figure}
 
-不确定性往往是分析人员极力避免的因素。但反过来，我们也可以制造“额外的”不确定性，来保护数据中的隐私信息。而上述基于密度的方法给出了原数据域的分布，其信息量甚至大于样本数据，因此不适合隐私保护。Dasgupta等人~\citep{dasgupta2011adaptive}提出通过聚类来封装底层数据，从而保护样本信息（如图~\ref{fig:PC_Data_Privacy}）。
+不确定性往往是分析人员极力避免的因素。但反过来，我们也可以制造“额外的”不确定性，通过隐藏样本数据来保护其中的隐私信息。上述基于密度的方法给出了原数据域的分布，其信息量甚至大于样本数据，因此不适合隐私保护。Dasgupta等人~\citep{dasgupta2011adaptive}提出通过聚类来封装底层数据（如图~\ref{fig:PC_Data_Privacy}），并重新设计了相应的交互手段，以抵御不同形式的隐私攻击。但他们设置的信息保护机制过于复杂，导致视图难以理解，大大降低了其可用性。相比于隐藏单个数据，另一种方案在于只显示部分样本，或是对重构的数据域进行再采样~\citep{heinrich2011progressive}来获得虚构的样本集。
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=1.0\linewidth]{images/PC_Data_Privacy.eps}
-\caption{\label{fig:PC_Data_Privacy}通过聚类保护数据隐私。本图来源于Dasgupta等人的论文~\citep{dasgupta2011adaptive}~。
+\caption{\label{fig:PC_Data_Privacy}通过聚类保护数据隐私，其中高亮的部分由于存在不确定性而难以理解。本图来源于Dasgupta等人的论文~\citep{dasgupta2011adaptive}~。
+}
+\end{figure}
+
+\subsubsection{绘制效率}
+
+当数据量较大时，直接绘制的效率较低，容易导致交互过程的延迟，影响用户体验。Rosenbaum等人~\citep{rosenbaum2012progressive}提出建立数据的精度层级（Data Hierarchy），通过低精度小规模的数据来提供概要信息，以平衡信息量与绘制效率（如图~\ref{fig:PC_Data_Splatting}）。但在视图精度不断提高的过程中，每个层级的数据都需要重新获取与绘制， 其总体效率会比直接绘制更低。相比于这种自顶向下的方式，Heinrich等人~\citep{heinrich2011progressive}通过数据域的再采样，自底向上地构建连续型平行坐标。随着样本的不断交叠，用户可以逐步了解数据域的分布特点。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\linewidth]{images/PC_Data_Splatting.eps}
+\caption{\label{fig:PC_Data_Splatting}递进式平行坐标，用户可以根据需要指定数据的精度。本图源自Rosenbaum等人的论文~\citep{rosenbaum2012progressive}~。
 }
 \end{figure}
 
 \subsection{视图}
 \label{subsection:dataImpro}
+
+\subsubsection{数据重合}
+
+\subsubsection{视觉混杂}
+
+\subsubsection{坐标轴排序}
 
 \subsection{感知}
 \label{subsection:dataImpro}
