@@ -202,6 +202,7 @@
 在平行坐标里，能观察到的数据特征主要有两种，即聚类信息和相关关系。一方面，相似的折线形成线簇，代表着不同的聚类，反映了数据趋势、异常点等行为。但要观察到聚类，必须先处理好前面提到的视觉混杂问题，使隐含的聚类能被凸显出来。另一方面，相邻坐标轴之间的线段走向能反映这两个维度的相关关系（如图\ref{fig:PC_correlation}）。但用户对相关性的感知是否准确，和其他方法相比是否更有效等等，都需要通过实验来评估。除此之外，还有很多有意义的数据特征无法通过简单的聚类或相关来描述。而已有的特征也需要相应的自动提取算法，来遍寻和评估不同的参数设置（如不同的维度排序），以找到特征明显、信息量大的视图。
 
 \subsection{交互}
+\label{subsection:interactionBasics}
 
 基于已有的观察，用户通过交互来改变视图，以发掘更多信息。平行坐标提供两种基本的交互功能，即数据刷选和坐标轴排序。对于刷选，用户需要给每个坐标轴限定取值范围~\citep{martin1995high}。这相当于在高维空间中建立一个超立方体（Hypercube）包围盒，同时满足各维度条件的数据才会被选中。这样的方式虽然逻辑简单，但操作繁琐、缺乏灵活性，用户既无法选中任意形状的数据区域，也无法根据其他数据特征来选择数据。除了刷选，用户还可以手动调整坐标轴的顺序。但这在数据维度较高时并不现实，用户很难通过交互来发现合适的排序。
 
@@ -217,7 +218,16 @@
 
 \subsubsection{不同的数据类型}
 
-正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的取值，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。Kosara~等人~\citep{kosara2006parallel}~\citep{bendix2005parallel}利用线段宽度来映射取值相同的样本数量，提出了平行集合（Parallel Set）的形式（如图\ref{fig:PC_Data_ParallelSet}）。而Hofmann等人~\citep{hofmann2013common}指出，折线的宽度并不对应它所代表的数据量（比较图\ref{fig:PC_Data_CommonAnglePlot}中的$a$、$b$两段）。他们提出用统一的角度来绘制折线，即统一角度图（Common Angle Plot）的形式，使用户能通过直线部分的宽度来准确感知集合的大小。
+正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的类别，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。一方面，可以对类别型维度进行量化~\citep{rosario2004mapping}，以表达不同类别之间的关系（如图\ref{fig:PC_Data_Quantification}），但用户依然无法判断每个类别内的数据量。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.47\linewidth]{images/PC_Data_Quantification1.eps}}
+\subfigure[]{
+\includegraphics[width=0.47\linewidth]{images/PC_Data_Quantification2.eps}}
+\caption{\label{fig:PC_Data_Quantification}类别型维度在量化前后的对比。本图源自Rosario等人的论文~\citep{rosario2004mapping}~。}
+\end{figure}
 
 \begin{figure}[!htb]
 \centering
@@ -230,6 +240,10 @@
 \caption{平行集合及其改进版本，用以在平行坐标框架下表现类别型数据。图(a)、(b)分别来自论文~\citep{kosara2006parallel}和~\citep{hofmann2013common}。}
 \end{figure}
 
+另一方面，样本数量可以用折线宽度来表示，即平行集合（Parallel Set）~\citep{kosara2006parallel}~\citep{bendix2005parallel}的形式，各个集合之间的交错、包含等逻辑关系也更为明显（如图\ref{fig:PC_Data_ParallelSet}）。而Hofmann等人~\citep{hofmann2013common}指出，斜线段的宽度并不对应它所代表的数据量（比较图\ref{fig:PC_Data_CommonAnglePlot}中的$a$、$b$两段）。他们提出用统一的角度来绘制折线，即统一角度图（Common Angle Plot）的形式，使用户能通过直线部分的宽度来准确感知集合的大小。
+
+除了类别型数据，时变数据也是一类重要的拓展，具体方法可分为静态和动态两种。其中静态的展示需要引入时间轴、并同时绘制所有时刻的数据，只是对时间轴的处理各有不同（见图\ref{fig:PC_Data_Time5})。
+
 \begin{figure}[!htb]
 \centering
 \subfigure[]{
@@ -240,8 +254,6 @@
 \includegraphics[width=0.28\linewidth]{images/PC_Data_Time5_3.eps}}
 \caption{\label{fig:PC_Data_Time5}时变平行坐标的三种静态展示方式：(a).时间轴平行于属性轴；(b).时间轴在坐标平面内垂直于属性轴；(c).时间轴垂直于坐标平面。}
 \end{figure}
-
-除了类别型数据，时变数据也是一类重要的拓展，具体方法可分为静态和动态两种。其中静态的展示需要引入时间轴、并同时绘制所有时刻的数据，只是对时间轴的处理各有不同（见图\ref{fig:PC_Data_Time5})。
 
 最简单的方式莫过于将时间轴看作一个平行轴，但各个时刻的数据被同等对待，不利于凸显数据的变化信息。Johansson等人~\citep{johansson2007depth}提出利用不透明度和色调等来区分数据变动的时间范围（如图~\ref{fig:PC_Data_Time3}）。用户可以直观地看出变化的频率和趋势，但不同时刻的数据依然会相互遮挡。
 
@@ -289,14 +301,14 @@
 
 无论什么类型的数据，都会在其采集和处理的过程中，因为种种原因（测量误差、样本随机性等）产生不同程度的不确定性。从结果推测的原数据因而会呈现概率分布，而这些分布则需要通过样本重构来得到。前面关于连续型数据的研究~\citep{bachthaler2008continuous}~\citep{heinrich2009continuous}都假定数据域是被充分均匀采样的，并采取线性插值的方法来进行重构。但这些假定都基于格点型的数据（Grid Data），对于不充分、非均匀采样的情形并不适用。
 
-对于一般的数据，Feng~\citep{feng2010matching}等人提出用高斯核密度估计（Kernel Density Estimation）来进行重构，并利用连续型平行坐标的技术来绘制数据分布（如图\ref{fig:PC_Data_Uncertainty}）。视图中密度越高的区域，其数据分布越集中，不确定性也越低。除此之外，他们还对这一技术作了曲线形式的拓展，并加入了基于密度的刷选、高亮等交互方式。
-
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=1.0\linewidth]{images/PC_Data_Uncertainty.eps}
 \caption{\label{fig:PC_Data_Uncertainty}平行坐标表现数据不确定性。本图来源于Feng等人的论文~\citep{feng2010matching}~。
 }
 \end{figure}
+
+对于一般的数据，Feng~\citep{feng2010matching}等人提出用高斯核密度估计（Kernel Density Estimation）来进行重构，并利用连续型平行坐标的技术来绘制数据分布（如图\ref{fig:PC_Data_Uncertainty}）。视图中密度越高的区域，其数据分布越集中，不确定性也越低。除此之外，他们还对这一技术作了曲线形式的拓展，并加入了基于密度的刷选、高亮等交互方式。
 
 不确定性往往是分析人员极力避免的因素。但反过来，我们也可以制造“额外的”不确定性，通过隐藏样本数据来保护其中的隐私信息。上述基于密度的方法给出了原数据域的分布，其信息量甚至大于样本数据，因此不适合隐私保护。Dasgupta等人~\citep{dasgupta2011adaptive}提出通过聚类来封装底层数据（如图~\ref{fig:PC_Data_Privacy}），并重新设计了相应的交互手段，以抵御不同形式的隐私攻击。但他们设置的信息保护机制过于复杂，导致视图难以理解，大大降低了其可用性。相比于隐藏单个数据，另一种方案在于只显示部分样本，或是对重构的数据域进行再采样~\citep{heinrich2011progressive}来获得虚构的样本集。
 
@@ -309,7 +321,7 @@
 
 \subsubsection{绘制效率}
 
-当数据量较大时，直接绘制的效率较低，容易导致交互过程的延迟，影响用户体验。Rosenbaum等人~\citep{rosenbaum2012progressive}提出建立数据的精度层级（Data Hierarchy），通过低精度小规模的数据来提供概要信息，以平衡信息量与绘制效率（如图~\ref{fig:PC_Data_Splatting}）。但在视图精度不断提高的过程中，每个层级的数据都需要重新获取与绘制， 其总体效率会比直接绘制更低。相比于这种自顶向下的方式，Heinrich等人~\citep{heinrich2011progressive}通过数据域的再采样，自底向上地构建连续型平行坐标。随着样本的不断交叠，用户可以逐步了解数据域的分布特点。
+当数据量较大时，直接绘制的效率较低，容易导致交互过程的延迟。Rosenbaum等人~\citep{rosenbaum2012progressive}提出建立数据的精度层级（Data Hierarchy），在绘制完成前通过低精度小规模的数据来提供概要信息，以平衡信息量与绘制效率（如图~\ref{fig:PC_Data_Splatting}）。
 
 \begin{figure}[!htb]
 \centering
@@ -318,20 +330,48 @@
 }
 \end{figure}
 
+但在视图精度不断提高的过程中，每个层级的数据都需要重新获取与绘制， 使得自顶向下绘制的总体效率比直接绘制更低。Heinrich等人~\citep{heinrich2011progressive}提出自底向上地渲染连续型平行坐标的方式。他们对数据域进行再采样，通过不断增加的样本来重现、而非直接计算密度分布，从而用户在采样的早期就可看出数据分布的特点。
+
 \subsection{视图}
-\label{subsection:dataImpro}
+\label{subsection:designImpro}
+
+如\ref{subsection:designBasics}节所述，对视图设计的研究主要关注三个问题，分别是数据重合、视觉混杂以及坐标轴的排序。
 
 \subsubsection{数据重合}
 
+数据重合的主要问题是无法在视觉上区分多个数据。Graham等人~\citep{graham2003using}提出用曲线代替折线，从而在重合点处，用户可以通过曲率的连续性来跟踪数据（图\ref{fig:PC_Design_Curve1}）；将重合点展开则可以进一步减轻这一问题（图\ref{fig:PC_Design_Curve2}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Curve1}
+\includegraphics[width=0.58\linewidth]{images/PC_Design_Curve.eps}}
+\subfigure[]{\label{fig:PC_Design_Curve2}
+\includegraphics[width=0.28\linewidth]{images/PC_Design_Curve1.eps}}
+\caption{通过曲率连续性区分不同数据。本图源自Graham等人的论文~\citep{graham2003using}~。}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.37\linewidth]{images/PC_Design_Curve3.eps}}
+\subfigure[]{
+\includegraphics[width=0.57\linewidth]{images/PC_Design_Curve4.eps}}
+\caption{\label{fig:PC_Design_Label}平行坐标中的数据标签。本图源自Zhou等人的论文~\citep{zhou2014parallel}~。}
+\end{figure}
+
+而Zhou等人~\citep{zhou2014parallel}指出，在重合点处相切的曲线依然无法区分。他们提出用数据标签代替线段（如图\ref{fig:PC_Design_Label}），从而不论是直线或曲线，用户在放大视图时，总能通过标签的不同来区分数据。但标签相比于线段更容易相互遮挡、影响可读性，使得该方法不适合数据量大的情形。
+
 \subsubsection{视觉混杂}
+
+视觉混杂问题是平行坐标研究的重点之一。
 
 \subsubsection{坐标轴排序}
 
 \subsection{感知}
-\label{subsection:dataImpro}
+\label{subsection:perceptionImpro}
 
 \subsection{交互}
-\label{subsection:dataImpro}
+\label{subsection:interactionImpro}
 
 \section{平行坐标的应用}
 \label{section:applications}
