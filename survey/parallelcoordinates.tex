@@ -363,7 +363,29 @@
 
 \subsubsection{视觉混杂}
 
-视觉混杂问题是平行坐标研究的重点之一。
+视觉混杂问题是平行坐标研究的重点之一。要在有限的空间里表现大量的图元，主要有三种思路：表现密度分布、减少图元数目、以及扩大显示空间。
+
+密度分布可以是图元或数据的密度，并借由不透明度或色调来表达。表现图元密度的最简单方法，是调节折线的不透明度，从而折线越密集的区域可见性越高（如图~\ref{fig:PC_Data_Time3}(b)）。也可以基于屏幕像素来统计折线堆叠的情况，再利用不透明度~\citep{artero2004uncovering}~\citep{johansson2007depth}或色调~\citep{mcdonnell2008illustrative}来呈现（如图~\ref{fig:PC_Design_Density1}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.4\linewidth]{images/PC_Design_Density1.eps}}
+\subfigure[]{
+\includegraphics[width=0.55\linewidth]{images/PC_Design_Density2.eps}}
+\caption{\label{fig:PC_Design_Density1}利用不透明度或色调表现折线密度}
+\end{figure}
+
+然而在平行坐标里，对绘制结果作密度估计并不反映数据域的密度。Zhou等人~\citep{zhou2009splatting}提出用抛雪球算法来检测数据聚类，并逐步显现其密度分布（如图~\ref{fig:PC_Design_Density2}）。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\linewidth]{images/PC_Design_Density3.eps}
+\caption{\label{fig:PC_Design_Density2}利用抛雪球算法逐步凸显数据密度。本图修改自Zhou等人的论文~\citep{zhou2009splatting}~。
+}
+\end{figure}
+
+进一步地，连续型平行坐标的相关研究~\citep{heinrich2009continuous}~\citep{lehmann2011features}~\citep{feng2010matching}~\citep{heinrich2011progressive}揭示了数据域里的密度估计及相应的绘制方式（见图~\ref{fig:PC_Data_Continuous2}、图~\ref{fig:PC_Data_Uncertainty}）。如此一来，既无需费时绘制所有数据，避免了混杂问题，又能较好地保留数据的信息。
 
 \subsubsection{坐标轴排序}
 
