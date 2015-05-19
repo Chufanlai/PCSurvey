@@ -130,7 +130,7 @@
 
 \section{基本原理及主要问题}
 \label{section:basics&prob}
-在这一节里，我们将从四个方面简要介绍平行坐标的设计。在此过程中，我们会逐步阐述平行坐标的几个主要问题。作进一步的探讨前，这里先简要介绍Jarke提出的的可视分析模型~\citep{van2005value}（如图\ref{fig:Vis_model}）。在一个可视分析流程中，数据（Data）驱动了可视化展示（Visualization），用户对视图进行感知（Perception）并从中获取知识（Knowledge）。基于已有知识，用户可以通过交互探索（Exploration）来改变视图的参数设置（Specification），以产生新的可视化来发掘更多知识。由此可见，可视分析流程主要由四部分组成，分别是数据、视图、视觉感知和交互。本节余下内容以及第\ref{section:impro}节的内容都将按这四个部分展开。
+在这一节里，我们将简要介绍平行坐标的设计，并逐步阐述其存在的几个主要问题。作进一步的探讨前，这里先简要介绍Jarke提出的的可视分析模型~\citep{van2005value}（如图\ref{fig:Vis_model}）。在一个可视分析流程中，数据（Data）驱动了可视化展示（Visualization），用户对视图进行感知（Perception）并从中获取知识（Knowledge）。基于已有知识，用户可以通过交互探索（Exploration）来改变视图的参数设置（Specification），以产生新的可视化来发掘更多知识。由此可见，可视分析流程主要由四部分组成，分别是数据、视图、视觉感知和交互。本节余下内容以及第\ref{section:impro}节的内容都将按这四个部分展开。
 
 \begin{figure}[!htb]
 \centering
@@ -386,7 +386,7 @@
 }
 \end{figure}
 
-进一步地，连续型平行坐标的相关研究~\citep{heinrich2009continuous}~\citep{lehmann2011features}~\citep{feng2010matching}~\citep{heinrich2011progressive}直接对数据域作密度估计，并揭示了相应的绘制方式（见图~\ref{fig:PC_Data_Continuous2}、图~\ref{fig:PC_Data_Uncertainty}）。如此一来，既无需费时绘制所有数据，避免了混杂问题，又能较好地保留数据分布的信息。然而在上述方法中，低密度区域的信息会因为较低的可见性而被忽略。Johansson等人~\citep{johansson2005revealing}利用传递函数（Transfer Function）来调节密度与可见性的关系，从而用户可以根据分析需求来强调不同密度的区域。
+进一步地，连续型平行坐标的相关研究~\citep{heinrich2009continuous}~\citep{lehmann2011features}~\citep{feng2010matching}~\citep{heinrich2011progressive}直接对数据域作密度估计，并揭示了相应的绘制方式（见图~\ref{fig:PC_Data_Continuous2}、图~\ref{fig:PC_Data_Uncertainty}）。如此一来，既无需费时绘制所有数据，避免了混杂问题，又能较好地保留数据分布的信息。然而在上述方法中，低密度区域的信息会因为较低的可见性而被忽略。Johansson等人~\citep{johansson2005revealing}利用传递函数（Transfer Function）来调节数据密度与可见性的关系，从而用户可以根据分析需求来凸显不同密度的区域。
 
 \subsubsection{坐标轴排序}
 
