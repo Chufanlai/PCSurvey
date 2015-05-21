@@ -388,6 +388,34 @@
 
 进一步地，连续型平行坐标的相关研究~\citep{heinrich2009continuous}~\citep{lehmann2011features}~\citep{feng2010matching}~\citep{heinrich2011progressive}直接对数据域作密度估计，并揭示了相应的绘制方式（见图~\ref{fig:PC_Data_Continuous2}、图~\ref{fig:PC_Data_Uncertainty}）。如此一来，既无需费时绘制所有数据，避免了混杂问题，又能较好地保留数据分布的信息。然而在上述方法中，低密度区域的信息会因为较低的可见性而被忽略。Johansson等人~\citep{johansson2005revealing}利用传递函数（Transfer Function）来调节数据密度与可见性的关系，从而用户可以根据分析需求来凸显不同密度的区域。
 
+相比于表现密度，视觉概要的方法通过少量图元来概括数据分布。较简单的做法是分别描述各个维度的数据密度~\citep{hauser2002angular}~\citep{caat2007design}（如图~\ref{fig:PC_Design_Abstraction1}），但这无法揭示维度之间的联系。要对折线进行概括，除了密度，还须考虑其方向。Geng等人~\citep{geng2011angular}提出了带角度的直方图（Angular Histogram），在表达数据密度的同时，通过柱形的角度来指示折线走向（如图~\ref{fig:PC_Design_Abstraction2}）。Muigg等人~\citep{muigg2011visual}则利用噪声纹理（Noise Texture）传达方向信息（如图~\ref{fig:PC_Design_Abstraction1}），并将这一技术推广到其他基于折线的视图中。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Abstraction3}
+\includegraphics[width=1.0\linewidth]{images/PC_Design_Abstraction5.eps}}
+\subfigure[]{\label{fig:PC_Design_Abstraction2}
+\includegraphics[width=1.0\linewidth]{images/PC_Design_Abstraction4.eps}}
+\caption{利用直方图表现各维度上数据的密度和走向。(a)、(b)两图分别来自论文~\citep{hauser2002angular}、~\citep{geng2011angular}。}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\linewidth]{images/PC_Design_Abstraction3.eps}
+\caption{\label{fig:PC_Design_Abstraction1}利用噪声纹理表达折线的方向。本图修改自Muigg等人的论文~\citep{muigg2011visual}~。
+}
+\end{figure}
+
+然而很多时候，即使是经过概括的视图，也会因为较高的数据异质性而显得杂乱。因此可以先进行聚类、从根源上消除混杂，亦即聚类表达型的方法。
+
+%McDonnell等人~\citep{mcdonnell2008illustrative}基于数据聚类的结果，用条带和阴影分别表现每个聚类的走势和密度（如图~\ref{fig:PC_Design_Abstraction1}）。这种形式既具概括性又不乏细节，适合用作数据展示，但既有的聚类结果容易主导用户的理解。
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=0.9\linewidth]{images/PC_Design_Abstraction2.eps}
+%\caption{\label{fig:PC_Design_Abstraction1}利用不透明度或色调表现折线密度}
+%\end{figure}
+
 \subsubsection{坐标轴排序}
 
 \subsection{感知}

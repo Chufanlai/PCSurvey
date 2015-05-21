@@ -127,6 +127,21 @@
   Timestamp                = {2015.04.08}
 }
 
+@Article{johansson2006revealing,
+  Title                    = {Revealing structure in visualizations of dense 2D and 3D parallel coordinates},
+  Author                   = {Johansson, Jimmy and Ljung, Patric and Jern, Mikael and Cooper, Matthew},
+  Journal                  = {Information Visualization},
+  Year                     = {2006},
+  Number                   = {2},
+  Pages                    = {125--136},
+  Volume                   = {5},
+
+  File                     = {:Revealing structure in visualizations of dense 2d and 3d parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.05.20}
+}
+
 @InProceedings{johansson2005revealing,
   Title                    = {Revealing structure within clustered parallel coordinates displays},
   Author                   = {Johansson, Jimmy and Ljung, Patric and Jern, Mikael and Cooper, Matthew},
@@ -211,6 +226,21 @@
   Timestamp                = {2015.04.08}
 }
 
+@Article{zachow2009visual,
+  Title                    = {Visual exploration of nasal airflow},
+  Author                   = {Zachow, Stefan and Muigg, Philipp and Hildebrandt, Thomas and Doleisch, Helmut and Hege, H-C},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2009},
+  Number                   = {6},
+  Pages                    = {1407--1414},
+  Volume                   = {15},
+
+  File                     = {:Visual exploration of nasal airflow.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.05.21}
+}
+
 @InProceedings{zhou2009splatting,
   Title                    = {Splatting the lines in parallel coordinates},
   Author                   = {Zhou, Hong and Cui, Weiwei and Qu, Huamin and Wu, Yingcai and Yuan, Xiaoru and Zhuo, Wei},
@@ -246,14 +276,14 @@
 @comment{jabref-meta: groupstree:
 0 AllEntriesGroup:;
 1 ExplicitGroup:Abstraction\;0\;caat2007design\;geng2011angular\;johan
-sson2008screen\;mcdonnell2008illustrative\;muigg2011visual\;novotny200
-6outlier\;;
-1 ExplicitGroup:Clustering\;0\;fua1999hierarchical\;guo2010interactive
-\;heinrich2011evaluation\;palmas2014edge\;siirtola2000direct\;zhou2008
+sson2008screen\;mcdonnell2008illustrative\;muigg2011visual\;zachow2009
 visual\;;
+1 ExplicitGroup:Clustering\;0\;fua1999hierarchical\;guo2010interactive
+\;heinrich2011evaluation\;novotny2006outlier\;palmas2014edge\;siirtola
+2000direct\;zhou2008visual\;;
+1 ExplicitGroup:Sampling\;0\;ellis2006enabling\;;
+1 ExplicitGroup:Reordering\;0\;dang2010stacking\;;
 1 ExplicitGroup:Blending\;0\;artero2004uncovering\;johansson2005reveal
 ing\;zhou2009splatting\;;
-1 ExplicitGroup:Sampling\;0\;ellis2006enabling\;;
-1 ExplicitGroup:Reordering\;0\;dang2010stacking\;peng2004clutter\;;
 }
 
