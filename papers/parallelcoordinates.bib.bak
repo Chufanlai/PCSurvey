@@ -1126,6 +1126,17 @@
   Timestamp                = {2015.04.08}
 }
 
+@InProceedings{theisel2000higher,
+  Title                    = {Higher Order Parallel Coordinates.},
+  Author                   = {Theisel, Holger},
+  Booktitle                = {VMV},
+  Year                     = {2000},
+  Pages                    = {415--420},
+
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.22}
+}
+
 @Article{tory2005parallel,
   Title                    = {A parallel coordinates style interface for exploratory volume visualization},
   Author                   = {Tory, Melanie and Potts, Simeon and Moller, Torsten},
@@ -1258,22 +1269,6 @@
   Timestamp                = {2015.04.08}
 }
 
-@Article{zachow2009visual,
-  Title                    = {Visual exploration of nasal airflow},
-  Author                   = {Zachow, Stefan and Muigg, Philipp and Hildebrandt, Thomas and Doleisch, Helmut and Hege, H-C},
-  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
-  Year                     = {2009},
-  Number                   = {6},
-  Pages                    = {1407--1414},
-  Volume                   = {15},
-
-  __markedentry            = {[chufanlai:1]},
-  File                     = {:Visual exploration of nasal airflow.pdf:PDF},
-  Owner                    = {chufanlai},
-  Publisher                = {IEEE},
-  Timestamp                = {2015.05.21}
-}
-
 @InProceedings{zhang2012network,
   Title                    = {A network-based interface for the exploration of high-dimensional data spaces},
   Author                   = {Zhang, Zhiyuan and McDonnell, Kevin T and Mueller, Klaus},
@@ -1364,8 +1359,8 @@ high\;yang2003interactive\;zhang2012network\;;
 cking\;ellis2006enabling\;fua1999hierarchical\;geng2011angular\;guo201
 0interactive\;heinrich2011evaluation\;johansson2005revealing\;johansso
 n2006revealing\;mcdonnell2008illustrative\;muigg2011visual\;novotny200
-6outlier\;palmas2014edge\;peng2004clutter\;siirtola2000direct\;zachow2
-009visual\;zhou2008visual\;zhou2009splatting\;;
+6outlier\;palmas2014edge\;peng2004clutter\;siirtola2000direct\;zhou200
+8visual\;zhou2009splatting\;;
 1 ExplicitGroup:Interaction\;0\;fua1999navigating\;fua2000structure\;h
 auser2002angular\;martin1995high\;;
 1 ExplicitGroup:LineImprovement\;0\;graham2003using\;moustafa2002some\

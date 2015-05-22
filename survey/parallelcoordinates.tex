@@ -338,6 +338,7 @@
 如\ref{subsection:designBasics}节所述，对视图设计的研究主要关注三个问题，分别是数据重合、视觉混杂以及坐标轴的排序。
 
 \subsubsection{数据重合}
+\label{subsection:dataCoincidence}
 
 数据重合的主要问题是无法在视觉上区分多个数据。Graham等人~\citep{graham2003using}提出用曲线代替折线，从而在重合点处，用户可以通过曲率的连续性来跟踪数据（图\ref{fig:PC_Design_Curve1}）；将重合点展开则可以进一步减轻这一问题（图\ref{fig:PC_Design_Curve2}）。
 
@@ -401,20 +402,63 @@
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.8\linewidth]{images/PC_Design_Abstraction3.eps}
+\includegraphics[width=0.9\linewidth]{images/PC_Design_Abstraction3.eps}
 \caption{\label{fig:PC_Design_Abstraction1}利用噪声纹理表达折线的方向。本图修改自Muigg等人的论文~\citep{muigg2011visual}~。
 }
 \end{figure}
 
-然而很多时候，即使是经过概括的视图，也会因为较高的数据异质性而显得杂乱。因此可以先进行聚类、从根源上消除混杂，亦即聚类表达型的方法。
+然而很多时候，即使是经过概括的视图，也会因为较高的数据异质性而显得杂乱。可以先进行聚类、从根源上消除混杂，即为聚类表达型方法。这类方法可分为视觉聚类和数据聚类两种。
 
-%McDonnell等人~\citep{mcdonnell2008illustrative}基于数据聚类的结果，用条带和阴影分别表现每个聚类的走势和密度（如图~\ref{fig:PC_Design_Abstraction1}）。这种形式既具概括性又不乏细节，适合用作数据展示，但既有的聚类结果容易主导用户的理解。
+视觉聚类方法将相似的图元汇聚起来，在平行坐标里即是将折线“捆”在一起。Guo等人\citep{guo2010interactive}提出一种具有引力的局部算子，用户可以在视图中放置算子以对部分折线进行捆绑（如图\ref{fig:PC_Design_Clustering1}）。
 
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=0.9\linewidth]{images/PC_Design_Abstraction2.eps}
-%\caption{\label{fig:PC_Design_Abstraction1}利用不透明度或色调表现折线密度}
-%\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\linewidth]{images/PC_Design_Clustering1.eps}
+\caption{\label{fig:PC_Design_Clustering1}局部捆绑折线的引力算子。本图修改自Guo等人的论文~\citep{guo2010interactive}~。
+}
+\end{figure}
+
+但交互聚类的方法往往单调繁复却不一定准确有效，可以引入自动算法。类似于抛雪球方法~\citep{zhou2009splatting}，Zhou等人~\citep{zhou2008visual}为每条折线赋予引力，使得方向和位置相近的折线相互吸引而自动汇聚起来（如图~\ref{fig:PC_Design_Clustering2}）。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.93\linewidth]{images/PC_Design_Clustering5.eps}
+\caption{\label{fig:PC_Design_Clustering2}折线的自动聚类。本图来自Zhou等人的论文~\citep{zhou2008visual}~。
+}
+\end{figure}
+
+另一方面，数据聚类方法先组织数据再进行表达，较为经典的研究是Fua等人~\citep{fua1999hierarchical}提出的层次聚类（如图~\ref{fig:PC_Design_Clustering3}）。但由于折线的位置方向各异、容易混杂，视图中往往只标识各个聚类的中心及其范围~\citep{siirtola2000direct}，无法给出单个数据的细节。为弥补这一缺点，可以同时检测出异常数据，并将聚类和异常点分开表达~\citep{novotny2006outlier}（如图~\ref{fig:PC_Design_Clustering4}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Clustering3}
+\includegraphics[width=1.0\linewidth]{images/PC_Design_Clustering6.eps}}
+\subfigure[]{\label{fig:PC_Design_Clustering4}
+\includegraphics[width=1.0\linewidth]{images/PC_Design_Clustering7.eps}}
+\caption{聚类及异常点的表达。(a)、(b)两图分别来自论文~\citep{fua1999hierarchical}、~\citep{novotny2006outlier}。}
+\end{figure}
+
+而在曲线形式~\citep{theisel2000higher}~\citep{artero2004uncovering}出现以后，能够兼容单个数据和聚类的边缘捆绑（Edge Bundling）技术，就被广泛应用在聚类表达里。类似~\citep{zhou2008visual}，McDonnell等人~\citep{mcdonnell2008illustrative}将每条折线捆绑到相应聚类的中心（如图~\ref{fig:PC_Design_Clustering5}）。在此基础上，他们利用视觉概要的方法表达数据走势与密度，产生了适合用作数据展示的阐释型（Illustrative）平行坐标（如图~\ref{fig:PC_Design_Clustering6}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Clustering5}
+\includegraphics[width=0.9\linewidth]{images/PC_Design_Clustering8.eps}}
+\subfigure[]{\label{fig:PC_Design_Clustering6}
+\includegraphics[width=0.9\linewidth]{images/PC_Design_Clustering9.eps}}
+\caption{阐释型平行坐标。本图来自McDonnell等人的论文~\citep{mcdonnell2008illustrative}。}
+\end{figure}
+
+而Heinrich等人~\citep{heinrich2011evaluation}指出，斜率在坐标轴处不连续，会违反使用曲线解决数据重合问题的初衷（见~\ref{subsection:dataCoincidence}节）。他们改用B\'ezier曲线，并分离各聚类中心以避免相近的聚类相互遮挡（如图~\ref{fig:PC_Design_Clustering7}）。借鉴于平行集合的形式~\citep{kosara2006parallel}，Palmas等人~\citep{palmas2014edge}进一步缩短曲线汇聚的长度，并利用条带来表现各维度聚类之间的关系。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Clustering7}
+\includegraphics[width=0.95\linewidth]{images/PC_Design_Clustering10.eps}}
+\subfigure[]{\label{fig:PC_Design_Clustering8}
+\includegraphics[width=0.95\linewidth]{images/PC_Design_Clustering11.eps}}
+\caption{基于B\'ezier曲线的边缘捆绑。(a)、(b)两图分别来自论文~\citep{heinrich2011evaluation}~\citep{palmas2014edge}。}
+\end{figure}
 
 \subsubsection{坐标轴排序}
 

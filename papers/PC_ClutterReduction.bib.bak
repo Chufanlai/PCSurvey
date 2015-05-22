@@ -226,21 +226,6 @@
   Timestamp                = {2015.04.08}
 }
 
-@Article{zachow2009visual,
-  Title                    = {Visual exploration of nasal airflow},
-  Author                   = {Zachow, Stefan and Muigg, Philipp and Hildebrandt, Thomas and Doleisch, Helmut and Hege, H-C},
-  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
-  Year                     = {2009},
-  Number                   = {6},
-  Pages                    = {1407--1414},
-  Volume                   = {15},
-
-  File                     = {:Visual exploration of nasal airflow.pdf:PDF},
-  Owner                    = {chufanlai},
-  Publisher                = {IEEE},
-  Timestamp                = {2015.05.21}
-}
-
 @InProceedings{zhou2009splatting,
   Title                    = {Splatting the lines in parallel coordinates},
   Author                   = {Zhou, Hong and Cui, Weiwei and Qu, Huamin and Wu, Yingcai and Yuan, Xiaoru and Zhuo, Wei},
