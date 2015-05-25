@@ -46,6 +46,22 @@
   Timestamp                = {2015.04.08}
 }
 
+@Article{berthold2003visualizing,
+  Title                    = {Visualizing fuzzy points in parallel coordinates},
+  Author                   = {Berthold, Michael R and Hall, Lawrence O},
+  Journal                  = {Fuzzy Systems, IEEE Transactions on},
+  Year                     = {2003},
+  Number                   = {3},
+  Pages                    = {369--374},
+  Volume                   = {11},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visualizing Fuzzy Points in Parallel Coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.05.25}
+}
+
 @Article{blaas2008extensions,
   Title                    = {Extensions of parallel coordinates for interactive exploration of large multi-timepoint data sets},
   Author                   = {Blaas, Jorik and Botha, Charl P and Post, Frits H},
@@ -272,7 +288,7 @@
   Pages                    = {80--95},
   Volume                   = {3},
 
-  __markedentry            = {},
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Mapping Nominal Values to Numbers for Effective Visualization.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {SAGE Publications},

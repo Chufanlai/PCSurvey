@@ -114,6 +114,22 @@
   Timestamp                = {2015.04.08}
 }
 
+@Article{berthold2003visualizing,
+  Title                    = {Visualizing fuzzy points in parallel coordinates},
+  Author                   = {Berthold, Michael R and Hall, Lawrence O},
+  Journal                  = {Fuzzy Systems, IEEE Transactions on},
+  Year                     = {2003},
+  Number                   = {3},
+  Pages                    = {369--374},
+  Volume                   = {11},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visualizing Fuzzy Points in Parallel Coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.05.25}
+}
+
 @Article{bertini2011quality,
   Title                    = {Quality metrics in high-dimensional data visualization: an overview and systematization},
   Author                   = {Bertini, Enrico and Tatu, Andrada and Keim, Daniel},
@@ -295,6 +311,20 @@
   Owner                    = {chufanlai},
   Publisher                = {Elsevier},
   Timestamp                = {2015.05.02}
+}
+
+@InProceedings{ellis2005sampling,
+  Title                    = {The sampling lens: making sense of saturated visualisations},
+  Author                   = {Ellis, Geoffrey and Bertini, Enrico and Dix, Alan},
+  Booktitle                = {CHI'05 Extended Abstracts on Human Factors in Computing Systems},
+  Year                     = {2005},
+  Organization             = {ACM},
+  Pages                    = {1351--1354},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:The Sampling Lens\: Making Sense of Saturated Visualisations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.25}
 }
 
 @Article{ellis2006enabling,
@@ -1133,6 +1163,8 @@
   Year                     = {2000},
   Pages                    = {415--420},
 
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Higher order parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.05.22}
 }
@@ -1237,6 +1269,20 @@
   File                     = {:30 Years of Multidimensional Multivariate Visualization.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.09}
+}
+
+@InProceedings{wong1996multiresolution,
+  Title                    = {Multiresolution multidimensional wavelet brushing},
+  Author                   = {Wong, Pak Chung and Bergeron, R Daniel},
+  Booktitle                = {Visualization'96. Proceedings.},
+  Year                     = {1996},
+  Organization             = {IEEE},
+  Pages                    = {141--148},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Multiresolution Multidimensional Wavelet Brushing.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.25}
 }
 
 @InProceedings{yang2003interactive,
@@ -1359,8 +1405,8 @@ high\;yang2003interactive\;zhang2012network\;;
 cking\;ellis2006enabling\;fua1999hierarchical\;geng2011angular\;guo201
 0interactive\;heinrich2011evaluation\;johansson2005revealing\;johansso
 n2006revealing\;mcdonnell2008illustrative\;muigg2011visual\;novotny200
-6outlier\;palmas2014edge\;peng2004clutter\;siirtola2000direct\;zhou200
-8visual\;zhou2009splatting\;;
+6outlier\;palmas2014edge\;peng2004clutter\;siirtola2000direct\;wong199
+6multiresolution\;zhou2008visual\;zhou2009splatting\;;
 1 ExplicitGroup:Interaction\;0\;fua1999navigating\;fua2000structure\;h
 auser2002angular\;martin1995high\;;
 1 ExplicitGroup:LineImprovement\;0\;graham2003using\;moustafa2002some\
