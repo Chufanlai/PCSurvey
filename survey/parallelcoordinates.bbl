@@ -1,0 +1,190 @@
+\begin{thebibliography}{29}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Artero et~al.(2004)Artero, de~Oliveira, and
+  Levkowitz]{artero2004uncovering}
+A.~O. Artero, M.~C.~F. de~Oliveira, and H.~Levkowitz.
+\newblock Uncovering clusters in crowded parallel coordinates visualizations.
+\newblock In \emph{Information Visualization, 2004. INFOVIS 2004. IEEE
+  Symposium on}, pages 81--88. IEEE, 2004.
+
+\bibitem[Bachthaler and Weiskopf(2008)]{bachthaler2008continuous}
+S.~Bachthaler and D.~Weiskopf.
+\newblock Continuous scatterplots.
+\newblock \emph{Visualization and Computer Graphics, IEEE Transactions on},
+  14\penalty0 (6):\penalty0 1428--1435, 2008.
+
+\bibitem[Barlow and Stuart(2004)]{barlow2004animator}
+N.~Barlow and L.~J. Stuart.
+\newblock Animator: A tool for the animation of parallel coordinates.
+\newblock In \emph{Information Visualisation, 2004. IV 2004. Proceedings.
+  Eighth International Conference on}, pages 725--730. IEEE, 2004.
+
+\bibitem[Bellman and Dreyfus(1962)]{Bellman1962}
+R.~E. Bellman and S.~E. Dreyfus.
+\newblock Applied dynamic programming.
+\newblock 1962.
+
+\bibitem[Bendix et~al.(2005)Bendix, Kosara, and Hauser]{bendix2005parallel}
+F.~Bendix, R.~Kosara, and H.~Hauser.
+\newblock Parallel sets: Visual analysis of categorical data.
+\newblock In \emph{Information Visualization, 2005. INFOVIS 2005. IEEE
+  Symposium on}, pages 133--140. IEEE, 2005.
+
+\bibitem[Blaas et~al.(2008)Blaas, Botha, and Post]{blaas2008extensions}
+J.~Blaas, C.~P. Botha, and F.~H. Post.
+\newblock Extensions of parallel coordinates for interactive exploration of
+  large multi-timepoint data sets.
+\newblock \emph{Visualization and Computer Graphics, IEEE Transactions on},
+  14\penalty0 (6):\penalty0 1436--1451, 2008.
+
+\bibitem[Cleveland and McGill(1988)]{cleveland1988dynamic}
+W.~C. Cleveland and M.~E. McGill.
+\newblock \emph{Dynamic graphics for statistics}.
+\newblock CRC Press, Inc., 1988.
+
+\bibitem[Dietzsch et~al.(2009)Dietzsch, Heinrich, Nieselt, and
+  Bartz]{dietzsch2009spray}
+J.~Dietzsch, J.~Heinrich, K.~Nieselt, and D.~Bartz.
+\newblock Spray: A visual analytics approach for gene expression data.
+\newblock In \emph{Visual Analytics Science and Technology, 2009. VAST 2009.
+  IEEE Symposium on}, pages 179--186. IEEE, 2009.
+
+\bibitem[Edsall(2003)]{edsall2003parallel}
+R.~M. Edsall.
+\newblock The parallel coordinate plot in action: design and use for geographic
+  visualization.
+\newblock \emph{Computational Statistics \& Data Analysis}, 43\penalty0
+  (4):\penalty0 605--619, 2003.
+
+\bibitem[Ferdosi and Roerdink(2011)]{ferdosi2011visualizing}
+B.~J. Ferdosi and J.~B. Roerdink.
+\newblock Visualizing high-dimensional structures by dimension ordering and
+  filtering using subspace analysis.
+\newblock In \emph{Computer Graphics Forum}, volume~30, pages 1121--1130. Wiley
+  Online Library, 2011.
+
+\bibitem[Fodor(2002)]{fodor2002survey}
+I.~K. Fodor.
+\newblock A survey of dimension reduction techniques.
+\newblock 2002.
+
+\bibitem[Grinstein et~al.(2001)Grinstein, Trutschl, and
+  Cvek]{grinstein2001high}
+G.~Grinstein, M.~Trutschl, and U.~Cvek.
+\newblock High-dimensional visualizations.
+\newblock In \emph{Data mining conference KDD workshop 2001}, pages 7--19,
+  2001.
+
+\bibitem[Heinrich and Weiskopf(2009)]{heinrich2009continuous}
+J.~Heinrich and D.~Weiskopf.
+\newblock Continuous parallel coordinates.
+\newblock \emph{Visualization and Computer Graphics, IEEE Transactions on},
+  15\penalty0 (6):\penalty0 1531--1538, 2009.
+
+\bibitem[Heinrich and Weiskopf(2013)]{heinrich2013state}
+J.~Heinrich and D.~Weiskopf.
+\newblock State of the art of parallel coordinates.
+\newblock \emph{STAR Proceedings of Eurographics}, 2013:\penalty0 95--116,
+  2013.
+
+\bibitem[Hoffman et~al.(1999)Hoffman, Grinstein, and
+  Pinkney]{hoffman1999dimensional}
+P.~Hoffman, G.~Grinstein, and D.~Pinkney.
+\newblock Dimensional anchors: a graphic primitive for multidimensional
+  multivariate information visualizations.
+\newblock In \emph{Proceedings of the 1999 workshop on new paradigms in
+  information visualization and manipulation in conjunction with the eighth ACM
+  internation conference on Information and knowledge management}, pages 9--16.
+  ACM, 1999.
+
+\bibitem[Hofmann and Vendettuoli(2013)]{hofmann2013common}
+H.~Hofmann and M.~Vendettuoli.
+\newblock Common angle plots as perception-true visualizations of categorical
+  associations.
+\newblock \emph{Visualization and Computer Graphics, IEEE Transactions on},
+  19\penalty0 (12):\penalty0 2297--2305, 2013.
+
+\bibitem[Inselberg(1985)]{inselberg1985plane}
+A.~Inselberg.
+\newblock The plane with parallel coordinates.
+\newblock \emph{The Visual Computer}, 1\penalty0 (2):\penalty0 69--91, 1985.
+
+\bibitem[Inselberg(2009)]{inselberg2009parallel}
+A.~Inselberg.
+\newblock \emph{Parallel coordinates}.
+\newblock Springer, 2009.
+
+\bibitem[Johansson et~al.(2007)Johansson, Ljung, and
+  Cooper]{johansson2007depth}
+J.~Johansson, P.~Ljung, and M.~D. Cooper.
+\newblock Depth cues and density in temporal parallel coordinates.
+\newblock In \emph{EuroVis}, volume~7, pages 35--42, 2007.
+
+\bibitem[Kandogan(2000)]{kandogan2000star}
+E.~Kandogan.
+\newblock Star coordinates: A multi-dimensional visualization technique with
+  uniform treatment of dimensions.
+\newblock In \emph{Proceedings of the IEEE Information Visualization
+  Symposium}, volume 650, page~22, 2000.
+
+\bibitem[Kosara et~al.(2006)Kosara, Bendix, and Hauser]{kosara2006parallel}
+R.~Kosara, F.~Bendix, and H.~Hauser.
+\newblock Parallel sets: Interactive exploration and visual analysis of
+  categorical data.
+\newblock \emph{Visualization and Computer Graphics, IEEE Transactions on},
+  12\penalty0 (4):\penalty0 558--568, 2006.
+
+\bibitem[Lehmann and Theisel(2011)]{lehmann2011features}
+D.~J. Lehmann and H.~Theisel.
+\newblock Features in continuous parallel coordinates.
+\newblock \emph{Visualization and Computer Graphics, IEEE Transactions on},
+  17\penalty0 (12):\penalty0 1912--1921, 2011.
+
+\bibitem[Li et~al.(2010)Li, Martens, and Van~Wijk]{li2010judging}
+J.~Li, J.-B. Martens, and J.~J. Van~Wijk.
+\newblock Judging correlation from scatterplots and parallel coordinate plots.
+\newblock \emph{Information Visualization}, 9\penalty0 (1):\penalty0 13--30,
+  2010.
+
+\bibitem[Martin and Ward(1995)]{martin1995high}
+A.~R. Martin and M.~O. Ward.
+\newblock High dimensional brushing for interactive exploration of multivariate
+  data.
+\newblock In \emph{Proceedings of the 6th Conference on Visualization'95}, page
+  271. IEEE Computer Society, 1995.
+
+\bibitem[Rosario et~al.(2004)Rosario, Rundensteiner, Brown, Ward, and
+  Huang]{rosario2004mapping}
+G.~E. Rosario, E.~A. Rundensteiner, D.~C. Brown, M.~O. Ward, and S.~Huang.
+\newblock Mapping nominal values to numbers for effective visualization.
+\newblock \emph{Information Visualization}, 3\penalty0 (2):\penalty0 80--95,
+  2004.
+
+\bibitem[Siirtola and R{\"a}ih{\"a}(2006)]{siirtola2006interacting}
+H.~Siirtola and K.-J. R{\"a}ih{\"a}.
+\newblock Interacting with parallel coordinates.
+\newblock \emph{Interacting with Computers}, 18\penalty0 (6):\penalty0
+  1278--1309, 2006.
+
+\bibitem[Van~Wijk(2005)]{van2005value}
+J.~J. Van~Wijk.
+\newblock The value of visualization.
+\newblock In \emph{Visualization, 2005. VIS 05. IEEE}, pages 79--86. IEEE,
+  2005.
+
+\bibitem[Wegenkittl et~al.(1997)Wegenkittl, Loffelmann, and
+  Groller]{wegenkittl1997visualizing}
+R.~Wegenkittl, H.~Loffelmann, and E.~Groller.
+\newblock Visualizing the behaviour of higher dimensional dynamical systems.
+\newblock In \emph{Visualization'97., Proceedings}, pages 119--125. IEEE, 1997.
+
+\bibitem[Wong and Bergeron()]{wong199430}
+P.~C. Wong and R.~D. Bergeron.
+\newblock 30 years of multidimensional multivariate visualization.
+
+\end{thebibliography}
