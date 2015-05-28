@@ -130,7 +130,7 @@
 
 \section{基本原理及主要问题}
 \label{section:basics&prob}
-在这一节里，我们将从四个方面简要介绍平行坐标的设计。在此过程中，我们会逐步阐述平行坐标的几个主要问题。作进一步的探讨前，这里先简要介绍Jarke提出的的可视分析模型~\citep{van2005value}（如图\ref{fig:Vis_model}）。在一个可视分析流程中，数据（Data）驱动了可视化展示（Visualization），用户对视图进行感知（Perception）并从中获取知识（Knowledge）。基于已有知识，用户可以通过交互探索（Exploration）来改变视图的参数设置（Specification），以产生新的可视化来发掘更多知识。由此可见，可视分析流程主要由四部分组成，分别是数据、视图、视觉感知和交互。本节余下内容以及第\ref{section:impro}节的内容都将按这四个部分展开。
+在这一节里，我们将简要介绍平行坐标的设计，并逐步阐述其存在的几个主要问题。作进一步的探讨前，这里先简要介绍Jarke提出的的可视分析模型~\citep{van2005value}（如图\ref{fig:Vis_model}）。在一个可视分析流程中，数据（Data）驱动了可视化展示（Visualization），用户对视图进行感知（Perception）并从中获取知识（Knowledge）。基于已有知识，用户可以通过交互探索（Exploration）来改变视图的参数设置（Specification），以产生新的可视化来发掘更多知识。由此可见，可视分析流程主要由四部分组成，分别是数据、视图、视觉感知和交互。本节余下内容以及第\ref{section:impro}节的内容都将按这四个部分展开。
 
 \begin{figure}[!htb]
 \centering
@@ -202,6 +202,7 @@
 在平行坐标里，能观察到的数据特征主要有两种，即聚类信息和相关关系。一方面，相似的折线形成线簇，代表着不同的聚类，反映了数据趋势、异常点等行为。但要观察到聚类，必须先处理好前面提到的视觉混杂问题，使隐含的聚类能被凸显出来。另一方面，相邻坐标轴之间的线段走向能反映这两个维度的相关关系（如图\ref{fig:PC_correlation}）。但用户对相关性的感知是否准确，和其他方法相比是否更有效等等，都需要通过实验来评估。除此之外，还有很多有意义的数据特征无法通过简单的聚类或相关来描述。而已有的特征也需要相应的自动提取算法，来遍寻和评估不同的参数设置（如不同的维度排序），以找到特征明显、信息量大的视图。
 
 \subsection{交互}
+\label{subsection:interactionBasics}
 
 基于已有的观察，用户通过交互来改变视图，以发掘更多信息。平行坐标提供两种基本的交互功能，即数据刷选和坐标轴排序。对于刷选，用户需要给每个坐标轴限定取值范围~\citep{martin1995high}。这相当于在高维空间中建立一个超立方体（Hypercube）包围盒，同时满足各维度条件的数据才会被选中。这样的方式虽然逻辑简单，但操作繁琐、缺乏灵活性，用户既无法选中任意形状的数据区域，也无法根据其他数据特征来选择数据。除了刷选，用户还可以手动调整坐标轴的顺序。但这在数据维度较高时并不现实，用户很难通过交互来发现合适的排序。
 
@@ -213,11 +214,20 @@
 \subsection{数据}
 \label{subsection:dataImpro}
 
-对数据的研究主要关注三个方面：不同的数据类型、数据隐私与不确定性、以及大数据的绘制效率。
+对数据的研究主要关注三个方面：不同的数据类型、不确定性与数据隐私、以及绘制效率。
 
 \subsubsection{不同的数据类型}
 
-正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的取值，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。Kosara~等人~\citep{kosara2006parallel}~\citep{bendix2005parallel}利用线段宽度来映射取值相同的样本数量，提出了平行集合（Parallel Set）的形式（如图\ref{fig:PC_Data_ParallelSet}）。而Hofmann等人~\citep{hofmann2013common}指出，折线的宽度并不对应它所代表的数据量（比较图\ref{fig:PC_Data_CommonAnglePlot}中的$a$、$b$两段）。他们提出用统一的角度来绘制折线，即统一角度图（Common Angle Plot）的形式，使用户能通过直线部分的宽度来准确感知集合的大小。
+正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的类别，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。一方面，可以对类别型维度进行量化~\citep{rosario2004mapping}，以表达不同类别之间的关系（如图\ref{fig:PC_Data_Quantification}），但用户依然无法判断每个类别内的数据量。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.47\linewidth]{images/PC_Data_Quantification1.eps}}
+\subfigure[]{
+\includegraphics[width=0.47\linewidth]{images/PC_Data_Quantification2.eps}}
+\caption{\label{fig:PC_Data_Quantification}类别型维度在量化前后的对比。本图源自Rosario等人的论文~\citep{rosario2004mapping}~。}
+\end{figure}
 
 \begin{figure}[!htb]
 \centering
@@ -230,6 +240,10 @@
 \caption{平行集合及其改进版本，用以在平行坐标框架下表现类别型数据。图(a)、(b)分别来自论文~\citep{kosara2006parallel}和~\citep{hofmann2013common}。}
 \end{figure}
 
+另一方面，样本数量可以用折线宽度来表示，即平行集合（Parallel Set）~\citep{kosara2006parallel}~\citep{bendix2005parallel}的形式，各个集合之间的交错、包含等逻辑关系也更为明显（如图\ref{fig:PC_Data_ParallelSet}）。而Hofmann等人~\citep{hofmann2013common}指出，斜线段的宽度并不对应它所代表的数据量（比较图\ref{fig:PC_Data_CommonAnglePlot}中的$a$、$b$两段）。他们提出用统一的角度来绘制折线，即统一角度图（Common Angle Plot）的形式，使用户能通过直线部分的宽度来准确感知集合的大小。
+
+除了类别型数据，时变数据也是一类重要的拓展，具体方法可分为静态和动态两种。其中静态的展示需要引入时间轴、并同时绘制所有时刻的数据，只是对时间轴的处理各有不同（见图\ref{fig:PC_Data_Time5})。
+
 \begin{figure}[!htb]
 \centering
 \subfigure[]{
@@ -240,8 +254,6 @@
 \includegraphics[width=0.28\linewidth]{images/PC_Data_Time5_3.eps}}
 \caption{\label{fig:PC_Data_Time5}时变平行坐标的三种静态展示方式：(a).时间轴平行于属性轴；(b).时间轴在坐标平面内垂直于属性轴；(c).时间轴垂直于坐标平面。}
 \end{figure}
-
-除了类别型数据，时变数据也是一类重要的拓展，具体方法可分为静态和动态两种。其中静态的展示需要引入时间轴、并同时绘制所有时刻的数据，只是对时间轴的处理各有不同（见图\ref{fig:PC_Data_Time5})。
 
 最简单的方式莫过于将时间轴看作一个平行轴，但各个时刻的数据被同等对待，不利于凸显数据的变化信息。Johansson等人~\citep{johansson2007depth}提出利用不透明度和色调等来区分数据变动的时间范围（如图~\ref{fig:PC_Data_Time3}）。用户可以直观地看出变化的频率和趋势，但不同时刻的数据依然会相互遮挡。
 
@@ -285,21 +297,213 @@
 
 相比于传统形式，连续型平行坐标可以在样本较少的情况下重构出精度较高的原数据域，而且能避免视图混杂问题（见~\ref{subsection:dataImpro}节），也具有较好的可扩展性和渲染效率。但它无法给出单个样本的信息，也不支持传统的交互和分析方法（如刷选、聚类等），在可用性上有一定的局限。
 
-\subsubsection{数据隐私与不确定性}
+\subsubsection{不确定性与数据隐私}
 
+无论什么类型的数据，都会在其采集和处理的过程中，因为种种原因（测量误差、样本随机性等）产生不同程度的不确定性。从结果推测的原数据因而会呈现概率分布，而这些分布则需要通过样本重构来得到。前面关于连续型数据的研究~\citep{bachthaler2008continuous}~\citep{heinrich2009continuous}都假定数据域是被充分均匀采样的，并采取线性插值的方法来进行重构。但这些假定都基于格点型的数据（Grid Data），对于不充分、非均匀采样的情形并不适用。
 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_Data_Uncertainty.eps}
+\caption{\label{fig:PC_Data_Uncertainty}平行坐标表现数据不确定性。本图来源于Feng等人的论文~\citep{feng2010matching}~。
+}
+\end{figure}
+
+对于一般的数据，Feng~\citep{feng2010matching}等人提出用高斯核密度估计（Kernel Density Estimation）来进行重构，并利用连续型平行坐标的技术来绘制数据分布（如图\ref{fig:PC_Data_Uncertainty}）。视图中密度越高的区域，其数据分布越集中，不确定性也越低。除此之外，他们还对这一技术作了曲线形式的拓展，并加入了基于密度的刷选、高亮等交互方式。
+
+不确定性往往是分析人员极力避免的因素。但反过来，我们也可以制造“额外的”不确定性，通过隐藏样本数据来保护其中的隐私信息。上述基于密度的方法给出了原数据域的分布，其信息量甚至大于样本数据，因此不适合隐私保护。Dasgupta等人~\citep{dasgupta2011adaptive}提出通过聚类来封装底层数据（如图~\ref{fig:PC_Data_Privacy}），并重新设计了相应的交互手段，以抵御不同形式的隐私攻击。但他们设置的信息保护机制过于复杂，导致视图难以理解，大大降低了其可用性。相比于隐藏单个数据，另一种方案在于只显示部分样本，或是对重构的数据域进行再采样~\citep{heinrich2011progressive}来获得虚构的样本集。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_Data_Privacy.eps}
+\caption{\label{fig:PC_Data_Privacy}通过聚类保护数据隐私，其中高亮的部分由于存在不确定性而难以理解。本图来源于Dasgupta等人的论文~\citep{dasgupta2011adaptive}~。
+}
+\end{figure}
+
+\subsubsection{绘制效率}
+
+当数据量较大时，直接绘制的效率较低，容易导致交互过程的延迟。Rosenbaum等人~\citep{rosenbaum2012progressive}提出建立数据的精度层级（Data Hierarchy），在绘制完成前通过低精度小规模的数据来提供概要信息，以平衡信息量与绘制效率（如图~\ref{fig:PC_Data_Splatting}）。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\linewidth]{images/PC_Data_Splatting.eps}
+\caption{\label{fig:PC_Data_Splatting}递进式平行坐标，用户可以根据需要指定数据的精度。本图源自Rosenbaum等人的论文~\citep{rosenbaum2012progressive}~。
+}
+\end{figure}
+
+但在视图精度不断提高的过程中，每个层级的数据都需要重新获取与绘制， 使得自顶向下绘制的总体效率比直接绘制更低。Heinrich等人~\citep{heinrich2011progressive}提出自底向上地渲染连续型平行坐标的方式。他们对数据域进行再采样，通过不断增加的样本来重现、而非直接计算密度分布，从而用户在采样的早期就可看出数据分布的特点。
 
 \subsection{视图}
-\label{subsection:dataImpro}
+\label{subsection:designImpro}
+
+如\ref{subsection:designBasics}节所述，对视图设计的研究主要关注三个问题，分别是数据重合、视觉混杂以及坐标轴的排序。
+
+\subsubsection{数据重合}
+\label{subsection:dataCoincidence}
+
+数据重合的主要问题是无法在视觉上区分多个数据。Graham等人~\citep{graham2003using}提出用曲线代替折线，从而在重合点处，用户可以通过曲率的连续性来跟踪数据（图\ref{fig:PC_Design_Curve1}）；将重合点展开则可以进一步减轻这一问题（图\ref{fig:PC_Design_Curve2}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Curve1}
+\includegraphics[width=0.58\linewidth]{images/PC_Design_Curve.eps}}
+\subfigure[]{\label{fig:PC_Design_Curve2}
+\includegraphics[width=0.28\linewidth]{images/PC_Design_Curve1.eps}}
+\caption{通过曲率连续性区分不同数据。本图源自Graham等人的论文~\citep{graham2003using}~。}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.37\linewidth]{images/PC_Design_Curve3.eps}}
+\subfigure[]{
+\includegraphics[width=0.57\linewidth]{images/PC_Design_Curve4.eps}}
+\caption{\label{fig:PC_Design_Label}平行坐标中的数据标签。本图源自Zhou等人的论文~\citep{zhou2014parallel}~。}
+\end{figure}
+
+而Zhou等人~\citep{zhou2014parallel}指出，在重合点处相切的曲线依然无法区分。他们提出用数据标签代替线段（如图\ref{fig:PC_Design_Label}），从而不论是直线或曲线，用户在放大视图时，总能通过标签的不同来区分数据。但标签相比于线段更容易相互遮挡、影响可读性，使得该方法不适合数据量大的情形。
+
+Dang等人则利用三维形式，将线元沿纵坐标堆叠起来（如图~\ref{fig:PC_Design_Stack}），这与线宽表示数量的方式~\citep{kosara2006parallel}有异曲同工之处。但三维视图容易产生遮挡、交互难度大，其实际效用还有较大争议。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.95\linewidth]{images/PC_Design_Curve5.eps}
+\caption{\label{fig:PC_Design_Stack}堆叠线元以解决数据重合问题。本图源自Dang等人的论文~\citep{kosara2006parallel}~。
+}
+\end{figure}
+
+\subsubsection{视觉混杂}
+
+视觉混杂问题是平行坐标研究的重点之一。要在有限的空间里表现大量的图元，主要有四种方法：刻画密度、视觉概要、聚类表达、以及数据压缩。
+
+密度分布可以是图元或数据的密度，并借由不透明度或色调来表达。表现图元密度的最简单方法，是调节折线的不透明度，从而折线越密集的区域可见性越高（如图~\ref{fig:PC_Data_Time3}(b)）。也可以基于屏幕像素来统计折线堆叠的情况，再利用不透明度~\citep{artero2004uncovering}~\citep{johansson2007depth}或色调~\citep{mcdonnell2008illustrative}来呈现（如图~\ref{fig:PC_Design_Density1}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.4\linewidth]{images/PC_Design_Density1.eps}}
+\subfigure[]{
+\includegraphics[width=0.55\linewidth]{images/PC_Design_Density2.eps}}
+\caption{\label{fig:PC_Design_Density1}利用不透明度或色调表现折线密度}
+\end{figure}
+
+然而在平行坐标里，对视图作密度估计并不反映数据域本身的密度。Zhou等人~\citep{zhou2009splatting}提出用抛雪球算法来检测数据聚类，并逐步显现其中的密度分布（如图~\ref{fig:PC_Design_Density2}）。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\linewidth]{images/PC_Design_Density3.eps}
+\caption{\label{fig:PC_Design_Density2}利用抛雪球算法逐步凸显数据密度。本图修改自Zhou等人的论文~\citep{zhou2009splatting}~。
+}
+\end{figure}
+
+进一步地，连续型平行坐标的相关研究~\citep{heinrich2009continuous}~\citep{lehmann2011features}~\citep{feng2010matching}~\citep{heinrich2011progressive}直接对数据域作密度估计，并揭示了相应的绘制方式（见图~\ref{fig:PC_Data_Continuous2}、图~\ref{fig:PC_Data_Uncertainty}）。如此一来，既无需费时绘制所有数据，避免了混杂问题，又能较好地保留数据分布的信息。然而在上述方法中，低密度区域的信息会因为较低的可见性而被忽略。Johansson等人~\citep{johansson2005revealing}利用传递函数（Transfer Function）来调节数据密度与可见性的关系，从而用户可以根据分析需求来凸显不同密度的区域。
+
+相比于表现密度，视觉概要的方法通过少量图元来概括数据分布。较简单的做法是分别描述各个维度的数据密度~\citep{hauser2002angular}~\citep{caat2007design}（如图~\ref{fig:PC_Design_Abstraction3}），但这无法揭示维度之间的联系。要对折线进行概括，除了密度，还须考虑其方向。Geng等人~\citep{geng2011angular}提出了带角度的直方图（Angular Histogram），在表达数据密度的同时，通过柱形的角度来指示折线走向（如图~\ref{fig:PC_Design_Abstraction2}）。Muigg等人~\citep{muigg2011visual}则利用噪声纹理（Noise Texture）传达方向信息（如图~\ref{fig:PC_Design_Abstraction1}），并将这一技术推广到其他基于折线的视图中。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Abstraction3}
+\includegraphics[width=1.0\linewidth]{images/PC_Design_Abstraction5.eps}}
+\subfigure[]{\label{fig:PC_Design_Abstraction2}
+\includegraphics[width=1.0\linewidth]{images/PC_Design_Abstraction4.eps}}
+\caption{利用直方图表现各维度上数据的密度和走向。(a)、(b)两图分别来自论文~\citep{hauser2002angular}、~\citep{geng2011angular}。}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\linewidth]{images/PC_Design_Abstraction3.eps}
+\caption{\label{fig:PC_Design_Abstraction1}利用噪声纹理表达折线的方向。本图修改自Muigg等人的论文~\citep{muigg2011visual}~。
+}
+\end{figure}
+
+然而很多时候，即使是经过概括的视图，也会因为较高的数据异质性而显得杂乱。可以先进行聚类、从根源上消除混杂，即为聚类表达型方法。这类方法可分为视觉聚类和数据聚类两种。
+
+视觉聚类方法将相似的图元汇聚起来，在平行坐标里即是将折线“捆”在一起。Guo等人\citep{guo2010interactive}提出一种具有引力的局部算子，用户可以在视图中放置算子以对部分折线进行捆绑（如图\ref{fig:PC_Design_Clustering1}）。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\linewidth]{images/PC_Design_Clustering1.eps}
+\caption{\label{fig:PC_Design_Clustering1}局部捆绑折线的引力算子。本图修改自Guo等人的论文~\citep{guo2010interactive}~。
+}
+\end{figure}
+
+但交互聚类的方法往往单调繁复却不一定准确有效，可以引入自动算法。类似于抛雪球方法~\citep{zhou2009splatting}，Zhou等人~\citep{zhou2008visual}为每条折线赋予引力，使得方向和位置相近的折线相互吸引而自动汇聚起来（如图~\ref{fig:PC_Design_Clustering2}）。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.93\linewidth]{images/PC_Design_Clustering5.eps}
+\caption{\label{fig:PC_Design_Clustering2}折线的自动聚类。本图来自Zhou等人的论文~\citep{zhou2008visual}~。
+}
+\end{figure}
+
+另一方面，数据聚类方法先组织数据再进行表达，较为经典的研究是Fua等人~\citep{fua1999hierarchical}提出的层次聚类（如图~\ref{fig:PC_Design_Clustering3}）。但由于折线的位置方向各异、容易混杂，视图中往往只标识各个聚类的中心及其范围~\citep{siirtola2000direct}~\citep{rosenbaum2012progressive}，无法给出单个数据的细节（如图~\ref{fig:PC_Data_Splatting}）。为弥补这一缺点，可以检测出异常数据，并将聚类和异常点分开表达~\citep{novotny2006outlier}（如图~\ref{fig:PC_Design_Clustering4}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Clustering3}
+\includegraphics[width=0.92\linewidth]{images/PC_Design_Clustering6.eps}}
+\subfigure[]{\label{fig:PC_Design_Clustering4}
+\includegraphics[width=0.92\linewidth]{images/PC_Design_Clustering7.eps}}
+\caption{聚类及异常点的表达。(a)、(b)两图分别来自论文~\citep{fua1999hierarchical}、~\citep{novotny2006outlier}。}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Clustering5}
+\includegraphics[width=0.9\linewidth]{images/PC_Design_Clustering8.eps}}
+\subfigure[]{\label{fig:PC_Design_Clustering6}
+\includegraphics[width=0.9\linewidth]{images/PC_Design_Clustering9.eps}}
+\caption{阐释型平行坐标。本图来自McDonnell等人的论文~\citep{mcdonnell2008illustrative}。}
+\end{figure}
+
+而在曲线形式~\citep{theisel2000higher}~\citep{graham2003using}出现以后，能够兼容单个数据和聚类的边缘捆绑（Edge Bundling）技术，就被广泛应用在聚类表达里。类似~\citep{zhou2008visual}，McDonnell等人~\citep{mcdonnell2008illustrative}将每条折线捆绑到相应聚类的中心（如图~\ref{fig:PC_Design_Clustering5}）。在此基础上，他们利用视觉概要的方法表达数据走势与密度，产生了适合用作数据展示的阐释型（Illustrative）平行坐标（如图~\ref{fig:PC_Design_Clustering6}）。
+
+而Heinrich等人~\citep{heinrich2011evaluation}指出，斜率在坐标轴处不连续，会违反使用曲线解决数据重合问题的初衷（见~\ref{subsection:dataCoincidence}节）。他们改用B\'ezier曲线，并分离各聚类中心以避免相近的聚类相互遮挡（如图~\ref{fig:PC_Design_Clustering7}）。借鉴平行集合的形式~\citep{kosara2006parallel}，Palmas等人~\citep{palmas2014edge}进一步缩短曲线汇聚的长度，并利用条带来表现各维度聚类之间的关系。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Clustering7}
+\includegraphics[width=0.95\linewidth]{images/PC_Design_Clustering10.eps}}
+\subfigure[]{\label{fig:PC_Design_Clustering8}
+\includegraphics[width=0.95\linewidth]{images/PC_Design_Clustering11.eps}}
+\caption{基于B\'ezier曲线的边缘捆绑。(a)、(b)两图分别来自论文~\citep{heinrich2011evaluation}~\citep{palmas2014edge}。}
+\end{figure}
+
+鉴于散点图擅长表现数据聚类，Yuan等人~\citep{yuan2009scattering}在坐标轴之间嵌入散点图，并借助点的聚类来引导折线捆绑（如图~\ref{fig:PC_Design_Clustering9}）。该形式既表现了散点分布，也减轻了视觉混杂问题。但其效果取决于数据本身的聚类性能，且不适用于维度较高的情形。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.88\linewidth]{images/PC_Design_Clustering12.eps}
+\caption{\label{fig:PC_Design_Clustering9}折线的自动聚类。本图来自Zhou等人的论文~\citep{zhou2008visual}~。
+}
+\end{figure}
+
+数据压缩类的方法，即是通过少数具有代表性的样本来呈现数据分布。其中最简单的手段是数据采样，Ellis等人~\citep{ellis2005sampling}~\citep{ellis2006enabling}提出采样透镜（Sampling Lens）的方式，用户可以交互地指定需要采样的视图区域（如图~\ref{fig:PC_Design_Clustering10}）。但圆形的区域并不适合选择折线，且随机采样得到的样本不一定具有代表性。Wong等人~\citep{wong1996multiresolution}使用小波变换来压缩数据（如图~\ref{fig:PC_Design_Clustering11}），并允许用户通过折线刷选来指定压缩的精度和范围，但构造的样本并不具有现实意义。Rosenbaum等人~\citep{rosenbaum2012progressive}进一步引入了递归区域划分技术（Recursive Interval Subdivision），使用中位数作为代表样本，并将其与小波压缩、层次聚类相比较。至于哪种压缩更能保留数据特征，Johansson等人~\citep{johansson2008screen}提出了一种基于距离变换（Distance Transformation）的衡量方法，用以定量地指导压缩方式的选择（如图~\ref{fig:PC_Design_Sampling}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Clustering10}
+\includegraphics[width=0.52\linewidth]{images/PC_Design_Clustering14.eps}}
+\subfigure[]{\label{fig:PC_Design_Clustering11}
+\includegraphics[width=0.39\linewidth]{images/PC_Design_Clustering13.eps}}
+\caption{数据压缩类方法。图(a)、(b)分别来自论文~\citep{ellis2005sampling}和~\citep{palmas2014edge}。}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.9\linewidth]{images/PC_Design_Sampling2.eps}}
+\subfigure[]{
+\includegraphics[width=0.9\linewidth]{images/PC_Design_Sampling1.eps}}
+\caption{\label{fig:PC_Design_Sampling}不同的压缩方法在同一压缩率下的比较。其中图(a)丢失了低密度区域的信息，而图(b)则保留了更多的数据特征。本图修改自Johansson等人的论文~\citep{johansson2008screen}。}
+\end{figure}
+
+\subsubsection{坐标轴排序}
 
 \subsection{感知}
-\label{subsection:dataImpro}
+\label{subsection:perceptionImpro}
 
 \subsection{交互}
-\label{subsection:dataImpro}
-
-\section{平行坐标的应用}
-\label{section:applications}
+\label{subsection:interactionImpro}
 
 \section{探讨与展望}
 \label{section:challenges}

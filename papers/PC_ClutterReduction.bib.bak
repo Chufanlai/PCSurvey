@@ -10,7 +10,7 @@
   Organization             = {IEEE},
   Pages                    = {81--88},
 
-  __markedentry            = {[chufanlai:]},
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Uncovering clusters in crowded parallel coordinates visualizations.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -25,6 +25,7 @@
   Pages                    = {70--79},
   Volume                   = {13},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Design and evaluation of tiled parallel coordinate visualization of multichannel EEG data.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
@@ -40,11 +41,24 @@
   Pages                    = {1044--1052},
   Volume                   = {16},
 
-  __markedentry            = {[chufanlai:]},
   File                     = {:Stacking Graphic Elements to Avoid Over-Plotting.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
   Timestamp                = {2015.04.08}
+}
+
+@InProceedings{ellis2005sampling,
+  Title                    = {The sampling lens: making sense of saturated visualisations},
+  Author                   = {Ellis, Geoffrey and Bertini, Enrico and Dix, Alan},
+  Booktitle                = {CHI'05 Extended Abstracts on Human Factors in Computing Systems},
+  Year                     = {2005},
+  Organization             = {ACM},
+  Pages                    = {1351--1354},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:The Sampling Lens\: Making Sense of Saturated Visualisations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.25}
 }
 
 @Article{ellis2006enabling,
@@ -56,6 +70,7 @@
   Pages                    = {717--724},
   Volume                   = {12},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Enabling automatic clutter reduction in parallel coordinate plots.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
@@ -70,6 +85,7 @@
   Organization             = {IEEE Computer Society Press},
   Pages                    = {43--50},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Hierarchical parallel coordinates for exploration of large datasets.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -84,23 +100,10 @@
   Pages                    = {2572--2580},
   Volume                   = {17},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Angular histograms\: Frequency-based visualiza- tions for large, high dimensional data.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
-  Timestamp                = {2015.04.08}
-}
-
-@InProceedings{graham2003using,
-  Title                    = {Using curves to enhance parallel coordinate visualisations},
-  Author                   = {Graham, Martin and Kennedy, Jessie},
-  Booktitle                = {Information Visualization, 2003. IV 2003. Proceedings. Seventh International Conference on},
-  Year                     = {2003},
-  Organization             = {IEEE},
-  Pages                    = {10--16},
-
-  __markedentry            = {[chufanlai:]},
-  File                     = {:Using curves to enhance parallel coordinate visualisations.pdf:PDF},
-  Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
 }
 
@@ -112,6 +115,7 @@
   Organization             = {IEEE},
   Pages                    = {97--104},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Interactive local clustering operations for high dimensional data in parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -123,24 +127,10 @@
   Journal                  = {arXiv preprint arXiv:1109.6073},
   Year                     = {2011},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Evaluation of a bundling technique for parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
-}
-
-@Article{heinrich2009continuous,
-  Title                    = {Continuous parallel coordinates},
-  Author                   = {Heinrich, Julian and Weiskopf, Daniel},
-  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
-  Year                     = {2009},
-  Number                   = {6},
-  Pages                    = {1531--1538},
-  Volume                   = {15},
-
-  File                     = {:Continuous parallel coordinates.pdf:PDF},
-  Owner                    = {chufanlai},
-  Publisher                = {IEEE},
-  Timestamp                = {2015.04.06}
 }
 
 @InProceedings{johansson2008screen,
@@ -153,9 +143,25 @@
   Pages                    = {1039--1046},
   Volume                   = {27},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:A screen space quality method for data abstraction.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
+}
+
+@Article{johansson2006revealing,
+  Title                    = {Revealing structure in visualizations of dense 2D and 3D parallel coordinates},
+  Author                   = {Johansson, Jimmy and Ljung, Patric and Jern, Mikael and Cooper, Matthew},
+  Journal                  = {Information Visualization},
+  Year                     = {2006},
+  Number                   = {2},
+  Pages                    = {125--136},
+  Volume                   = {5},
+
+  File                     = {:Revealing structure in visualizations of dense 2d and 3d parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.05.20}
 }
 
 @InProceedings{johansson2005revealing,
@@ -166,24 +172,9 @@
   Organization             = {IEEE},
   Pages                    = {125--132},
 
-  __markedentry            = {[chufanlai:]},
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Revealing structure within clustered parallel coordinates displays.pdf:PDF},
   Owner                    = {chufanlai},
-  Timestamp                = {2015.04.08}
-}
-
-@Article{lehmann2011features,
-  Title                    = {Features in continuous parallel coordinates},
-  Author                   = {Lehmann, Dirk J and Theisel, Holger},
-  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
-  Year                     = {2011},
-  Number                   = {12},
-  Pages                    = {1912--1921},
-  Volume                   = {17},
-
-  File                     = {:Features in continuous parallel coordinates.pdf:PDF},
-  Owner                    = {chufanlai},
-  Publisher                = {IEEE},
   Timestamp                = {2015.04.08}
 }
 
@@ -197,6 +188,7 @@
   Pages                    = {1031--1038},
   Volume                   = {27},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Illustrative parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -212,7 +204,7 @@
   Pages                    = {643--652},
   Volume                   = {30},
 
-  __markedentry            = {[chufanlai:]},
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Visual Coherence for Large‐Scale Line‐Plot Visualizations.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -227,6 +219,7 @@
   Pages                    = {893--900},
   Volume                   = {12},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Outlier-preserving focus+ context visualization in parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
@@ -241,22 +234,10 @@
   Organization             = {IEEE},
   Pages                    = {57--64},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:An edge-bundling layout for interactive parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.09}
-}
-
-@InProceedings{peng2004clutter,
-  Title                    = {Clutter reduction in multi-dimensional data visualization using dimension reordering},
-  Author                   = {Peng, Wei and Ward, Matthew O and Rundensteiner, Elke A},
-  Booktitle                = {Information Visualization, 2004. INFOVIS 2004. IEEE Symposium on},
-  Year                     = {2004},
-  Organization             = {IEEE},
-  Pages                    = {89--96},
-
-  File                     = {:Clutter reduction in multi-dimensional data visualization using dimension reordering.pdf:PDF},
-  Owner                    = {chufanlai},
-  Timestamp                = {2015.04.08}
 }
 
 @InProceedings{siirtola2000direct,
@@ -267,8 +248,39 @@
   Organization             = {IEEE},
   Pages                    = {373--378},
 
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Direct manipulation of parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{wong1996multiresolution,
+  Title                    = {Multiresolution multidimensional wavelet brushing},
+  Author                   = {Wong, Pak Chung and Bergeron, R Daniel},
+  Booktitle                = {Visualization'96. Proceedings.},
+  Year                     = {1996},
+  Organization             = {IEEE},
+  Pages                    = {141--148},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Multiresolution Multidimensional Wavelet Brushing.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.25}
+}
+
+@Article{yuan2009scattering,
+  Title                    = {Scattering points in parallel coordinates},
+  Author                   = {Yuan, Xiaoru and Guo, Peihong and Xiao, He and Zhou, Hong and Qu, Huamin},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2009},
+  Number                   = {6},
+  Pages                    = {1001--1008},
+  Volume                   = {15},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Scattering points in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
   Timestamp                = {2015.04.08}
 }
 
@@ -282,7 +294,7 @@
   Pages                    = {759--766},
   Volume                   = {28},
 
-  __markedentry            = {[chufanlai:]},
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Splatting the lines in parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
@@ -298,9 +310,25 @@
   Pages                    = {1047--1054},
   Volume                   = {27},
 
-  __markedentry            = {[chufanlai:]},
+  __markedentry            = {[chufanlai:1]},
   File                     = {:Visual clustering in parallel coordinates.pdf:PDF},
   Owner                    = {chufanlai},
   Timestamp                = {2015.04.08}
+}
+
+@comment{jabref-meta: groupsversion:3;}
+
+@comment{jabref-meta: groupstree:
+0 AllEntriesGroup:;
+1 ExplicitGroup:Abstraction\;0\;caat2007design\;geng2011angular\;muigg
+2011visual\;;
+1 ExplicitGroup:Clustering\;0\;fua1999hierarchical\;guo2010interactive
+\;heinrich2011evaluation\;mcdonnell2008illustrative\;novotny2006outlie
+r\;palmas2014edge\;siirtola2000direct\;yuan2009scattering\;zhou2008vis
+ual\;;
+1 ExplicitGroup:Sampling\;0\;ellis2005sampling\;ellis2006enabling\;joh
+ansson2008screen\;wong1996multiresolution\;;
+1 ExplicitGroup:Blending\;0\;artero2004uncovering\;johansson2005reveal
+ing\;zhou2009splatting\;;
 }
 

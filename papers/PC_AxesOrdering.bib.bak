@@ -2,6 +2,19 @@
 % Encoding: UTF-8
 
 
+@InProceedings{ankerst1998similarity,
+  Title                    = {Similarity clustering of dimensions for an enhanced visualization of multidimensional data},
+  Author                   = {Ankerst, Mihael and Berchtold, Stefan and Keim, Daniel A},
+  Booktitle                = {Information Visualization, 1998. Proceedings. IEEE Symposium on},
+  Year                     = {1998},
+  Organization             = {IEEE},
+  Pages                    = {52--60},
+
+  File                     = {:Similarity Clustering of Dimensions for an enhanced visualization of multidimensional data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.27}
+}
+
 @InProceedings{ferdosi2011visualizing,
   Title                    = {Visualizing High-Dimensional Structures by Dimension Ordering and Filtering using Subspace Analysis},
   Author                   = {Ferdosi, Bilkis J and Roerdink, Jos BTM},
@@ -72,6 +85,19 @@
   Timestamp                = {2015.04.08}
 }
 
+@InProceedings{peng2004clutter,
+  Title                    = {Clutter reduction in multi-dimensional data visualization using dimension reordering},
+  Author                   = {Peng, Wei and Ward, Matthew O and Rundensteiner, Elke A},
+  Booktitle                = {Information Visualization, 2004. INFOVIS 2004. IEEE Symposium on},
+  Year                     = {2004},
+  Organization             = {IEEE},
+  Pages                    = {89--96},
+
+  File                     = {:Clutter reduction in multi-dimensional data visualization using dimension reordering.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
 @Article{tatu2011automated,
   Title                    = {Automated analytical methods to support visual exploration of high-dimensional data},
   Author                   = {Tatu, Andrada and Albuquerque, Georgia and Eisemann, Martin and Bak, Peter and Theisel, Holger and Magnor, Marcus and Keim, Daniel},
@@ -85,6 +111,21 @@
   Owner                    = {chufanlai},
   Publisher                = {IEEE},
   Timestamp                = {2015.04.08}
+}
+
+@Article{wilkinson2006high,
+  Title                    = {High-dimensional visual analytics: Interactive exploration guided by pairwise views of point distributions},
+  Author                   = {Wilkinson, Leland and Anand, Anushka and Grossman, Robert},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2006},
+  Number                   = {6},
+  Pages                    = {1363--1372},
+  Volume                   = {12},
+
+  File                     = {:High-Dimensional Visual Analytics\: Interactive Exploration Guided by Pairwise Views of Point Distributions.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.27}
 }
 
 @InProceedings{yang2003interactive,
