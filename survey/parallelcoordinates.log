@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2015.4.13)  5 MAY 2015 16:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2015.4.13)  15 JUN 2015 05:46
 entering extended mode
 **parallelcoordinates.tex
 (D:\Survey\PCSurvey\survey\parallelcoordinates.tex
@@ -481,17 +481,7 @@ File: c70gbsn.fd 2008/12/29 4.8.2
 (F:\CTEX\MiKTeX\tex\latex\cjk\UTF8\c70gbsn.fdx
 File: c70gbsn.fdx 2008/12/29 4.8.2
 )
-(D:\Survey\PCSurvey\survey\parallelcoordinates.aux
-
-LaTeX Warning: Label `subsection:dataImpro' multiply defined.
-
-
-LaTeX Warning: Label `subsection:dataImpro' multiply defined.
-
-
-LaTeX Warning: Label `subsection:dataImpro' multiply defined.
-
-)
+(D:\Survey\PCSurvey\survey\parallelcoordinates.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
@@ -608,12 +598,61 @@ Underfull \vbox (badness 1502) has occurred while \output is active []
 
 File: images/PC_demo.eps Graphic file (type eps)
 
-<images/PC_demo.eps> [1
+<images/PC_demo.eps>
+
+LaTeX Warning: Reference `section:applications' on page 1 undefined on input li
+ne 129.
+
+[1
 
 
 ]
+Underfull \hbox (badness 1552) in paragraph at lines 133--134
+[]\C70/gbsn/m/n/12/57 ( \C70/gbsn/m/n/12/8f Ÿ \C70/gbsn/m/n/12/4e   \C70/gbsn/m
+/n/12/82 Ç \C70/gbsn/m/n/12/91 Ã \C70/gbsn/m/n/12/ff  \C70/gbsn/m/n/12/62  \C
+70/gbsn/m/n/12/4e Ï \C70/gbsn/m/n/12/5c  \C70/gbsn/m/n/12/7b Ä \C70/gbsn/m/n/1
+2/89 Å \C70/gbsn/m/n/12/4e À \C70/gbsn/m/n/12/7e Õ \C70/gbsn/m/n/12/5e s \C70/g
+bsn/m/n/12/88 L \C70/gbsn/m/n/12/57 P
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 133--134
+\C70/gbsn/m/n/12/68  \C70/gbsn/m/n/12/76 Ñ \C70/gbsn/m/n/12/8b æ ° \C70/gbsn/m
+/n/12/ff  \C70/gbsn/m/n/12/5e v \C70/gbsn/m/n/12/90  \C70/gbsn/m/n/12/6b e \C
+70/gbsn/m/n/12/96  \C70/gbsn/m/n/12/8f  \C70/gbsn/bx/n/12/51 v \C70/gbsn/m/n/
+12/5b X \C70/gbsn/m/n/12/57 ( \C70/gbsn/m/n/12/76 Ñ \C70/gbsn/bx/n/12/51 ‡ \C70
+/gbsn/m/n/12/4e * ; \C70/gbsn/m/n/12/89 Å
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 133--134
+\C70/gbsn/m/n/12/95 Ó \C70/gbsn/m/n/12/98 ò \C70/gbsn/m/n/12/30  \C70/gbsn/m/n
+/12/4f \ \C70/gbsn/m/n/12/8f € \C70/gbsn/m/n/12/4e   \C70/gbsn/m/n/12/6b e \C70
+/gbsn/m/n/12/76 Ñ \C70/gbsn/m/n/12/63 ¢ \C70/gbsn/m/n/12/8b ® \C70/gbsn/m/n/12/
+52 M \C70/gbsn/m/n/12/ff  \C70/gbsn/m/n/12/8f Ÿ \C70/gbsn/m/n/12/91 Ã \C70/gbs
+n/bx/n/12/51 H \C70/gbsn/m/n/12/7b Ä \C70/gbsn/m/n/12/89 Å \C70/gbsn/m/n/12/4e 
+À
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 133--134
+\C70/gbsn/m/n/12/57 ( \C70/gbsn/m/n/12/4e   * \C70/gbsn/m/n/12/53 Ô \C70/gbsn/m
+/n/12/89 ∆ \C70/gbsn/m/n/12/52  \C70/gbsn/m/n/12/67 ê \C70/gbsn/m/n/12/6d A \C
+70/gbsn/m/n/12/7a  \C70/gbsn/m/n/12/4e - \C70/gbsn/m/n/12/ff  \C70/gbsn/m/n/1
+2/65 p \C70/gbsn/m/n/12/63 n \C70/gbsn/m/n/12/ff \OT1/cmr/m/n/12 Data\C70/gbsn
+/m/n/12/ff 	 \C70/gbsn/m/n/12/9a q
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 133--134
+\C70/gbsn/m/n/12/56 ˛ \C70/gbsn/m/n/12/8f € \C70/gbsn/m/n/12/88 L \C70/gbsn/m/n
+/12/61  \C70/gbsn/m/n/12/77 Â \C70/gbsn/m/n/12/ff \OT1/cmr/m/n/12 Perception\
+C70/gbsn/m/n/12/ff 	 \C70/gbsn/m/n/12/5e v \C70/gbsn/m/n/12/4e Œ - \C70/gbsn/m/
+n/12/83 ∑ \C70/gbsn/m/n/12/53 ÷ \C70/gbsn/m/n/12/77 Â \C70/gbsn/m/n/12/8b ∆
+ []
+
 File: images/Vis_model.eps Graphic file (type eps)
- <images/Vis_model.eps>
+<images/Vis_model.eps>
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 144.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -621,22 +660,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 144.
 File: images/PC_principle.eps Graphic file (type eps)
- <images/PC_principle.eps>
-[2]
+ <images/PC_principle.eps> [2]
 File: images/PC_coincide.eps Graphic file (type eps)
  <images/PC_coincide.eps>
 File: images/PC_clutter.eps Graphic file (type eps)
- <images/PC_clutter.eps>
-File: images/PC_reordering.eps Graphic file (type eps)
 
-<images/PC_reordering.eps>
+<images/PC_clutter.eps>
+File: images/PC_reordering.eps Graphic file (type eps)
+ <images/PC_reordering.eps>
 File: images/PC_correlation.eps Graphic file (type eps)
- <images/PC_correlation.eps> [3]
+ <images/PC_correlation.eps>
+[3]
+Underfull \vbox (badness 2452) has occurred while \output is active []
+
+File: images/PC_Data_Quantification1.eps Graphic file (type eps)
+
+<images/PC_Data_Quantification1.eps>
+File: images/PC_Data_Quantification2.eps Graphic file (type eps)
+ <images/PC_Data_Quantification2.eps>
 File: images/PC_Data_ParallelSet.eps Graphic file (type eps)
 
 <images/PC_Data_ParallelSet.eps>
 File: images/PC_Data_CommonAnglePlot.eps Graphic file (type eps)
- <images/PC_Data_CommonAnglePlot.eps>
+ <images/PC_Data_CommonAnglePlot.eps> [4]
 File: images/PC_Data_Time5_1.eps Graphic file (type eps)
 
 <images/PC_Data_Time5_1.eps>
@@ -644,7 +690,7 @@ File: images/PC_Data_Time5_2.eps Graphic file (type eps)
  <images/PC_Data_Time5_2.eps>
 File: images/PC_Data_Time5_3.eps Graphic file (type eps)
 
-<images/PC_Data_Time5_3.eps> [4]
+<images/PC_Data_Time5_3.eps>
 File: images/PC_Data_Time4.eps Graphic file (type eps)
  <images/PC_Data_Time4.eps>
 File: images/PC_Data_Time3.eps Graphic file (type eps)
@@ -654,26 +700,163 @@ File: images/PC_Data_Time1.eps Graphic file (type eps)
  <images/PC_Data_Time1.eps>
 File: images/PC_Data_Time2.eps Graphic file (type eps)
 
-<images/PC_Data_Time2.eps>
+<images/PC_Data_Time2.eps> [5]
 File: images/PC_Data_Continuous2.eps Graphic file (type eps)
- <images/PC_Data_Continuous2.eps> [5]
-(D:\Survey\PCSurvey\survey\parallelcoordinates.bbl
-Underfull \hbox (badness 1325) in paragraph at lines 16--20
+ <images/PC_Data_Continuous2.eps>
+File: images/PC_Data_Uncertainty.eps Graphic file (type eps)
+
+<images/PC_Data_Uncertainty.eps>
+File: images/PC_Data_Privacy.eps Graphic file (type eps)
+ <images/PC_Data_Privacy.eps>
+File: images/PC_Data_Splatting.eps Graphic file (type eps)
+
+<images/PC_Data_Splatting.eps> [6]
+File: images/PC_Design_Curve.eps Graphic file (type eps)
+ <images/PC_Design_Curve.eps>
+File: images/PC_Design_Curve1.eps Graphic file (type eps)
+
+<images/PC_Design_Curve1.eps>
+File: images/PC_Design_Curve3.eps Graphic file (type eps)
+ <images/PC_Design_Curve3.eps>
+File: images/PC_Design_Curve4.eps Graphic file (type eps)
+
+<images/PC_Design_Curve4.eps>
+File: images/PC_Design_Curve5.eps Graphic file (type eps)
+ <images/PC_Design_Curve5.eps>
+File: images/PC_Design_Density1.eps Graphic file (type eps)
+
+<images/PC_Design_Density1.eps>
+File: images/PC_Design_Density2.eps Graphic file (type eps)
+ <images/PC_Design_Density2.eps>
+File: images/PC_Design_Density3.eps Graphic file (type eps)
+
+<images/PC_Design_Density3.eps> [7]
+File: images/PC_Design_Abstraction5.eps Graphic file (type eps)
+ <images/PC_Design_Abstraction5.eps>
+File: images/PC_Design_Abstraction4.eps Graphic file (type eps)
+
+<images/PC_Design_Abstraction4.eps>
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 406--409
+ [][] 
+ []
+
+
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 406--409
+ [] 
+ []
+
+File: images/PC_Design_Abstraction3.eps Graphic file (type eps)
+<images/PC_Design_Abstraction3.eps>
+File: images/PC_Design_Clustering1.eps Graphic file (type eps)
+ <images/PC_Design_Clustering1.eps>
+File: images/PC_Design_Clustering5.eps Graphic file (type eps)
+
+<images/PC_Design_Clustering5.eps> [8]
+File: images/PC_Design_Clustering6.eps Graphic file (type eps)
+ <images/PC_Design_Clustering6.eps>
+File: images/PC_Design_Clustering7.eps Graphic file (type eps)
+
+<images/PC_Design_Clustering7.eps>
+File: images/PC_Design_Clustering8.eps Graphic file (type eps)
+ <images/PC_Design_Clustering8.eps>
+File: images/PC_Design_Clustering9.eps Graphic file (type eps)
+
+<images/PC_Design_Clustering9.eps>
+Underfull \hbox (badness 1067) in paragraph at lines 459--460
+\C70/gbsn/m/n/12/62 Ä \C70/gbsn/bx/n/12/67 / \C70/gbsn/m/n/12/ff  \C70/gbsn/m/
+n/12/5c 1 \C70/gbsn/m/n/12/88 ´ \C70/gbsn/m/n/12/5e  \C70/gbsn/m/n/12/6c € \C7
+0/gbsn/m/n/12/5e î \C70/gbsn/m/n/12/75 ( \C70/gbsn/bx/n/12/57 ( \C70/gbsn/m/n/1
+2/80 Z \C70/gbsn/bx/n/12/7c { \C70/gbsn/m/n/12/88 h \C70/gbsn/m/n/12/8f æ \C70/
+gbsn/bx/n/12/91 Ã \C70/gbsn/m/n/12/30  \C70/gbsn/bx/n/12/7c { \C70/gbsn/m/n/12
+/4f <
+ []
+
+File: images/PC_Design_Clustering10.eps Graphic file (type eps)
+<images/PC_Design_Clustering10.eps>
+File: images/PC_Design_Clustering11.eps Graphic file (type eps)
+ <images/PC_Design_Clustering11.eps>
+File: images/PC_Design_Clustering12.eps Graphic file (type eps)
+
+<images/PC_Design_Clustering12.eps> [9]
+File: images/PC_Design_Clustering14.eps Graphic file (type eps)
+ <images/PC_Design_Clustering14.eps>
+File: images/PC_Design_Clustering13.eps Graphic file (type eps)
+
+<images/PC_Design_Clustering13.eps>
+File: images/PC_Design_Sampling2.eps Graphic file (type eps)
+ <images/PC_Design_Sampling2.eps>
+File: images/PC_Design_Sampling1.eps Graphic file (type eps)
+
+<images/PC_Design_Sampling1.eps>
+File: images/PC_Design_Reordering1.eps Graphic file (type eps)
+ <images/PC_Design_Reordering1.eps>
+File: images/PC_Design_Reordering2.eps Graphic file (type eps)
+
+<images/PC_Design_Reordering2.eps>
+File: images/PC_Design_Reordering3.eps Graphic file (type eps)
+ <images/PC_Design_Reordering3.eps> [10]
+File: images/PC_Design_Reordering4.eps Graphic file (type eps)
+
+<images/PC_Design_Reordering4.eps>
+File: images/PC_Design_Reordering5.eps Graphic file (type eps)
+ <images/PC_Design_Reordering5.eps>
+File: images/PC_Design_Reordering7.eps Graphic file (type eps)
+
+<images/PC_Design_Reordering7.eps>
+File: images/PC_Design_Reordering8.eps Graphic file (type eps)
+ <images/PC_Design_Reordering8.eps>
+Underfull \hbox (badness 1552) in paragraph at lines 550--551
+[]\C70/gbsn/m/n/12/80  \C70/gbsn/m/n/12/86 Q \C70/gbsn/bx/n/12/52 0 \C70/gbsn/
+bx/n/12/65 c \C70/gbsn/m/n/12/70 π \C70/gbsn/m/n/12/56 ˛ \C70/gbsn/m/n/12/77 È 
+\C70/gbsn/bx/n/12/96 5 \C70/gbsn/m/n/12/80 ˝ \C70/gbsn/m/n/12/59  \C70/gbsn/m/
+n/12/88 h \C70/gbsn/bx/n/12/8f æ \C70/gbsn/m/n/12/62 @ \C70/gbsn/bx/n/12/67 	 \
+C70/gbsn/bx/n/12/5b P \C70/gbsn/m/n/12/7a z
+ []
+
+File: images/PC_Design_Reordering6.eps Graphic file (type eps)
+<images/PC_Design_Reordering6.eps>
+(D:\Survey\PCSurvey\survey\parallelcoordinates.bbl [11]
+Underfull \hbox (badness 1325) in paragraph at lines 24--28
 []\OT1/cmr/m/n/12 S. Bachthaler and D. Weiskopf.  Con-tin-u-
  []
 
-[6]) [7] (D:\Survey\PCSurvey\survey\parallelcoordinates.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+Underfull \hbox (badness 1043) in paragraph at lines 72--76
+[]\OT1/cmr/m/n/12 A. Das-gup-ta and R. Kosara.  Pargnos-tic-s:
+ []
+
+[12]
+Underfull \hbox (badness 2229) in paragraph at lines 143--148
+[]\OT1/cmr/m/n/12 Z. Geng, Z. Peng, R. S. Laramee, J. C.
+ []
+
+
+Underfull \hbox (badness 4792) in paragraph at lines 242--247
+[]\OT1/cmr/m/n/12 J. Jo-hans-son, M. Coop-er, and M. Jern.
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 242--247
+\OT1/cmr/m/n/12 3-dimensional dis-play for clus-tered multi-
+ []
+
+[13]
+Underfull \hbox (badness 1320) in paragraph at lines 295--299
+\OT1/cmr/m/n/12 to-many re-la-tion-al par-al-lel co-or-di-nates dis-
+ []
+
+[14]) [15] (D:\Survey\PCSurvey\survey\parallelcoordinates.aux)
+
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5127 strings out of 495355
- 65486 string characters out of 3183882
- 140852 words of memory out of 3000000
- 8127 multiletter control sequences out of 15000+200000
- 41825 words of font info for 149 fonts, out of 3000000 for 9000
+ 5659 strings out of 495355
+ 75999 string characters out of 3183882
+ 143593 words of memory out of 3000000
+ 8619 multiletter control sequences out of 15000+200000
+ 42208 words of font info for 151 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,4n,29p,4883b,1484s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,4n,29p,4883b,1693s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on parallelcoordinates.dvi (7 pages, 38192 bytes).
+Output written on parallelcoordinates.dvi (15 pages, 76592 bytes).

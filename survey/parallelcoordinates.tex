@@ -176,7 +176,7 @@
 }
 \end{figure}
 
-其三，平行坐标能够表现相邻维度间的关系，但信息量偏低。假设数据有$n$个维度，它们两两组合可得到$\frac{n(n-1)}{2}$个二维子空间，散点图矩阵能容纳其中的所有信息。但在平行坐标里，用户无法观察两个不相邻维度间的关系,因此只能看到$(n-1)$个二维子空间。换言之，平行坐标只表现了$\frac{2}{n}$的维度关系，不恰当的坐标轴排序很容易掩埋重要的相关性信息（如图\ref{fig:PC_reordering})。
+其三，平行坐标能够表现相邻维度间的关系，但信息量偏低。假设数据有$n$个维度，它们两两组合可得到$\frac{n(n-1)}{2}$个二维子空间，散点图矩阵能容纳其中的所有信息。但在平行坐标里，用户无法观察两个不相邻维度间的关系,因此只能看到$(n-1)$个二维子空间。换言之，平行坐标只表现了$\frac{2}{n}$的维度关系，不恰当的坐标轴排序很容易掩埋重要的信息（如图\ref{fig:PC_reordering})。
 
 \begin{figure}[!htb]
 \centering
@@ -217,6 +217,7 @@
 对数据的研究主要关注三个方面：不同的数据类型、不确定性与数据隐私、以及绘制效率。
 
 \subsubsection{不同的数据类型}
+\label{subsubsection:dataType}
 
 正如~\ref{subsection:designBasics}节所述，由于折线重叠问题，平行坐标并不适合表现类别型数据。在这种数据里，大量样本具有相同的类别，它们相互之间无法被区分。但事实上，这些数据的分析重点并不在于单个样本，而是同一类样本的集合，因此需要在平行坐标里加入表达集合关系的元素。一方面，可以对类别型维度进行量化~\citep{rosario2004mapping}，以表达不同类别之间的关系（如图\ref{fig:PC_Data_Quantification}），但用户依然无法判断每个类别内的数据量。
 
@@ -494,10 +495,66 @@ Dang等人则利用三维形式，将线元沿纵坐标堆叠起来（如图~\re
 \includegraphics[width=0.9\linewidth]{images/PC_Design_Sampling2.eps}}
 \subfigure[]{
 \includegraphics[width=0.9\linewidth]{images/PC_Design_Sampling1.eps}}
-\caption{\label{fig:PC_Design_Sampling}不同的压缩方法在同一压缩率下的比较。其中图(a)丢失了低密度区域的信息，而图(b)则保留了更多的数据特征。本图修改自Johansson等人的论文~\citep{johansson2008screen}。}
+\caption{\label{fig:PC_Design_Sampling}不同的压缩方法在相同压缩率下的比较。其中图(a)丢失了低密度区域的信息，而图(b)则保留了更多的数据特征。本图修改自Johansson等人的论文~\citep{johansson2008screen}。}
 \end{figure}
 
 \subsubsection{坐标轴排序}
+正如\ref{subsection:designBasics}节所述，坐标轴的顺序决定了哪些二维子空间会被显示，它对于整个视图的表达效果至关重要。
+
+较为直接的做法是将相似的维度放在相邻的位置，使轴间的子空间具有较高的相关性。Ankerst等人~\citep{ankerst1998similarity}最早探讨了基于相关性的排序，并证明了无论在何种准则下，最优排序都是一个NP完全问题。尽管可以用各种自动算法（如蚁群算法~\citep{ankerst1998similarity}、贪心算法~\citep{johansson2009interactive}、分支定界~\citep{dasgupta2010pargnostics}等等）求得近似解，用户往往无法了解和参与自动排序的过程。为此Zhang等人~\citep{zhang2012network}提出了基于相关性图的交互式排序方法。通过相关性图（图~\ref{fig:PC_Design_Reordering1}右图），用户能够观察各维度之间关系的强弱。据此可以规划一条遍历图上各点的路径，而遍历的顺序即为坐标轴顺序。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.98\linewidth]{images/PC_Design_Reordering1.eps}
+\caption{\label{fig:PC_Design_Reordering1}交互式坐标轴排序。本图来自Zhang等人的论文~\citep{zhang2012network}~。
+}
+\end{figure}
+
+除了相关性，还可以进一步考察子空间的其它特征，譬如聚类性能。一方面，可以检测出具有重要聚类的高维子空间。在排序时保持其各个维度相邻，可以有效凸显其中的聚类信息~\citep{ferdosi2011visualizing}。另一方面，对于多种不同的排序，可以比较二维子空间的聚类特性~\citep{tatu2011automated}。轴间线段更趋一致的排序，更有可能反映潜在的数据规律（如图~\ref{fig:PC_Design_Reordering2}）。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{
+\includegraphics[width=0.45\linewidth]{images/PC_Design_Reordering2.eps}}
+\subfigure[]{
+\includegraphics[width=0.45\linewidth]{images/PC_Design_Reordering3.eps}}
+\caption{\label{fig:PC_Design_Reordering2}通过特征空间比较轴间线段的聚类性，聚类明显的排序（图(a)）更能反映潜在的数据规律。本图源自Tatu等人的论文~\citep{tatu2011automated}。}
+\end{figure}
+
+当单个标准无法满足需求时，用户还可以组合多种准则来优化排序~\citep{johansson2009interactive}。Dasgupta等人~\citep{dasgupta2010pargnostics}结合线段交错性、汇聚性等七种准则，提出了较为完备的平行坐标评价标准。但如何定制准则、使其既直观易懂又容易计算，还有待进一步探究。
+
+无论是何种准则，随着问题规模的增大，启发式算法（Heuristic Algorithm）的性能会不断下降。此外，过高的维度会压缩轴间空间使其不可见，排序也就失去了意义。因此在排序的同时，有必要降低数据的维度数。Yang等人~\citep{yang2002visual}~\citep{yang2003interactive}基于相似性对各维度进行层次聚类，利用少数具有代表性的维度来展示数据。Zhang等人的交互式排序~\citep{zhang2012network}则通过缩放相关性图来筛选维度。而Johansson等人~\citep{johansson2009interactive}建立了不同的评判准则，让用户可以根据分析需求、有针对性地进行维度筛选。
+
+除了排序和降维，坐标轴的布置方式也是一个有趣的研究课题。非平行、非平面的布局往往能表达更加多样的数据关系。其中一类拓展利用了三维空间，如~\ref{subsubsection:dataType}节提到的三维时变平行坐标（见图~\ref{fig:PC_Data_Time2}）。Johansson~\citep{johansson20053}等人设计了环形的布局，以表达多对一的维度关系（如图~\ref{fig:PC_Design_Reordering3}）。Fanea等人~\citep{fanea2005interactive}则结合平行坐标与星型图，并通过三维交互来提供两者之间的过渡（如图~\ref{fig:PC_Design_Reordering4}）。但三维视图容易产生遮挡严重、交互困难等问题，因此更多的研究只关注平面布局的变化。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Reordering3}
+\includegraphics[width=0.5\linewidth]{images/PC_Design_Reordering4.eps}}
+\subfigure[]{\label{fig:PC_Design_Reordering4}
+\includegraphics[width=0.44\linewidth]{images/PC_Design_Reordering5.eps}}
+\caption{平行坐标的三维拓展。图(a)、(b)分别来自论文~\citep{johansson20053}和~\citep{fanea2005interactive}。}
+\end{figure}
+
+为表现更多的子空间，Lind等人~\citep{lind2009many}尝试了多对多平行坐标的形式（如图~\ref{fig:PC_Design_Reordering5}）。但受限于视图复杂度，他们仅研究了七个变量的情形，并认为这种形式不具备良好的可扩展性。Claessen等人~\citep{claessen2011flexible}延展了这一概念，提出让用户自由放置和联结坐标轴，以产生各种基于轴的可视化形式（如图~\ref{fig:PC_Design_Reordering5}）。但这既增加了用户的交互负担，也不可避免地造成了空间浪费，其合理性有待进一步探讨。
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:PC_Design_Reordering5}
+\includegraphics[width=0.46\linewidth]{images/PC_Design_Reordering7.eps}}
+\subfigure[]{\label{fig:PC_Design_Reordering6}
+\includegraphics[width=0.47\linewidth]{images/PC_Design_Reordering8.eps}}
+\caption{坐标轴的自由布局。图(a)、(b)分别来自论文~\citep{lind2009many}和~\citep{claessen2011flexible}。}
+\end{figure}
+
+考虑到散点图矩阵能够表达所有子空间，Viau等人~\citep{viau2010flowvizmenu}通过动画过渡融合散点图与平行坐标，尝试将后者嵌入到矩阵中。Heinrich等人~\citep{heinrich2012parallel}则进一步提出了平行坐标矩阵的形式（如图~\ref{fig:PC_Design_Reordering6}），通过矩阵各行表现不同的排序，以提高视图的表达效率。相比于完全自由的布局，矩阵形式不存在空间浪费、视图旋转等问题，也更符合用户的使用习惯。但无论哪种形式，重复显示同一维度都将大大降低视图的可扩展性，也为交互设计带来了挑战。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1.0\linewidth]{images/PC_Design_Reordering6.eps}
+\caption{\label{fig:PC_Design_Reordering7}平行坐标矩阵，表达了数据中所有的二维子空间。本图来自Heinrich等人的论文~\citep{heinrich2012parallel}~。
+}
+\end{figure}
 
 \subsection{感知}
 \label{subsection:perceptionImpro}

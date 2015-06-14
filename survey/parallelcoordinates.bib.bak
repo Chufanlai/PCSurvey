@@ -1,0 +1,1415 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@InProceedings{albuquerque2009quality,
+  Title                    = {Quality-Based Visualization Matrices.},
+  Author                   = {Albuquerque, Georgia and Eisemann, Martin and Lehmann, Dirk J and Theisel, Holger and Magnor, Marcus A},
+  Booktitle                = {VMV},
+  Year                     = {2009},
+  Pages                    = {341--350},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Quality-based visualization matrices.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{ankerst1998similarity,
+  Title                    = {Similarity clustering of dimensions for an enhanced visualization of multidimensional data},
+  Author                   = {Ankerst, Mihael and Berchtold, Stefan and Keim, Daniel A},
+  Booktitle                = {Information Visualization, 1998. Proceedings. IEEE Symposium on},
+  Year                     = {1998},
+  Organization             = {IEEE},
+  Pages                    = {52--60},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Similarity Clustering of Dimensions for an enhanced visualization of multidimensional data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.27}
+}
+
+@InProceedings{artero2004uncovering,
+  Title                    = {Uncovering clusters in crowded parallel coordinates visualizations},
+  Author                   = {Artero, Almir Olivette and de Oliveira, Maria Cristina Ferreira and Levkowitz, Haim},
+  Booktitle                = {Information Visualization, 2004. INFOVIS 2004. IEEE Symposium on},
+  Year                     = {2004},
+  Organization             = {IEEE},
+  Pages                    = {81--88},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Uncovering clusters in crowded parallel coordinates visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{bachthaler2008continuous,
+  Title                    = {Continuous scatterplots},
+  Author                   = {Bachthaler, Sven and Weiskopf, Daniel},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2008},
+  Number                   = {6},
+  Pages                    = {1428--1435},
+  Volume                   = {14},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Continuous Scatterplots.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.05.04}
+}
+
+@InProceedings{barlow2004animator,
+  Title                    = {Animator: A tool for the animation of parallel coordinates},
+  Author                   = {Barlow, N and Stuart, Liz J},
+  Booktitle                = {Information Visualisation, 2004. IV 2004. Proceedings. Eighth International Conference on},
+  Year                     = {2004},
+  Organization             = {IEEE},
+  Pages                    = {725--730},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Animator\: A Tool for the Animation of Parallel Coordinates .pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{Bellman1962,
+  Title                    = {Applied dynamic programming},
+  Author                   = {Bellman, Richard Ernest and Dreyfus, Stuart E},
+  Year                     = {1962},
+
+  __markedentry            = {[chufanlai:5]},
+  Owner                    = {chufanlai},
+  Publisher                = {Rand Corporation},
+  Timestamp                = {2015.04.09}
+}
+
+@InProceedings{bendix2005parallel,
+  Title                    = {Parallel sets: Visual analysis of categorical data},
+  Author                   = {Bendix, Fabian and Kosara, Robert and Hauser, Helwig},
+  Booktitle                = {Information Visualization, 2005. INFOVIS 2005. IEEE Symposium on},
+  Year                     = {2005},
+  Organization             = {IEEE},
+  Pages                    = {133--140},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Parallel sets\: Visual analysis of categorical data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{berger2011uncertainty,
+  Title                    = {Uncertainty-Aware Exploration of Continuous Parameter Spaces Using Multivariate Prediction},
+  Author                   = {Berger, Wolfgang and Piringer, Harald and Filzmoser, Peter and Gr{\"o}ller, Eduard},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2011},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {911--920},
+  Volume                   = {30},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Uncertainty-aware exploration of continuous parameter spaces using multivariate prediction.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{berthold2003visualizing,
+  Title                    = {Visualizing fuzzy points in parallel coordinates},
+  Author                   = {Berthold, Michael R and Hall, Lawrence O},
+  Journal                  = {Fuzzy Systems, IEEE Transactions on},
+  Year                     = {2003},
+  Number                   = {3},
+  Pages                    = {369--374},
+  Volume                   = {11},
+
+  __markedentry            = {},
+  File                     = {:Visualizing Fuzzy Points in Parallel Coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.05.25}
+}
+
+@Article{bertini2011quality,
+  Title                    = {Quality metrics in high-dimensional data visualization: an overview and systematization},
+  Author                   = {Bertini, Enrico and Tatu, Andrada and Keim, Daniel},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {12},
+  Pages                    = {2203--2212},
+  Volume                   = {17},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Quality Metrics in High-Dimensional Data Visualization\: An Overview and Systematization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.28}
+}
+
+@Article{blaas2008extensions,
+  Title                    = {Extensions of parallel coordinates for interactive exploration of large multi-timepoint data sets},
+  Author                   = {Blaas, Jorik and Botha, Charl P and Post, Frits H},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2008},
+  Number                   = {6},
+  Pages                    = {1436--1451},
+  Volume                   = {14},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Extensions of parallel coordinates for interactive exploration of large multi-timepoint data sets.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{caat2007design,
+  Title                    = {Design and evaluation of tiled parallel coordinate visualization of multichannel EEG data},
+  Author                   = {Caat, M ten and Maurits, Natasha M and Roerdink, Jos BTM},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2007},
+  Number                   = {1},
+  Pages                    = {70--79},
+  Volume                   = {13},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Design and evaluation of tiled parallel coordinate visualization of multichannel EEG data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{claessen2011flexible,
+  Title                    = {Flexible linked axes for multivariate data visualization},
+  Author                   = {Claessen, Jarry HT and Van Wijk, Jarke J},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {12},
+  Pages                    = {2310--2316},
+  Volume                   = {17},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Flexible linked axes for multivariate data visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@Book{cleveland1988dynamic,
+  Title                    = {Dynamic graphics for statistics},
+  Author                   = {Cleveland, William C and McGill, Marylyn E},
+  Publisher                = {CRC Press, Inc.},
+  Year                     = {1988},
+
+  __markedentry            = {[chufanlai:3]},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@InProceedings{collins2009parallel,
+  Title                    = {Parallel tag clouds to explore and analyze faceted text corpora},
+  Author                   = {Collins, Christopher and Viegas, Fernanda B and Wattenberg, Martin},
+  Booktitle                = {Visual Analytics Science and Technology, 2009. VAST 2009. IEEE Symposium on},
+  Year                     = {2009},
+  Organization             = {IEEE},
+  Pages                    = {91--98},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Parallel Coordinates tag clouds to explore and analyze faceted text corpora.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{dang2010stacking,
+  Title                    = {Stacking graphic elements to avoid over-plotting},
+  Author                   = {Dang, Tuan Nhon and Wilkinson, Leland and Anand, Anushka},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2010},
+  Number                   = {6},
+  Pages                    = {1044--1052},
+  Volume                   = {16},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Stacking Graphic Elements to Avoid Over-Plotting.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{dasgupta2012conceptualizing,
+  Title                    = {Conceptualizing visual uncertainty in parallel coordinates},
+  Author                   = {Dasgupta, Aritra and Chen, Min and Kosara, Robert},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2012},
+  Number                   = {3pt2},
+  Organization             = {Wiley Online Library},
+  Pages                    = {1015--1024},
+  Volume                   = {31},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Conceptualizing visual uncertainty in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{dasgupta2011adaptive,
+  Title                    = {Adaptive privacy-preserving visualization using parallel coordinates},
+  Author                   = {Dasgupta, Aritra and Kosara, Robert},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {12},
+  Pages                    = {2241--2248},
+  Volume                   = {17},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Adaptive privacy-preserving visualization using parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.10}
+}
+
+@Article{dasgupta2010pargnostics,
+  Title                    = {Pargnostics: Screen-space metrics for parallel coordinates},
+  Author                   = {Dasgupta, Aritra and Kosara, Robert},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2010},
+  Number                   = {6},
+  Pages                    = {1017--1026},
+  Volume                   = {16},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Pargnostics\: Screen-space metrics for parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.26}
+}
+
+@InProceedings{dietzsch2009spray,
+  Title                    = {Spray: A visual analytics approach for gene expression data},
+  Author                   = {Dietzsch, Janko and Heinrich, Julian and Nieselt, Kay and Bartz, Dirk},
+  Booktitle                = {Visual Analytics Science and Technology, 2009. VAST 2009. IEEE Symposium on},
+  Year                     = {2009},
+  Organization             = {IEEE},
+  Pages                    = {179--186},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:SpRay\: A Visual Analytics Approach for Gene Expression Data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.02}
+}
+
+@Article{edsall2003parallel,
+  Title                    = {The parallel coordinate plot in action: design and use for geographic visualization},
+  Author                   = {Edsall, Robert M},
+  Journal                  = {Computational Statistics \& Data Analysis},
+  Year                     = {2003},
+  Number                   = {4},
+  Pages                    = {605--619},
+  Volume                   = {43},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:The parallel coordinate plot in action\: design and 3 use for geographic visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.05.02}
+}
+
+@InProceedings{ellis2005sampling,
+  Title                    = {The sampling lens: making sense of saturated visualisations},
+  Author                   = {Ellis, Geoffrey and Bertini, Enrico and Dix, Alan},
+  Booktitle                = {CHI'05 Extended Abstracts on Human Factors in Computing Systems},
+  Year                     = {2005},
+  Organization             = {ACM},
+  Pages                    = {1351--1354},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:The Sampling Lens\: Making Sense of Saturated Visualisations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.25}
+}
+
+@Article{ellis2006enabling,
+  Title                    = {Enabling automatic clutter reduction in parallel coordinate plots},
+  Author                   = {Ellis, Geoffrey and Dix, Alan},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2006},
+  Number                   = {5},
+  Pages                    = {717--724},
+  Volume                   = {12},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Enabling automatic clutter reduction in parallel coordinate plots.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{fanea2005interactive,
+  Title                    = {An interactive 3d integration of parallel coordinates and star glyphs},
+  Author                   = {Fanea, Elena and Carpendale, Sheelagh and Isenberg, Tobias},
+  Booktitle                = {Information Visualization, 2005. INFOVIS 2005. IEEE Symposium on},
+  Year                     = {2005},
+  Organization             = {IEEE},
+  Pages                    = {149--156},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:An interactive 3D integration of parallel coordinates and star glyphs.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{feng2010matching,
+  Title                    = {Matching visual saliency to confidence in plots of uncertain data},
+  Author                   = {Feng, David and Kwock, Lester and Lee, Yueh and Taylor, Russell M},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2010},
+  Number                   = {6},
+  Pages                    = {980--989},
+  Volume                   = {16},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Matching visual saliency to confidence in plots of uncertain data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{ferdosi2011visualizing,
+  Title                    = {Visualizing High-Dimensional Structures by Dimension Ordering and Filtering using Subspace Analysis},
+  Author                   = {Ferdosi, Bilkis J and Roerdink, Jos BTM},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2011},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {1121--1130},
+  Volume                   = {30},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visualizing high-dimensional structures by dimension ordering and filtering using subspace analysis.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{fodor2002survey,
+  Title                    = {A survey of dimension reduction techniques},
+  Author                   = {Fodor, Imola K},
+  Year                     = {2002},
+
+  __markedentry            = {[chufanlai:3]},
+  File                     = {:A survey of dimension reduction techniques.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@Article{fua2000structure,
+  Title                    = {Structure-based brushes: A mechanism for navigating hierarchically organized data and information spaces},
+  Author                   = {Fua, Ying-Huey and Ward, Matthew O and Rundensteiner, Elke A},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2000},
+  Number                   = {2},
+  Pages                    = {150--159},
+  Volume                   = {6},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Structure-based brushes\: a mechanism for navigating hierarchically organized data and information spaces.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{fua1999hierarchical,
+  Title                    = {Hierarchical parallel coordinates for exploration of large datasets},
+  Author                   = {Fua, Ying-Huey and Ward, Matthew O and Rundensteiner, Elke A},
+  Booktitle                = {Proceedings of the conference on Visualization'99: celebrating ten years},
+  Year                     = {1999},
+  Organization             = {IEEE Computer Society Press},
+  Pages                    = {43--50},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Hierarchical parallel coordinates for exploration of large datasets.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{fua1999navigating,
+  Title                    = {Navigating hierarchies with structure-based brushes},
+  Author                   = {Fua, Ying-Huey and Ward, Matthew O and Rundensteiner, Elke A},
+  Booktitle                = {Information Visualization, 1999.(Info Vis' 99) Proceedings. 1999 IEEE Symposium on},
+  Year                     = {1999},
+  Organization             = {IEEE},
+  Pages                    = {58--64},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Hierarchical parallel coordinates for exploration of large datasets.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{geng2011angular,
+  Title                    = {Angular histograms: Frequency-based visualizations for large, high dimensional data},
+  Author                   = {Geng, Zhao and Peng, ZhenMin and Laramee, Robert S and Roberts, Jonathan C and Walker, Rick},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {12},
+  Pages                    = {2572--2580},
+  Volume                   = {17},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Angular histograms\: Frequency-based visualiza- tions for large, high dimensional data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{graham2003using,
+  Title                    = {Using curves to enhance parallel coordinate visualisations},
+  Author                   = {Graham, Martin and Kennedy, Jessie},
+  Booktitle                = {Information Visualization, 2003. IV 2003. Proceedings. Seventh International Conference on},
+  Year                     = {2003},
+  Organization             = {IEEE},
+  Pages                    = {10--16},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Using curves to enhance parallel coordinate visualisations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{gratzl2013lineup,
+  Title                    = {Lineup: Visual analysis of multi-attribute rankings},
+  Author                   = {Gratzl, Samuel and Lex, Alexander and Gehlenborg, Nils and Pfister, Hanspeter and Streit, Marc},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2013},
+  Number                   = {12},
+  Pages                    = {2277--2286},
+  Volume                   = {19},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Lineup\: Visual analysis of multi-attribute rankings.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.29}
+}
+
+@InProceedings{grinstein2001high,
+  Title                    = {High-dimensional visualizations},
+  Author                   = {Grinstein, Georges and Trutschl, Marjan and Cvek, Urska},
+  Booktitle                = {Data mining conference KDD workshop 2001},
+  Year                     = {2001},
+  Pages                    = {7--19},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:High-dimensional visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@InProceedings{guo2011tripvista,
+  Title                    = {TripVista: Triple perspective visual trajectory analytics and its application on microscopic traffic data at a road intersection},
+  Author                   = {Guo, Hanqi and Wang, Zuchao and Yu, Bowen and Zhao, Huijing and Yuan, Xiaoru},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2011 IEEE},
+  Year                     = {2011},
+  Organization             = {IEEE},
+  Pages                    = {163--170},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:TripVista\: triple perspective visual trajectory analytics and its ap- plication on microscopic traffic data at a road intersection.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{guo2011multi,
+  Title                    = {Multi-dimensional transfer function design based on flexible dimension projection embedded in parallel coordinates},
+  Author                   = {Guo, Hanqi and Xiao, He and Yuan, Xiaoru},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2011 IEEE},
+  Year                     = {2011},
+  Organization             = {IEEE},
+  Pages                    = {19--26},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Multi-dimensional transfer function design based on flexible dimension projection embedded in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{guo2010interactive,
+  Title                    = {Interactive local clustering operations for high dimensional data in parallel coordinates},
+  Author                   = {Guo, Peihong and Xiao, He and Wang, Zuchao and Yuan, Xiaoru},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2010 IEEE},
+  Year                     = {2010},
+  Organization             = {IEEE},
+  Pages                    = {97--104},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Interactive local clustering operations for high dimensional data in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{hauser2002angular,
+  Title                    = {Angular brushing of extended parallel coordinates},
+  Author                   = {Hauser, Helwig and Ledermann, Florian and Doleisch, Helmut},
+  Booktitle                = {Information Visualization, 2002. INFOVIS 2002. IEEE Symposium on},
+  Year                     = {2002},
+  Organization             = {IEEE},
+  Pages                    = {127--130},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Angular brushing of extended parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{heinrich2011progressive,
+  Title                    = {Progressive splatting of continuous scatterplots and parallel coordinates},
+  Author                   = {Heinrich, Julian and Bachthaler, Sven and Weiskopf, Daniel},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2011},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {653--662},
+  Volume                   = {30},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Progressive splatting of continuous scatterplots and parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{heinrich2011evaluation,
+  Title                    = {Evaluation of a bundling technique for parallel coordinates},
+  Author                   = {Heinrich, Julian and Luo, Yuan and Kirkpatrick, Arthur E and Zhang, Hao and Weiskopf, Daniel},
+  Journal                  = {arXiv preprint arXiv:1109.6073},
+  Year                     = {2011},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Evaluation of a bundling technique for parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{heinrich2012parallel,
+  Title                    = {The parallel coordinates matrix},
+  Author                   = {Heinrich, J and Stasko, J and Weiskopf, D},
+  Journal                  = {EuroVis--Short Papers},
+  Year                     = {2012},
+  Pages                    = {37--41},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:The parallel coordinates matrix.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{heinrich2013state,
+  Title                    = {State of the art of parallel coordinates},
+  Author                   = {Heinrich, Julian and Weiskopf, Daniel},
+  Journal                  = {STAR Proceedings of Eurographics},
+  Year                     = {2013},
+  Pages                    = {95--116},
+  Volume                   = {2013},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:State of the art of parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.06}
+}
+
+@Article{heinrich2009continuous,
+  Title                    = {Continuous parallel coordinates},
+  Author                   = {Heinrich, Julian and Weiskopf, Daniel},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2009},
+  Number                   = {6},
+  Pages                    = {1531--1538},
+  Volume                   = {15},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Continuous parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.06}
+}
+
+@InProceedings{hoffman1999dimensional,
+  Title                    = {Dimensional anchors: a graphic primitive for multidimensional multivariate information visualizations},
+  Author                   = {Hoffman, Patrick and Grinstein, Georges and Pinkney, David},
+  Booktitle                = {Proceedings of the 1999 workshop on new paradigms in information visualization and manipulation in conjunction with the eighth ACM internation conference on Information and knowledge management},
+  Year                     = {1999},
+  Organization             = {ACM},
+  Pages                    = {9--16},
+
+  __markedentry            = {[chufanlai:3]},
+  File                     = {:Dimensional anchors\: a graphic primitive for multidimensional multivariate information visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@Article{hofmann2013common,
+  Title                    = {Common angle plots as perception-true visualizations of categorical associations},
+  Author                   = {Hofmann, Heike and Vendettuoli, Marie},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2013},
+  Number                   = {12},
+  Pages                    = {2297--2305},
+  Volume                   = {19},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Common Angle Plots as Perception-True Visualizations of Categorical Associations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.28}
+}
+
+@InProceedings{holten2010evaluation,
+  Title                    = {Evaluation of cluster identification performance for different PCP variants},
+  Author                   = {Holten, Danny and Van Wijk, Jarke J},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2010},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {793--802},
+  Volume                   = {29},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Evaluation of cluster iden- tification performance for different PCP variants.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Book{inselberg2009parallel,
+  Title                    = {Parallel coordinates},
+  Author                   = {Inselberg, Alfred},
+  Publisher                = {Springer},
+  Year                     = {2009},
+
+  __markedentry            = {[chufanlai:1]},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.22}
+}
+
+@Article{inselberg1985plane,
+  Title                    = {The plane with parallel coordinates},
+  Author                   = {Inselberg, Alfred},
+  Journal                  = {The Visual Computer},
+  Year                     = {1985},
+  Number                   = {2},
+  Pages                    = {69--91},
+  Volume                   = {1},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:The plane with parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {Springer},
+  Timestamp                = {2015.04.06}
+}
+
+@InProceedings{146402,
+  Title                    = {Parallel coordinates: a tool for visualizing multi-dimensional geometry},
+  Author                   = {Inselberg, A. and Dimsdale, Bernard},
+  Booktitle                = {Visualization, 1990. Visualization '90., Proceedings of the First IEEE Conference on},
+  Year                     = {1990},
+  Month                    = {Oct},
+  Pages                    = {361-378},
+
+  __markedentry            = {[chufanlai:1]},
+  Doi                      = {10.1109/VISUAL.1990.146402},
+  File                     = {:Parallel coordinates\: a tool for visualizing multi-dimensional geometry.pdf:PDF},
+  Keywords                 = {computational geometry;computer graphics;N-dimensional;hypersurface;interior point;multivariate data;nonprojective mapping;parallel coordinates;planar images;two-dimensional sets;visualizing multi-dimensional geometry;Air traffic control;Application software;Computational geometry;Computer displays;Computer science;Orbital robotics;Robot kinematics;Robot vision systems;Statistics;Visualization},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{johansson2008screen,
+  Title                    = {A screen space quality method for data abstraction},
+  Author                   = {Johansson, Jimmy and Cooper, Matthew},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2008},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {1039--1046},
+  Volume                   = {27},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:A screen space quality method for data abstraction.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{johansson20053,
+  Title                    = {3-dimensional display for clustered multi-relational parallel coordinates},
+  Author                   = {Johansson, Jimmy and Cooper, Matthew and Jern, Mikael},
+  Booktitle                = {Information Visualisation, 2005. Proceedings. Ninth International Conference on},
+  Year                     = {2005},
+  Organization             = {IEEE},
+  Pages                    = {188--193},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:3-dimensional display for clustered multi-relational parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{johansson2008perceiving,
+  Title                    = {Perceiving patterns in parallel coordinates: determining thresholds for identification of relationships},
+  Author                   = {Johansson, Jimmy and Forsell, Camilla and Lind, Mats and Cooper, Matthew},
+  Journal                  = {Information Visualization},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {152--162},
+  Volume                   = {7},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Perceiving patterns in parallel coordinates\: determining thresh- olds for identification of relationships.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{johansson2007depth,
+  Title                    = {Depth Cues and Density in Temporal Parallel Coordinates.},
+  Author                   = {Johansson, Jimmy and Ljung, Patric and Cooper, Matthew D},
+  Booktitle                = {EuroVis},
+  Year                     = {2007},
+  Pages                    = {35--42},
+  Volume                   = {7},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Depth cues and density in temporal parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{johansson2006revealing,
+  Title                    = {Revealing structure in visualizations of dense 2D and 3D parallel coordinates},
+  Author                   = {Johansson, Jimmy and Ljung, Patric and Jern, Mikael and Cooper, Matthew},
+  Journal                  = {Information Visualization},
+  Year                     = {2006},
+  Number                   = {2},
+  Pages                    = {125--136},
+  Volume                   = {5},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Revealing structure in visualizations of dense 2d and 3d parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.05.20}
+}
+
+@InProceedings{johansson2005revealing,
+  Title                    = {Revealing structure within clustered parallel coordinates displays},
+  Author                   = {Johansson, Jimmy and Ljung, Patric and Jern, Mikael and Cooper, Matthew},
+  Booktitle                = {Information Visualization, 2005. INFOVIS 2005. IEEE Symposium on},
+  Year                     = {2005},
+  Organization             = {IEEE},
+  Pages                    = {125--132},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Revealing structure within clustered parallel coordinates displays.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{johansson2009interactive,
+  Title                    = {Interactive dimensionality reduction through user-defined combinations of quality metrics},
+  Author                   = {Johansson, Sara and Johansson, Jimmy},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2009},
+  Number                   = {6},
+  Pages                    = {993--1000},
+  Volume                   = {15},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Interactive Dimensionality Reduction Through User-defined.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.24}
+}
+
+@InProceedings{kandogan2000star,
+  Title                    = {Star coordinates: A multi-dimensional visualization technique with uniform treatment of dimensions},
+  Author                   = {Kandogan, Eser},
+  Booktitle                = {Proceedings of the IEEE Information Visualization Symposium},
+  Year                     = {2000},
+  Pages                    = {22},
+  Volume                   = {650},
+
+  __markedentry            = {[chufanlai:3]},
+  File                     = {:Star coordinates\: A multi-dimensional visualization technique with uniform treatment of dimensions.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@Article{kosara2006parallel,
+  Title                    = {Parallel sets: Interactive exploration and visual analysis of categorical data},
+  Author                   = {Kosara, Robert and Bendix, Fabian and Hauser, Helwig},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2006},
+  Number                   = {4},
+  Pages                    = {558--568},
+  Volume                   = {12},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Parallel sets\: Interactive exploration and visual analysis of categorical data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{lee2014structure,
+  Title                    = {A Structure-Based Distance Metric for High-Dimensional Space Exploration with Multidimensional Scaling},
+  Author                   = {Lee, Jenny Hyunjung and McDonnell, Kevin T and Zelenyuk, Alla and Imre, Dan and Mueller, Klaus},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2014},
+  Number                   = {3},
+  Pages                    = {351--364},
+  Volume                   = {20},
+
+  __markedentry            = {[chufanlai:5]},
+  File                     = {:A Structure-Based Distance Metric for High-Dimensional Space Exploration with Multidimensional Scaling.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.09}
+}
+
+@Article{lehmann2011features,
+  Title                    = {Features in continuous parallel coordinates},
+  Author                   = {Lehmann, Dirk J and Theisel, Holger},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {12},
+  Pages                    = {1912--1921},
+  Volume                   = {17},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Features in continuous parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{li2010judging,
+  Title                    = {Judging correlation from scatterplots and parallel coordinate plots},
+  Author                   = {Li, Jing and Martens, Jean-Bernard and Van Wijk, Jarke J},
+  Journal                  = {Information Visualization},
+  Year                     = {2010},
+  Number                   = {1},
+  Pages                    = {13--30},
+  Volume                   = {9},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Judging correlation from scatterplots and parallel coordinate plots.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{lind2009many,
+  Title                    = {Many-to-many relational parallel coordinates displays},
+  Author                   = {Lind, Mats and Johansson, Jimmy and Cooper, Matthew},
+  Booktitle                = {Information Visualisation, 2009 13th International Conference},
+  Year                     = {2009},
+  Organization             = {IEEE},
+  Pages                    = {25--31},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Many-to-many relational parallel coordinates displays.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{martin1995high,
+  Title                    = {High dimensional brushing for interactive exploration of multivariate data},
+  Author                   = {Martin, Allen R and Ward, Matthew O},
+  Booktitle                = {Proceedings of the 6th Conference on Visualization'95},
+  Year                     = {1995},
+  Organization             = {IEEE Computer Society},
+  Pages                    = {271},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:High dimensional brushing for interactive exploration of multivariate data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.28}
+}
+
+@InProceedings{mcdonnell2008illustrative,
+  Title                    = {Illustrative parallel coordinates},
+  Author                   = {McDonnell, Kevin T and Mueller, Klaus},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2008},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {1031--1038},
+  Volume                   = {27},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Illustrative parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{moustafa2002some,
+  Title                    = {On some generalizations of parallel coordinate plots},
+  Author                   = {Moustafa, Rida EA and Wegman, Edward J},
+  Booktitle                = {Seeing a Million--A Data Visualization Workshop},
+  Year                     = {2002},
+  Pages                    = {41--48},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:On some generalizations of parallel coordinate plots.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@InProceedings{muigg2011visual,
+  Title                    = {Visual Coherence for Large-Scale Line-Plot Visualizations},
+  Author                   = {Muigg, Philipp and Hadwiger, Markus and Doleisch, Helmut and Gr{\"o}ller, Eduard},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2011},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {643--652},
+  Volume                   = {30},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visual Coherence for Large‐Scale Line‐Plot Visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{novotny2006outlier,
+  Title                    = {Outlier-preserving focus+ context visualization in parallel coordinates},
+  Author                   = {Novotny, Matej and Hauser, Helwig},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2006},
+  Number                   = {5},
+  Pages                    = {893--900},
+  Volume                   = {12},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Outlier-preserving focus+ context visualization in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{palmas2014edge,
+  Title                    = {An edge-bundling layout for interactive parallel coordinates},
+  Author                   = {Palmas, Gregorio and Bachynskyi, Myroslav and Oulasvirta, Antti and Seidel, Hans Peter and Weinkauf, Tino},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2014 IEEE},
+  Year                     = {2014},
+  Organization             = {IEEE},
+  Pages                    = {57--64},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:An edge-bundling layout for interactive parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@Article{pang1997approaches,
+  Title                    = {Approaches to uncertainty visualization},
+  Author                   = {Pang, Alex T and Wittenbrink, Craig M and Lodha, Suresh K},
+  Journal                  = {The Visual Computer},
+  Year                     = {1997},
+  Number                   = {8},
+  Pages                    = {370--390},
+  Volume                   = {13},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Approaches to uncertainty visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {Springer},
+  Timestamp                = {2015.05.06}
+}
+
+@InProceedings{peng2004clutter,
+  Title                    = {Clutter reduction in multi-dimensional data visualization using dimension reordering},
+  Author                   = {Peng, Wei and Ward, Matthew O and Rundensteiner, Elke A},
+  Booktitle                = {Information Visualization, 2004. INFOVIS 2004. IEEE Symposium on},
+  Year                     = {2004},
+  Organization             = {IEEE},
+  Pages                    = {89--96},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Clutter reduction in multi-dimensional data visualization using dimension reordering.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{qu2007visual,
+  Title                    = {Visual analysis of the air pollution problem in Hong Kong},
+  Author                   = {Qu, Huamin and Chan, Wing-Yi and Xu, Anbang and Chung, Kai-Lun and Lau, Kai-Hon and Guo, Ping},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2007},
+  Number                   = {6},
+  Pages                    = {1408--1415},
+  Volume                   = {13},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visual analysis of the air pollution problem in Hong Kong.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{rosario2004mapping,
+  Title                    = {Mapping nominal values to numbers for effective visualization},
+  Author                   = {Rosario, Geraldine E and Rundensteiner, Elke A and Brown, David C and Ward, Matthew O and Huang, Shiping},
+  Journal                  = {Information Visualization},
+  Year                     = {2004},
+  Number                   = {2},
+  Pages                    = {80--95},
+  Volume                   = {3},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Mapping Nominal Values to Numbers for Effective Visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {SAGE Publications},
+  Timestamp                = {2015.04.26}
+}
+
+@InProceedings{rosenbaum2012progressive,
+  Title                    = {Progressive parallel coordinates},
+  Author                   = {Rosenbaum, Ren{\'e} and Zhi, Jian and Hamann, Bernd},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2012 IEEE},
+  Year                     = {2012},
+  Organization             = {IEEE},
+  Pages                    = {25--32},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Progressive parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{siirtola2000direct,
+  Title                    = {Direct manipulation of parallel coordinates},
+  Author                   = {Siirtola, Harri},
+  Booktitle                = {Information Visualization, 2000. Proceedings. IEEE International Conference on},
+  Year                     = {2000},
+  Organization             = {IEEE},
+  Pages                    = {373--378},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Direct manipulation of parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{siirtola2009visual,
+  Title                    = {Visual perception of parallel coordinate visualizations},
+  Author                   = {Siirtola, Harri and Laivo, Tuuli and Heimonen, Tomi and Raiha, K-J},
+  Booktitle                = {Information Visualisation, 2009 13th International Conference},
+  Year                     = {2009},
+  Organization             = {IEEE},
+  Pages                    = {3--9},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visual perception of parallel coordinate visualizations.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{siirtola2006interacting,
+  Title                    = {Interacting with parallel coordinates},
+  Author                   = {Siirtola, Harri and R{\"a}ih{\"a}, Kari-Jouko},
+  Journal                  = {Interacting with Computers},
+  Year                     = {2006},
+  Number                   = {6},
+  Pages                    = {1278--1309},
+  Volume                   = {18},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Interacting with parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {Oxford University Press},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{tatu2011automated,
+  Title                    = {Automated analytical methods to support visual exploration of high-dimensional data},
+  Author                   = {Tatu, Andrada and Albuquerque, Georgia and Eisemann, Martin and Bak, Peter and Theisel, Holger and Magnor, Marcus and Keim, Daniel},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {5},
+  Pages                    = {584--597},
+  Volume                   = {17},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Automated analytical methods to support visual exploration of high-dimensional data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{tatu2009combining,
+  Title                    = {Combining automated analysis and visualization techniques for effective exploration of high-dimensional data},
+  Author                   = {Tatu, Andrada and Albuquerque, Georgia and Eisemann, Martin and Schneidewind, J{\"o}rn and Theisel, Holger and Magnor, Marcus and Keim, Daniel},
+  Booktitle                = {Visual Analytics Science and Technology, 2009. VAST 2009. IEEE Symposium on},
+  Year                     = {2009},
+  Organization             = {IEEE},
+  Pages                    = {59--66},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Combining automated analysis and visualization techniques for effective exploration of high-dimensional data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{theisel2000higher,
+  Title                    = {Higher Order Parallel Coordinates.},
+  Author                   = {Theisel, Holger},
+  Booktitle                = {VMV},
+  Year                     = {2000},
+  Pages                    = {415--420},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Higher order parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.22}
+}
+
+@Article{tory2005parallel,
+  Title                    = {A parallel coordinates style interface for exploratory volume visualization},
+  Author                   = {Tory, Melanie and Potts, Simeon and Moller, Torsten},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2005},
+  Number                   = {1},
+  Pages                    = {71--80},
+  Volume                   = {11},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:A parallel coordinates style interface for exploratory volume visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{turkay2011brushing,
+  Title                    = {Brushing dimensions-a dual visual analysis model for high-dimensional data},
+  Author                   = {Turkay, Cagatay and Filzmoser, Peter and Hauser, Helwig},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2011},
+  Number                   = {12},
+  Pages                    = {2591--2599},
+  Volume                   = {17},
+
+  __markedentry            = {[chufanlai:5]},
+  File                     = {:Brushing dimensions-a dual visual analysis model for high-dimensional data.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{van2005value,
+  Title                    = {The value of visualization},
+  Author                   = {Van Wijk, Jarke J},
+  Booktitle                = {Visualization, 2005. VIS 05. IEEE},
+  Year                     = {2005},
+  Organization             = {IEEE},
+  Pages                    = {79--86},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:The Value of Visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.22}
+}
+
+@Article{viau2010flowvizmenu,
+  Title                    = {The FlowVizMenu and parallel scatterplot matrix: Hybrid multidimensional visualizations for network exploration},
+  Author                   = {Viau, Christophe and McGuffin, Michael J and Chiricota, Yves and Jurisica, Igor},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2010},
+  Number                   = {6},
+  Pages                    = {1100--1108},
+  Volume                   = {16},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:The FlowVizMenu and parallel scatterplot matrix\: Hybrid multidimensional visualizations for network exploration.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{wegenkittl1997visualizing,
+  Title                    = {Visualizing the behaviour of higher dimensional dynamical systems},
+  Author                   = {Wegenkittl, Rainer and Loffelmann, Helwig and Groller, Eduard},
+  Booktitle                = {Visualization'97., Proceedings},
+  Year                     = {1997},
+  Organization             = {IEEE},
+  Pages                    = {119--125},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visualizing the Behavior of Higher Dimensional Dynamical Systems.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.03}
+}
+
+@Article{wilkinson2006high,
+  Title                    = {High-dimensional visual analytics: Interactive exploration guided by pairwise views of point distributions},
+  Author                   = {Wilkinson, Leland and Anand, Anushka and Grossman, Robert},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2006},
+  Number                   = {6},
+  Pages                    = {1363--1372},
+  Volume                   = {12},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:High-Dimensional Visual Analytics\: Interactive Exploration Guided by Pairwise Views of Point Distributions.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.27}
+}
+
+@InProceedings{wong199430,
+  Title                    = {30 Years of Multidimensional Multivariate Visualization.},
+  Author                   = {Wong, Pak Chung and Bergeron, R Daniel},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:30 Years of Multidimensional Multivariate Visualization.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@InProceedings{wong1996multiresolution,
+  Title                    = {Multiresolution multidimensional wavelet brushing},
+  Author                   = {Wong, Pak Chung and Bergeron, R Daniel},
+  Booktitle                = {Visualization'96. Proceedings.},
+  Year                     = {1996},
+  Organization             = {IEEE},
+  Pages                    = {141--148},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Multiresolution Multidimensional Wavelet Brushing.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.05.25}
+}
+
+@InProceedings{yang2003interactive,
+  Title                    = {Interactive hierarchical dimension ordering, spacing and filtering for exploration of high dimensional datasets},
+  Author                   = {Yang, Jing and Peng, Wei and Ward, Matthew O and Rundensteiner, Elke A},
+  Booktitle                = {Information Visualization, 2003. INFOVIS 2003. IEEE Symposium on},
+  Year                     = {2003},
+  Organization             = {IEEE},
+  Pages                    = {105--112},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Interactive hierarchical dimension ordering, spacing and filtering for exploration of high dimensional datasets.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@Article{yuan2009scattering,
+  Title                    = {Scattering points in parallel coordinates},
+  Author                   = {Yuan, Xiaoru and Guo, Peihong and Xiao, He and Zhou, Hong and Qu, Huamin},
+  Journal                  = {Visualization and Computer Graphics, IEEE Transactions on},
+  Year                     = {2009},
+  Number                   = {6},
+  Pages                    = {1001--1008},
+  Volume                   = {15},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Scattering points in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{zhang2012network,
+  Title                    = {A network-based interface for the exploration of high-dimensional data spaces},
+  Author                   = {Zhang, Zhiyuan and McDonnell, Kevin T and Mueller, Klaus},
+  Booktitle                = {Pacific Visualization Symposium (PacificVis), 2012 IEEE},
+  Year                     = {2012},
+  Organization             = {IEEE},
+  Pages                    = {17--24},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:A network-based interface for the exploration of high-dimensional data spaces.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{zhou2009splatting,
+  Title                    = {Splatting the lines in parallel coordinates},
+  Author                   = {Zhou, Hong and Cui, Weiwei and Qu, Huamin and Wu, Yingcai and Yuan, Xiaoru and Zhuo, Wei},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2009},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {759--766},
+  Volume                   = {28},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Splatting the lines in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@InProceedings{zhou2014parallel,
+  Title                    = {Parallel Coordinates with Data Labels},
+  Author                   = {Zhou, Hong and Xu, Panpan and Ming, Zhong and Qu, Huamin},
+  Booktitle                = {Proceedings of the 7th International Symposium on Visual Information Communication and Interaction},
+  Year                     = {2014},
+  Organization             = {ACM},
+  Pages                    = {49},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Parallel Coordinates with Data Labels.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.09}
+}
+
+@InProceedings{zhou2008visual,
+  Title                    = {Visual clustering in parallel coordinates},
+  Author                   = {Zhou, Hong and Yuan, Xiaoru and Qu, Huamin and Cui, Weiwei and Chen, Baoquan},
+  Booktitle                = {Computer Graphics Forum},
+  Year                     = {2008},
+  Number                   = {3},
+  Organization             = {Wiley Online Library},
+  Pages                    = {1047--1054},
+  Volume                   = {27},
+
+  __markedentry            = {[chufanlai:1]},
+  File                     = {:Visual clustering in parallel coordinates.pdf:PDF},
+  Owner                    = {chufanlai},
+  Timestamp                = {2015.04.08}
+}
+
+@comment{jabref-meta: groupsversion:3;}
+
+@comment{jabref-meta: groupstree:
+0 AllEntriesGroup:;
+1 ExplicitGroup:Perception\;0\;dasgupta2010pargnostics\;holten2010eval
+uation\;johansson2008perceiving\;johansson2008screen\;li2010judging\;t
+atu2009combining\;;
+1 ExplicitGroup:Survey\;0\;146402\;albuquerque2009quality\;bertini2011
+quality\;grinstein2001high\;heinrich2013state\;inselberg1985plane\;ins
+elberg2009parallel\;siirtola2006interacting\;siirtola2009visual\;van20
+05value\;wong199430\;;
+1 ExplicitGroup:Data\;0\;barlow2004animator\;bendix2005parallel\;blaas
+2008extensions\;collins2009parallel\;dasgupta2011adaptive\;dasgupta201
+2conceptualizing\;feng2010matching\;heinrich2009continuous\;heinrich20
+11progressive\;hofmann2013common\;johansson2007depth\;kosara2006parall
+el\;lehmann2011features\;rosario2004mapping\;rosenbaum2012progressive\
+;;
+1 ExplicitGroup:Application\;0\;berger2011uncertainty\;caat2007design\
+;gratzl2013lineup\;guo2011multi\;guo2011tripvista\;qu2007visual\;tory2
+005parallel\;;
+1 ExplicitGroup:AxesPlacement\;0\;claessen2011flexible\;fanea2005inter
+active\;heinrich2012parallel\;johansson20053\;lind2009many\;viau2010fl
+owvizmenu\;;
+1 ExplicitGroup:AxesReordering\;0\;ankerst1998similarity\;ferdosi2011v
+isualizing\;johansson2009interactive\;tatu2011automated\;wilkinson2006
+high\;yang2003interactive\;zhang2012network\;;
+1 ExplicitGroup:ClutterReduction\;0\;artero2004uncovering\;dang2010sta
+cking\;ellis2006enabling\;fua1999hierarchical\;geng2011angular\;guo201
+0interactive\;heinrich2011evaluation\;johansson2005revealing\;johansso
+n2006revealing\;mcdonnell2008illustrative\;muigg2011visual\;novotny200
+6outlier\;palmas2014edge\;peng2004clutter\;siirtola2000direct\;wong199
+6multiresolution\;zhou2008visual\;zhou2009splatting\;;
+1 ExplicitGroup:Interaction\;0\;fua1999navigating\;fua2000structure\;h
+auser2002angular\;martin1995high\;;
+1 ExplicitGroup:LineImprovement\;0\;graham2003using\;moustafa2002some\
+;yuan2009scattering\;zhou2014parallel\;;
+}
+
